@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Planned",
+        "type": "todo_list",
+        "description": "Planned Todo"
+    },
+    {
+        "name": "Working",
+        "type": "todo_list",
+        "description": "Working Todo"
+    },
+    {
+        "name": "Completed",
+        "type": "todo_list",
+        "description": "Completed Todo"
+    },
+    {
+        "name": "Overdue",
+        "type": "todo_list",
+        "description": "Overdue Todo"
+    }
+]

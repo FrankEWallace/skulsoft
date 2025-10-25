@@ -1,0 +1,1 @@
+import{r as e,t as a,o as c,w as s,e as r}from"./app-Cvm44xuh.js";const i={name:"AcademicConfig"},l=Object.assign(i,{setup(_){const o=[{name:"AcademicConfigSubjectType",icon:"fas fa-chevron-right",label:"calendar.subject.type.type"}];return(p,u)=>{const t=e("router-view"),n=e("ModuleConfig");return c(),a(n,{navigations:o},{default:s(()=>[r(t)]),_:1})}}});export{l as default};

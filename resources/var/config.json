@@ -1,0 +1,1895 @@
+{
+    "system": [
+        {
+            "name": "show_setup_wizard",
+            "value": false
+        },
+        {
+            "name": "direction",
+            "value": "ltr",
+            "is_public": true
+        },
+        {
+            "name": "locale",
+            "value": "en",
+            "is_public": true
+        },
+        {
+            "name": "timezone",
+            "value": "Asia/Kolkata",
+            "is_public": true
+        },
+        {
+            "name": "color_scheme",
+            "value": "default",
+            "is_public": true
+        },
+        {
+            "name": "date_format",
+            "value": "MMMM D, YYYY",
+            "is_public": true
+        },
+        {
+            "name": "time_format",
+            "value": "h:mm A",
+            "is_public": true
+        },
+        {
+            "name": "per_page",
+            "value": 10,
+            "is_public": true
+        },
+        {
+            "name": "currency",
+            "value": "USD",
+            "is_public": true
+        },
+        {
+            "name": "currencies",
+            "value": "USD",
+            "is_public": true
+        },
+        {
+            "name": "footer_credit",
+            "value": "Designed with ❤️ by ScriptMint",
+            "is_public": true
+        },
+        {
+            "name": "show_version_number",
+            "value": true,
+            "is_public": true
+        },
+        {
+            "name": "enable_dark_theme",
+            "value": false,
+            "is_public": true
+        },
+        {
+            "name": "enable_mini_sidebar",
+            "value": true
+        },
+        {
+            "name": "enable_maintenance_mode",
+            "value": false
+        },
+        {
+            "name": "enable_setup_wizard",
+            "value": false
+        },
+        {
+            "name": "enable_print_preview",
+            "value": true,
+            "is_public": true
+        },
+        {
+            "name": "enable_strong_password",
+            "value": true,
+            "is_public": true
+        },
+        {
+            "name": "whitelist_ips",
+            "value": "",
+            "is_public": false
+        },
+        {
+            "name": "blacklist_ips",
+            "value": "",
+            "is_public": false
+        },
+        {
+            "name": "default_guest_page_layout",
+            "value": "dotted_gradient_background",
+            "is_public": true
+        }
+    ],
+    "feature": [
+        {
+            "name": "enable_todo",
+            "value": true
+        },
+        {
+            "name": "enable_backup",
+            "value": true
+        },
+        {
+            "name": "enable_activity_log",
+            "value": true
+        },
+        {
+            "name": "enable_online_registration",
+            "value": true,
+            "is_public": true
+        },
+        {
+            "name": "online_registration_instruction",
+            "value": "",
+            "is_public": true,
+            "is_html": true
+        },
+        {
+            "name": "enable_post",
+            "value": true,
+            "is_public": true
+        },
+        {
+            "name": "online_registration_mandatory_upload_field",
+            "value": "id_proof,address_proof,signature,marksheet,transfer_certificate",
+            "is_public": true
+        },
+        {
+            "name": "online_registration_version",
+            "value": "default",
+            "is_public": true
+        },
+        {
+            "name": "enable_guest_payment",
+            "value": true,
+            "is_public": true
+        },
+        {
+            "name": "guest_payment_instruction",
+            "value": "",
+            "is_public": true,
+            "is_html": true
+        },
+        {
+            "name": "enable_job_application",
+            "value": true,
+            "is_public": true
+        },
+        {
+            "name": "job_application_instruction",
+            "value": "",
+            "is_public": true,
+            "is_html": true
+        },
+        {
+            "name": "enable_transfer_certificate_verification",
+            "value": true,
+            "is_public": true
+        },
+        {
+            "name": "transfer_certificate_verification_instruction",
+            "value": "",
+            "is_public": true,
+            "is_html": true
+        }
+    ],
+    "notification": [
+        {
+            "name": "enable_mail_notification",
+            "value": true,
+            "is_public": true
+        },
+        {
+            "name": "enable_mobile_push_notification",
+            "value": false,
+            "is_public": false
+        },
+        {
+            "name": "enable_guest_notification_bar",
+            "value": false,
+            "is_public": true
+        },
+        {
+            "name": "enable_app_notification_bar",
+            "value": false
+        },
+        {
+            "name": "guest_notification_message",
+            "value": "",
+            "is_public": true
+        },
+        {
+            "name": "app_notification_message",
+            "value": ""
+        },
+        {
+            "name": "enable_pusher_notification",
+            "value": false,
+            "is_public": true
+        },
+        {
+            "name": "pusher_app_id",
+            "value": "",
+            "is_secret": true
+        },
+        {
+            "name": "pusher_app_key",
+            "value": "",
+            "is_public": true
+        },
+        {
+            "name": "pusher_app_secret",
+            "value": "",
+            "is_secret": true
+        },
+        {
+            "name": "pusher_app_cluster",
+            "value": "",
+            "is_public": true
+        }
+    ],
+    "general": [
+        {
+            "name": "app_name",
+            "value": "ScriptMint",
+            "is_public": true
+        },
+        {
+            "name": "meta_author",
+            "value": "ScriptMint",
+            "is_public": true
+        },
+        {
+            "name": "meta_description",
+            "value": "Application by ScriptMint",
+            "is_public": true
+        },
+        {
+            "name": "meta_keywords",
+            "value": "scriptmint",
+            "is_public": true
+        }
+    ],
+    "auth": [
+        {
+            "name": "session_lifetime",
+            "value": 1440
+        },
+        {
+            "name": "login_throttle_max_attempts",
+            "value": 5
+        },
+        {
+            "name": "login_throttle_lock_timeout",
+            "value": 2
+        },
+        {
+            "name": "enable_reset_password",
+            "value": true,
+            "is_public": true
+        },
+        {
+            "name": "reset_password_token_lifetime",
+            "value": 30
+        },
+        {
+            "name": "enable_registration",
+            "value": true,
+            "is_public": true
+        },
+        {
+            "name": "enable_registration_terms",
+            "value": false,
+            "is_public": true
+        },
+        {
+            "name": "enable_email_verification",
+            "value": true,
+            "is_public": true
+        },
+        {
+            "name": "enable_account_approval",
+            "value": true
+        },
+        {
+            "name": "enable_two_factor_security",
+            "value": false
+        },
+        {
+            "name": "enable_oauth_login",
+            "value": false,
+            "is_public": true
+        },
+        {
+            "name": "google_client_id",
+            "is_secret": true
+        },
+        {
+            "name": "google_client_secret",
+            "is_secret": true
+        },
+        {
+            "name": "facebook_client_id",
+            "is_secret": true
+        },
+        {
+            "name": "facebook_client_secret",
+            "is_secret": true
+        },
+        {
+            "name": "twitter_client_id",
+            "is_secret": true
+        },
+        {
+            "name": "twitter_client_secret",
+            "is_secret": true
+        },
+        {
+            "name": "github_client_id",
+            "is_secret": true
+        },
+        {
+            "name": "github_client_secret",
+            "is_secret": true
+        },
+        {
+            "name": "microsoft_client_id",
+            "is_secret": true
+        },
+        {
+            "name": "microsoft_client_secret",
+            "is_secret": true
+        },
+        {
+            "name": "enable_otp_login",
+            "value": false,
+            "is_public": true
+        },
+        {
+            "name": "otp_login_lifetime",
+            "value": 10
+        },
+        {
+            "name": "enable_email_otp_login",
+            "value": false,
+            "is_public": true
+        },
+        {
+            "name": "enable_sms_otp_login",
+            "value": false,
+            "is_public": true
+        },
+        {
+            "name": "enable_screen_lock",
+            "value": false
+        },
+        {
+            "name": "screen_lock_timeout",
+            "value": 10
+        }
+    ],
+    "assets": [
+        {
+            "name": "favicon",
+            "value": "/images/favicon.png",
+            "is_public": true
+        },
+        {
+            "name": "logo",
+            "value": "/images/logo.png",
+            "is_public": true
+        },
+        {
+            "name": "logo_light",
+            "value": "/images/logo-light.png",
+            "is_public": true
+        },
+        {
+            "name": "icon",
+            "value": "/images/icon.png",
+            "is_public": true
+        },
+        {
+            "name": "icon_light",
+            "value": "/images/icon-light.png",
+            "is_public": true
+        },
+        {
+            "name": "guest_background",
+            "value": "/images/guest-background.webp",
+            "is_public": true
+        },
+        {
+            "name": "guest_full_page_background",
+            "value": "/images/guest-background.webp",
+            "is_public": true
+        }
+    ],
+    "mail": [
+        {
+            "name": "driver",
+            "value": "log"
+        },
+        {
+            "name": "from_name",
+            "value": "ScriptMint"
+        },
+        {
+            "name": "from_address",
+            "value": "hello@scriptmint.com"
+        },
+        {
+            "name": "smtp_username",
+            "value": "",
+            "is_secret": true
+        },
+        {
+            "name": "smtp_password",
+            "value": "",
+            "is_secret": true
+        },
+        {
+            "name": "mailgun_domain",
+            "value": "",
+            "is_secret": true
+        },
+        {
+            "name": "mailgun_secret",
+            "value": "",
+            "is_secret": true
+        },
+        {
+            "name": "mailgun_endpoint",
+            "value": "",
+            "is_secret": false
+        }
+    ],
+    "sms": [
+        {
+            "name": "driver",
+            "value": null,
+            "is_secret": false
+        },
+        {
+            "name": "max_sms_per_queue",
+            "value": 100,
+            "is_secret": false
+        },
+        {
+            "name": "sender_id",
+            "value": null,
+            "is_secret": false
+        },
+        {
+            "name": "test_number",
+            "value": null,
+            "is_secret": false
+        },
+        {
+            "name": "test_template_id",
+            "value": null,
+            "is_secret": false
+        },
+        {
+            "name": "api_key",
+            "value": null,
+            "is_secret": true
+        },
+        {
+            "name": "api_secret",
+            "value": null,
+            "is_secret": true
+        },
+        {
+            "name": "api_url",
+            "value": null,
+            "is_secret": false
+        },
+        {
+            "name": "api_method",
+            "value": "GET",
+            "is_secret": false
+        },
+        {
+            "name": "number_prefix",
+            "value": null,
+            "is_secret": false
+        },
+        {
+            "name": "sender_id_param",
+            "value": null,
+            "is_secret": false
+        },
+        {
+            "name": "receiver_param",
+            "value": null,
+            "is_secret": false
+        },
+        {
+            "name": "message_param",
+            "value": null,
+            "is_secret": false
+        },
+        {
+            "name": "template_id_param",
+            "value": null,
+            "is_secret": false
+        },
+        {
+            "name": "api_headers",
+            "value": null,
+            "is_secret": true
+        },
+        {
+            "name": "additional_params",
+            "value": null,
+            "is_secret": true
+        }
+    ],
+    "whatsapp": [
+        {
+            "name": "provider",
+            "value": null,
+            "is_secret": false
+        },
+        {
+            "name": "max_whatsapp_per_queue",
+            "value": 100,
+            "is_secret": false
+        },
+        {
+            "name": "sender_id",
+            "value": null,
+            "is_secret": false
+        },
+        {
+            "name": "test_number",
+            "value": null,
+            "is_secret": false
+        },
+        {
+            "name": "test_template_id",
+            "value": null,
+            "is_secret": false
+        },
+        {
+            "name": "account_id",
+            "value": null,
+            "is_secret": true
+        },
+        {
+            "name": "api_key",
+            "value": null,
+            "is_secret": true
+        },
+        {
+            "name": "api_id",
+            "value": null,
+            "is_secret": false
+        },
+        {
+            "name": "api_secret",
+            "value": null,
+            "is_secret": true
+        },
+        {
+            "name": "username",
+            "value": null,
+            "is_secret": false
+        },
+        {
+            "name": "password",
+            "value": null,
+            "is_secret": true
+        },
+        {
+            "name": "api_url",
+            "value": null,
+            "is_secret": false
+        },
+        {
+            "name": "api_method",
+            "value": "GET",
+            "is_secret": false
+        },
+        {
+            "name": "number_prefix",
+            "value": null,
+            "is_secret": false
+        },
+        {
+            "name": "sender_id_param",
+            "value": null,
+            "is_secret": false
+        },
+        {
+            "name": "receiver_param",
+            "value": null,
+            "is_secret": false
+        },
+        {
+            "name": "message_param",
+            "value": null,
+            "is_secret": false
+        },
+        {
+            "name": "template_id_param",
+            "value": null,
+            "is_secret": false
+        },
+        {
+            "name": "api_headers",
+            "value": null,
+            "is_secret": true
+        },
+        {
+            "name": "additional_params",
+            "value": null,
+            "is_secret": true
+        }
+    ],
+    "social_network": [],
+    "utility": [
+        {
+            "name": "todo_view",
+            "value": "board"
+        }
+    ],
+    "chat": [
+        {
+            "name": "enable_chat",
+            "value": true
+        }
+    ],
+    "site": [
+        {
+            "name": "enable_site",
+            "value": true
+        },
+        {
+            "name": "show_public_view",
+            "value": true
+        },
+        {
+            "name": "theme",
+            "value": "default",
+            "is_public": true
+        },
+        {
+            "name": "color_scheme",
+            "value": "default",
+            "is_public": true
+        }
+    ],
+    "blog": [
+        {
+            "name": "enable_blog",
+            "value": true
+        }
+    ],
+    "contact": [
+        {
+            "name": "enable_middle_name_field",
+            "value": false
+        },
+        {
+            "name": "enable_third_name_field",
+            "value": false
+        },
+        {
+            "name": "is_unique_id_number1_enabled",
+            "value": false,
+            "is_public": true
+        },
+        {
+            "name": "is_unique_id_number2_enabled",
+            "value": false,
+            "is_public": true
+        },
+        {
+            "name": "is_unique_id_number3_enabled",
+            "value": false,
+            "is_public": true
+        },
+        {
+            "name": "is_unique_id_number4_enabled",
+            "value": false,
+            "is_public": true
+        },
+        {
+            "name": "is_unique_id_number5_enabled",
+            "value": false,
+            "is_public": true
+        },
+        {
+            "name": "unique_id_number1_label",
+            "value": "Unique ID Number 1",
+            "is_public": true
+        },
+        {
+            "name": "unique_id_number2_label",
+            "value": "Unique ID Number 2",
+            "is_public": true
+        },
+        {
+            "name": "unique_id_number3_label",
+            "value": "Unique ID Number 3",
+            "is_public": true
+        },
+        {
+            "name": "unique_id_number4_label",
+            "value": "Unique ID Number 4",
+            "is_public": true
+        },
+        {
+            "name": "unique_id_number5_label",
+            "value": "Unique ID Number 5",
+            "is_public": true
+        },
+        {
+            "name": "is_unique_id_number1_required",
+            "value": false
+        },
+        {
+            "name": "is_unique_id_number2_required",
+            "value": false
+        },
+        {
+            "name": "is_unique_id_number3_required",
+            "value": false
+        },
+        {
+            "name": "is_unique_id_number4_required",
+            "value": false
+        },
+        {
+            "name": "is_unique_id_number5_required",
+            "value": false
+        }
+    ],
+    "academic": [
+        {
+            "name": "period_selection",
+            "value": "period_wise"
+        },
+        {
+            "name": "allow_listing_subject_wise_student",
+            "value": true
+        }
+    ],
+    "student": [
+        {
+            "name": "registration_number_prefix",
+            "value": "SM"
+        },
+        {
+            "name": "registration_number_digit",
+            "value": 3
+        },
+        {
+            "name": "registration_number_suffix",
+            "value": ""
+        },
+        {
+            "name": "admission_number_prefix",
+            "value": "SM"
+        },
+        {
+            "name": "admission_number_digit",
+            "value": 3
+        },
+        {
+            "name": "admission_number_suffix",
+            "value": ""
+        },
+        {
+            "name": "transfer_request_number_prefix",
+            "value": "TR"
+        },
+        {
+            "name": "transfer_request_number_digit",
+            "value": 3
+        },
+        {
+            "name": "transfer_request_number_suffix",
+            "value": ""
+        },
+        {
+            "name": "transfer_number_prefix",
+            "value": "T"
+        },
+        {
+            "name": "transfer_number_digit",
+            "value": 3
+        },
+        {
+            "name": "transfer_number_suffix",
+            "value": ""
+        },
+        {
+            "name": "enable_provisional_admission",
+            "value": false
+        },
+        {
+            "name": "provisional_admission_number_prefix",
+            "value": "PSM"
+        },
+        {
+            "name": "provisional_admission_number_digit",
+            "value": 3
+        },
+        {
+            "name": "provisional_admission_number_suffix",
+            "value": ""
+        },
+        {
+            "name": "attendance_past_day_limit",
+            "value": 7
+        },
+        {
+            "name": "is_unique_id_number1_enabled",
+            "value": true,
+            "is_public": true
+        },
+        {
+            "name": "is_unique_id_number2_enabled",
+            "value": true,
+            "is_public": true
+        },
+        {
+            "name": "is_unique_id_number3_enabled",
+            "value": true,
+            "is_public": true
+        },
+        {
+            "name": "is_unique_id_number4_enabled",
+            "value": true,
+            "is_public": true
+        },
+        {
+            "name": "is_unique_id_number5_enabled",
+            "value": true,
+            "is_public": true
+        },
+        {
+            "name": "unique_id_number1_label",
+            "value": "Unique ID Number 1",
+            "is_public": true
+        },
+        {
+            "name": "unique_id_number2_label",
+            "value": "Unique ID Number 2",
+            "is_public": true
+        },
+        {
+            "name": "unique_id_number3_label",
+            "value": "Unique ID Number 3",
+            "is_public": true
+        },
+        {
+            "name": "unique_id_number4_label",
+            "value": "Unique ID Number 4",
+            "is_public": true
+        },
+        {
+            "name": "unique_id_number5_label",
+            "value": "Unique ID Number 5",
+            "is_public": true
+        },
+        {
+            "name": "is_unique_id_number1_required",
+            "value": false,
+            "is_public": true
+        },
+        {
+            "name": "is_unique_id_number2_required",
+            "value": false,
+            "is_public": true
+        },
+        {
+            "name": "is_unique_id_number3_required",
+            "value": false,
+            "is_public": true
+        },
+        {
+            "name": "is_unique_id_number4_required",
+            "value": false,
+            "is_public": true
+        },
+        {
+            "name": "is_unique_id_number5_required",
+            "value": false,
+            "is_public": true
+        },
+        {
+            "name": "enable_marital_status",
+            "value": false
+        },
+        {
+            "name": "enable_anniversary_date",
+            "value": false
+        },
+        {
+            "name": "allow_student_to_submit_contact_edit_request",
+            "value": true
+        },
+        {
+            "name": "late_fee_waiver_till_date",
+            "value": ""
+        },
+        {
+            "name": "allow_flexible_installment_payment",
+            "value": false
+        },
+        {
+            "name": "enable_timesheet",
+            "value": false,
+            "is_public": false
+        },
+        {
+            "name": "allow_student_clock_in_out",
+            "value": false,
+            "is_public": false
+        },
+        {
+            "name": "enable_qr_code_attendance",
+            "value": true,
+            "is_public": false
+        },
+        {
+            "name": "has_dynamic_qr_code",
+            "value": true,
+            "is_public": false
+        },
+        {
+            "name": "qr_code_expiry_duration",
+            "value": 30,
+            "is_public": false
+        },
+        {
+            "name": "service_request_number_prefix",
+            "value": "SR"
+        },
+        {
+            "name": "service_request_number_digit",
+            "value": 3
+        },
+        {
+            "name": "service_request_number_suffix",
+            "value": ""
+        },
+        {
+            "name": "services",
+            "value": "mess,transport,hostel"
+        }
+    ],
+    "employee": [
+        {
+            "name": "code_number_prefix",
+            "value": "ESM",
+            "is_public": false
+        },
+        {
+            "name": "code_number_digit",
+            "value": 3,
+            "is_public": false
+        },
+        {
+            "name": "code_number_suffix",
+            "value": "",
+            "is_public": false
+        },
+        {
+            "name": "default_employee_types",
+            "value": "administrative,teaching,support"
+        },
+        {
+            "name": "is_unique_id_number1_enabled",
+            "value": true,
+            "is_public": false
+        },
+        {
+            "name": "is_unique_id_number2_enabled",
+            "value": true,
+            "is_public": false
+        },
+        {
+            "name": "is_unique_id_number3_enabled",
+            "value": true,
+            "is_public": false
+        },
+        {
+            "name": "is_unique_id_number4_enabled",
+            "value": true,
+            "is_public": false
+        },
+        {
+            "name": "is_unique_id_number5_enabled",
+            "value": true,
+            "is_public": false
+        },
+        {
+            "name": "unique_id_number1_label",
+            "value": "Unique ID Number 1",
+            "is_public": false
+        },
+        {
+            "name": "unique_id_number2_label",
+            "value": "Unique ID Number 2",
+            "is_public": false
+        },
+        {
+            "name": "unique_id_number3_label",
+            "value": "Unique ID Number 3",
+            "is_public": false
+        },
+        {
+            "name": "unique_id_number4_label",
+            "value": "Unique ID Number 4",
+            "is_public": false
+        },
+        {
+            "name": "unique_id_number5_label",
+            "value": "Unique ID Number 5",
+            "is_public": false
+        },
+        {
+            "name": "is_unique_id_number1_required",
+            "value": false,
+            "is_public": false
+        },
+        {
+            "name": "is_unique_id_number2_required",
+            "value": false,
+            "is_public": false
+        },
+        {
+            "name": "is_unique_id_number3_required",
+            "value": false,
+            "is_public": false
+        },
+        {
+            "name": "is_unique_id_number4_required",
+            "value": false,
+            "is_public": false
+        },
+        {
+            "name": "is_unique_id_number5_required",
+            "value": false,
+            "is_public": false
+        },
+        {
+            "name": "allow_employee_to_submit_contact_edit_request",
+            "value": true
+        },
+        {
+            "name": "allow_employee_request_leave_with_exhausted_credit",
+            "value": false
+        },
+        {
+            "name": "allow_employee_half_day_leave",
+            "value": false
+        },
+        {
+            "name": "attendance_past_day_limit",
+            "value": 0
+        },
+        {
+            "name": "allow_employee_clock_in_out",
+            "value": true,
+            "is_public": false
+        },
+        {
+            "name": "enable_qr_code_attendance",
+            "value": true,
+            "is_public": false
+        },
+        {
+            "name": "has_dynamic_qr_code",
+            "value": true,
+            "is_public": false
+        },
+        {
+            "name": "qr_code_expiry_duration",
+            "value": 30,
+            "is_public": false
+        },
+        {
+            "name": "duration_between_clock_request",
+            "value": 5,
+            "is_public": false
+        },
+        {
+            "name": "allow_employee_clock_in_out_via_device",
+            "value": true,
+            "is_public": true
+        },
+        {
+            "name": "late_grace_period",
+            "value": 15,
+            "is_public": false
+        },
+        {
+            "name": "early_leaving_grace_period",
+            "value": 15,
+            "is_public": false
+        },
+        {
+            "name": "present_grace_period",
+            "value": 30,
+            "is_public": false
+        },
+        {
+            "name": "enable_geolocation_timesheet",
+            "value": false,
+            "is_public": false
+        },
+        {
+            "name": "geolocation_latitude",
+            "value": "",
+            "is_public": false
+        },
+        {
+            "name": "geolocation_longitude",
+            "value": "",
+            "is_public": false
+        },
+        {
+            "name": "cache_geolocation_data",
+            "value": 10000
+        },
+        {
+            "name": "geolocation_radius",
+            "value": 100,
+            "is_public": false
+        },
+        {
+            "name": "payroll_number_prefix",
+            "value": "PSM",
+            "is_public": false
+        },
+        {
+            "name": "payroll_number_digit",
+            "value": 3,
+            "is_public": false
+        },
+        {
+            "name": "payroll_number_suffix",
+            "value": "",
+            "is_public": false
+        },
+        {
+            "name": "enable_payhead_round_off",
+            "value": false,
+            "is_public": false
+        },
+        {
+            "name": "show_payroll_as_total_component",
+            "value": false,
+            "is_public": false
+        }
+    ],
+    "guardian": [
+        {
+            "name": "is_unique_id_number1_enabled",
+            "value": true,
+            "is_public": false
+        },
+        {
+            "name": "is_unique_id_number2_enabled",
+            "value": true,
+            "is_public": false
+        },
+        {
+            "name": "is_unique_id_number3_enabled",
+            "value": true,
+            "is_public": false
+        },
+        {
+            "name": "is_unique_id_number4_enabled",
+            "value": true,
+            "is_public": false
+        },
+        {
+            "name": "is_unique_id_number5_enabled",
+            "value": true,
+            "is_public": false
+        },
+        {
+            "name": "unique_id_number1_label",
+            "value": "Unique ID Number 1",
+            "is_public": false
+        },
+        {
+            "name": "unique_id_number2_label",
+            "value": "Unique ID Number 2",
+            "is_public": false
+        },
+        {
+            "name": "unique_id_number3_label",
+            "value": "Unique ID Number 3",
+            "is_public": false
+        },
+        {
+            "name": "unique_id_number4_label",
+            "value": "Unique ID Number 4",
+            "is_public": false
+        },
+        {
+            "name": "unique_id_number5_label",
+            "value": "Unique ID Number 5",
+            "is_public": false
+        },
+        {
+            "name": "is_unique_id_number1_required",
+            "value": false,
+            "is_public": false
+        },
+        {
+            "name": "is_unique_id_number2_required",
+            "value": false,
+            "is_public": false
+        },
+        {
+            "name": "is_unique_id_number3_required",
+            "value": false,
+            "is_public": false
+        },
+        {
+            "name": "is_unique_id_number4_required",
+            "value": false,
+            "is_public": false
+        },
+        {
+            "name": "is_unique_id_number5_required",
+            "value": false,
+            "is_public": false
+        }
+    ],
+    "finance": [
+        {
+            "name": "enable_bank_code1",
+            "value": true,
+            "is_public": false
+        },
+        {
+            "name": "bank_code1_label",
+            "value": "Bank Code 1",
+            "is_public": false
+        },
+        {
+            "name": "is_bank_code1_required",
+            "value": false,
+            "is_public": false
+        },
+        {
+            "name": "enable_bank_code2",
+            "value": true,
+            "is_public": false
+        },
+        {
+            "name": "bank_code2_label",
+            "value": "Bank Code 2",
+            "is_public": false
+        },
+        {
+            "name": "is_bank_code2_required",
+            "value": false,
+            "is_public": false
+        },
+        {
+            "name": "enable_bank_code3",
+            "value": true,
+            "is_public": false
+        },
+        {
+            "name": "bank_code3_label",
+            "value": "Bank Code 3",
+            "is_public": false
+        },
+        {
+            "name": "is_bank_code3_required",
+            "value": false,
+            "is_public": false
+        },
+        {
+            "name": "payment_number_prefix",
+            "value": "TP%YEAR_SHORT%%MONTH_NUMBER_SHORT%",
+            "is_public": false
+        },
+        {
+            "name": "payment_number_digit",
+            "value": 3
+        },
+        {
+            "name": "payment_number_suffix",
+            "value": ""
+        },
+        {
+            "name": "receipt_number_prefix",
+            "value": "TR%YEAR_SHORT%%MONTH_NUMBER_SHORT%",
+            "is_public": false
+        },
+        {
+            "name": "receipt_number_digit",
+            "value": 3
+        },
+        {
+            "name": "receipt_number_suffix",
+            "value": ""
+        },
+        {
+            "name": "transfer_number_prefix",
+            "value": "TT%YEAR_SHORT%%MONTH_NUMBER_SHORT%",
+            "is_public": false
+        },
+        {
+            "name": "transfer_number_digit",
+            "value": 3
+        },
+        {
+            "name": "transfer_number_suffix",
+            "value": ""
+        },
+        {
+            "name": "bank_transfer_number_prefix",
+            "value": "BT%YEAR_SHORT%%MONTH_NUMBER_SHORT%",
+            "is_public": false
+        },
+        {
+            "name": "bank_transfer_number_digit",
+            "value": 3
+        },
+        {
+            "name": "bank_transfer_number_suffix",
+            "value": ""
+        },
+        {
+            "name": "enable_online_transaction_number",
+            "value": false
+        },
+        {
+            "name": "online_transaction_number_prefix",
+            "value": "OT%YEAR_SHORT%%MONTH_NUMBER_SHORT%",
+            "is_public": false
+        },
+        {
+            "name": "online_transaction_number_digit",
+            "value": 3,
+            "is_public": false
+        },
+        {
+            "name": "online_transaction_number_suffix",
+            "value": "",
+            "is_public": false
+        },
+        {
+            "name": "enable_paypal",
+            "value": false
+        },
+        {
+            "name": "enable_live_paypal_mode",
+            "value": false
+        },
+        {
+            "name": "paypal_client",
+            "value": "",
+            "is_secret": true
+        },
+        {
+            "name": "paypal_secret",
+            "value": "",
+            "is_secret": true
+        },
+        {
+            "name": "enable_stripe",
+            "value": false
+        },
+        {
+            "name": "enable_live_stripe_mode",
+            "value": false
+        },
+        {
+            "name": "stripe_client",
+            "value": "",
+            "is_secret": true
+        },
+        {
+            "name": "stripe_secret",
+            "value": "",
+            "is_secret": true
+        },
+        {
+            "name": "enable_payzone",
+            "value": false
+        },
+        {
+            "name": "enable_live_payzone_mode",
+            "value": false
+        },
+        {
+            "name": "payzone_merchant",
+            "value": ""
+        },
+        {
+            "name": "payzone_secret_key",
+            "value": "",
+            "is_secret": true
+        },
+        {
+            "name": "payzone_notification_key",
+            "value": "",
+            "is_secret": true
+        },
+        {
+            "name": "enable_razorpay",
+            "value": false
+        },
+        {
+            "name": "enable_live_razorpay_mode",
+            "value": false
+        },
+        {
+            "name": "razorpay_client",
+            "value": "",
+            "is_secret": true
+        },
+        {
+            "name": "razorpay_secret",
+            "value": "",
+            "is_secret": true
+        },
+        {
+            "name": "enable_paystack",
+            "value": false
+        },
+        {
+            "name": "enable_live_paystack_mode",
+            "value": false
+        },
+        {
+            "name": "paystack_client",
+            "value": "",
+            "is_secret": true
+        },
+        {
+            "name": "paystack_secret",
+            "value": "",
+            "is_secret": true
+        },
+        {
+            "name": "enable_ccavenue",
+            "value": false
+        },
+        {
+            "name": "enable_live_ccavenue_mode",
+            "value": false
+        },
+        {
+            "name": "ccavenue_merchant",
+            "value": "",
+            "is_secret": false
+        },
+        {
+            "name": "ccavenue_client",
+            "value": "",
+            "is_secret": true
+        },
+        {
+            "name": "ccavenue_secret",
+            "value": "",
+            "is_secret": true
+        },
+        {
+            "name": "enable_billdesk",
+            "value": false,
+            "is_public": true
+        },
+        {
+            "name": "billdesk_version",
+            "value": "1.2",
+            "is_public": true
+        },
+        {
+            "name": "enable_live_billdesk_mode",
+            "value": false,
+            "is_public": true
+        },
+        {
+            "name": "billdesk_merchant",
+            "value": "",
+            "is_secret": false
+        },
+        {
+            "name": "billdesk_client",
+            "value": "",
+            "is_secret": true
+        },
+        {
+            "name": "billdesk_secret",
+            "value": "",
+            "is_secret": true
+        },
+        {
+            "name": "enable_billplz",
+            "value": false,
+            "is_secret": false
+        },
+        {
+            "name": "enable_live_billplz_mode",
+            "value": false,
+            "is_secret": false
+        },
+        {
+            "name": "billplz_client",
+            "value": "",
+            "is_secret": false
+        },
+        {
+            "name": "billplz_secret",
+            "value": "",
+            "is_secret": true
+        },
+        {
+            "name": "billplz_signature",
+            "value": "",
+            "is_secret": true
+        }
+    ],
+    "reception": [
+        {
+            "name": "enquiry_number_prefix",
+            "value": "RESM",
+            "is_public": false
+        },
+        {
+            "name": "enquiry_number_digit",
+            "value": 3,
+            "is_public": false
+        },
+        {
+            "name": "enquiry_number_suffix",
+            "value": "",
+            "is_public": false
+        },
+        {
+            "name": "visitor_log_number_prefix",
+            "value": "RVLSM",
+            "is_public": false
+        },
+        {
+            "name": "visitor_log_number_digit",
+            "value": 3,
+            "is_public": false
+        },
+        {
+            "name": "visitor_log_number_suffix",
+            "value": "",
+            "is_public": false
+        },
+        {
+            "name": "gate_pass_number_prefix",
+            "value": "RGPSM",
+            "is_public": false
+        },
+        {
+            "name": "gate_pass_number_digit",
+            "value": 3,
+            "is_public": false
+        },
+        {
+            "name": "gate_pass_number_suffix",
+            "value": "",
+            "is_public": false
+        },
+        {
+            "name": "complaint_number_prefix",
+            "value": "RCSM",
+            "is_public": false
+        },
+        {
+            "name": "complaint_number_digit",
+            "value": 3,
+            "is_public": false
+        },
+        {
+            "name": "complaint_number_suffix",
+            "value": "",
+            "is_public": false
+        },
+        {
+            "name": "query_number_prefix",
+            "value": "RQSM",
+            "is_public": false
+        },
+        {
+            "name": "query_number_digit",
+            "value": 3,
+            "is_public": false
+        },
+        {
+            "name": "query_number_suffix",
+            "value": "",
+            "is_public": false
+        }
+    ],
+    "exam": [
+        {
+            "name": "marksheet_format",
+            "value": "India"
+        },
+        {
+            "name": "enable_auto_lock_marks",
+            "value": false
+        },
+        {
+            "name": "auto_lock_marks_period",
+            "value": 7
+        }
+    ],
+    "resource": [
+        {
+            "name": "allow_edit_diary_by_accessible_user",
+            "value": false
+        },
+        {
+            "name": "allow_delete_diary_by_accessible_user",
+            "value": false
+        },
+        {
+            "name": "allow_edit_syllabus_by_accessible_user",
+            "value": false
+        },
+        {
+            "name": "allow_delete_syllabus_by_accessible_user",
+            "value": false
+        },
+        {
+            "name": "allow_edit_lesson_plan_by_accessible_user",
+            "value": false
+        },
+        {
+            "name": "allow_delete_lesson_plan_by_accessible_user",
+            "value": false
+        },
+        {
+            "name": "online_class_use_meeting_code",
+            "value": true
+        },
+        {
+            "name": "online_class_joining_period",
+            "value": 10
+        },
+        {
+            "name": "allow_edit_online_class_by_accessible_user",
+            "value": false
+        },
+        {
+            "name": "allow_delete_online_class_by_accessible_user",
+            "value": false
+        },
+        {
+            "name": "allow_edit_assignment_by_accessible_user",
+            "value": false
+        },
+        {
+            "name": "allow_delete_assignment_by_accessible_user",
+            "value": false
+        },
+        {
+            "name": "allow_edit_learning_material_by_accessible_user",
+            "value": false
+        },
+        {
+            "name": "allow_delete_learning_material_by_accessible_user",
+            "value": false
+        },
+        {
+            "name": "enable_filter_by_assigned_subject",
+            "value": false
+        }
+    ],
+    "calendar": [
+        {
+            "name": "show_celebration_in_dashboard",
+            "value": true
+        },
+        {
+            "name": "event_number_prefix",
+            "value": "CESM",
+            "is_public": false
+        },
+        {
+            "name": "event_number_digit",
+            "value": 3,
+            "is_public": false
+        },
+        {
+            "name": "event_number_suffix",
+            "value": "",
+            "is_public": false
+        }
+    ],
+    "inventory": [
+        {
+            "name": "stock_requisition_number_prefix",
+            "value": "ISRSM",
+            "is_public": false
+        },
+        {
+            "name": "stock_requisition_number_digit",
+            "value": 3,
+            "is_public": false
+        },
+        {
+            "name": "stock_requisition_number_suffix",
+            "value": "",
+            "is_public": false
+        },
+        {
+            "name": "stock_purchase_number_prefix",
+            "value": "ISPSM",
+            "is_public": false
+        },
+        {
+            "name": "stock_purchase_number_digit",
+            "value": 3,
+            "is_public": false
+        },
+        {
+            "name": "stock_purchase_number_suffix",
+            "value": "",
+            "is_public": false
+        },
+        {
+            "name": "stock_return_number_prefix",
+            "value": "ISRSM",
+            "is_public": false
+        },
+        {
+            "name": "stock_return_number_digit",
+            "value": 3,
+            "is_public": false
+        },
+        {
+            "name": "stock_return_number_suffix",
+            "value": "",
+            "is_public": false
+        },
+        {
+            "name": "stock_transfer_number_prefix",
+            "value": "ISTSM",
+            "is_public": false
+        },
+        {
+            "name": "stock_transfer_number_digit",
+            "value": 3,
+            "is_public": false
+        },
+        {
+            "name": "stock_transfer_number_suffix",
+            "value": "",
+            "is_public": false
+        },
+        {
+            "name": "stock_adjustment_number_prefix",
+            "value": "ISASM",
+            "is_public": false
+        },
+        {
+            "name": "stock_adjustment_number_digit",
+            "value": 3,
+            "is_public": false
+        },
+        {
+            "name": "stock_adjustment_number_suffix",
+            "value": "",
+            "is_public": false
+        }
+    ],
+    "communication": [
+        {
+            "name": "announcement_number_prefix",
+            "value": "CASM",
+            "is_public": false
+        },
+        {
+            "name": "announcement_number_digit",
+            "value": 3,
+            "is_public": false
+        },
+        {
+            "name": "announcement_number_suffix",
+            "value": "",
+            "is_public": false
+        }
+    ],
+    "recruitment": [
+        {
+            "name": "vacancy_number_prefix",
+            "value": "SMV"
+        },
+        {
+            "name": "vacancy_number_digit",
+            "value": 3
+        },
+        {
+            "name": "vacancy_number_suffix",
+            "value": ""
+        }
+    ],
+    "transport": [
+        {
+            "name": "show_transport_route_in_dashboard",
+            "value": true
+        }
+    ],
+    "mess": [
+        {
+            "name": "show_mess_schedule_in_dashboard",
+            "value": true
+        }
+    ],
+    "gallery": [
+        {
+            "name": "show_gallery_in_dashboard",
+            "value": true
+        },
+        {
+            "name": "enable_watermark",
+            "value": true
+        },
+        {
+            "name": "watermark_position",
+            "value": "top-right"
+        },
+        {
+            "name": "watermark_size",
+            "value": 40
+        }
+    ],
+    "library": [
+        {
+            "name": "transaction_number_prefix",
+            "value": "SML",
+            "is_public": false
+        },
+        {
+            "name": "transaction_number_digit",
+            "value": 3,
+            "is_public": false
+        },
+        {
+            "name": "transaction_number_suffix",
+            "value": "",
+            "is_public": false
+        }
+    ],
+    "approval": [
+        {
+            "name": "request_number_prefix",
+            "value": "AR",
+            "is_public": false
+        },
+        {
+            "name": "request_number_digit",
+            "value": 3,
+            "is_public": false
+        },
+        {
+            "name": "request_number_suffix",
+            "value": "",
+            "is_public": false
+        }
+    ],
+    "post": [
+        {
+            "name": "enable_redirect_to_post_after_login",
+            "value": true,
+            "is_public": true
+        }
+    ],
+    "module": []
+}

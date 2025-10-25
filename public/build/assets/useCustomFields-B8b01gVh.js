@@ -1,0 +1,1 @@
+import{p as r}from"./app-Cvm44xuh.js";function c(){const n=r([]),i=(t,u=null)=>t.map(e=>{const l=u?u.find(o=>o.uuid===e.uuid):null;let s="";return(e.type.value=="multi_select_input"||e.type.value=="checkbox_input")&&(s=[]),{...e,value:(l==null?void 0:l.value)||s}});return{customFields:n,setCustomFields:(t,u=null)=>{n.value=i(t,u)}}}export{c as u};

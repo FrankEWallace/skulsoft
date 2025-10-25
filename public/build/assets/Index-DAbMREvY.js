@@ -1,0 +1,1 @@
+import{r as o,t as a,o as s,w as c,e as i}from"./app-Cvm44xuh.js";const r={name:"ExamConfig"},m=Object.assign(r,{setup(_){const e=[{name:"ExamConfigGeneral",icon:"fas fa-cogs",label:"config.config"}];return(f,l)=>{const n=o("router-view"),t=o("ModuleConfig");return s(),a(t,{navigations:e},{default:c(()=>[i(n)]),_:1})}}});export{m as default};

@@ -1,0 +1,7 @@
+[
+    {
+        "name": "Transfer Certificate",
+        "type": "transfer_certificate",
+        "variables": ["NAME", "DATE_OF_BIRTH", "COURSE_BATCH"]
+    }
+]

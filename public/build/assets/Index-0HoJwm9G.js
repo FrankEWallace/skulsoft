@@ -1,0 +1,1 @@
+import{r as e,t as a,o as c,w as s,e as i}from"./app-Cvm44xuh.js";const r={name:"EmployeeAttendanceConfig"},g=Object.assign(r,{setup(_){const o=[{name:"EmployeeAttendanceConfigGeneral",icon:"fas fa-cogs",label:"config.config"}];return(f,l)=>{const n=e("router-view"),t=e("ModuleConfig");return c(),a(t,{navigations:o},{default:s(()=>[i(n)]),_:1})}}});export{g as default};

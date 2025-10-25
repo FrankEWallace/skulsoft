@@ -1,0 +1,1324 @@
+{
+    "roles": [
+        "admin",
+        "manager",
+        "principal",
+        "staff",
+        "accountant",
+        "librarian",
+        "exam-incharge",
+        "transport-incharge",
+        "inventory-incharge",
+        "mess-incharge",
+        "hostel-incharge",
+        "attendance-assistant",
+        "receptionist",
+        "student",
+        "guardian",
+        "user"
+    ],
+    "permissions": {
+        "general": {
+            "login:action": [
+                "manager",
+                "principal",
+                "staff",
+                "accountant",
+                "librarian",
+                "exam-incharge",
+                "transport-incharge",
+                "inventory-incharge",
+                "mess-incharge",
+                "hostel-incharge",
+                "receptionist",
+                "student",
+                "guardian",
+                "attendance-assistant"
+            ],
+            "profile:update": [],
+            "password:update": [
+                "manager",
+                "principal",
+                "staff",
+                "accountant",
+                "librarian",
+                "exam-incharge",
+                "transport-incharge",
+                "inventory-incharge",
+                "mess-incharge",
+                "hostel-incharge",
+                "receptionist",
+                "student",
+                "guardian"
+            ],
+            "chat:access": [],
+            "post:config": ["manager"],
+            "post:read": [
+                "manager",
+                "principal",
+                "staff",
+                "accountant",
+                "librarian",
+                "exam-incharge",
+                "transport-incharge",
+                "inventory-incharge",
+                "mess-incharge",
+                "hostel-incharge",
+                "receptionist",
+                "student",
+                "guardian"
+            ],
+            "post:create": ["manager", "principal"],
+            "post:edit": [],
+            "post:delete": ["manager"],
+            "post:comment": [
+                "manager",
+                "principal",
+                "staff",
+                "accountant",
+                "librarian",
+                "exam-incharge",
+                "transport-incharge",
+                "inventory-incharge",
+                "mess-incharge",
+                "hostel-incharge",
+                "receptionist",
+                "student",
+                "guardian"
+            ],
+            "access:reports": ["manager"]
+        },
+        "team": {
+            "organization:manage": [],
+            "team:manage": []
+        },
+        "config": {
+            "config:store": [],
+            "locale:read": [],
+            "locale:create": [],
+            "locale:edit": [],
+            "locale:delete": [],
+            "backup:manage": [],
+            "activity-log:manage": [],
+            "activity-log:export": []
+        },
+        "custom_field": {
+            "custom-field:manage": []
+        },
+        "dashboard": {
+            "dashboard:stat": ["manager", "principal", "accountant"]
+        },
+        "contact": {
+            "contact:config": ["manager"],
+            "contact:read": ["manager", "principal", "receptionist"],
+            "contact:create": ["manager", "principal", "receptionist"],
+            "contact:edit": ["manager", "principal", "receptionist"],
+            "contact:delete": ["manager", "principal"],
+            "contact:export": ["manager", "principal", "receptionist"]
+        },
+        "student": {
+            "student:config": ["manager"],
+            "student:report": ["manager"],
+            "student:summary": [
+                "librarian",
+                "exam-incharge",
+                "transport-incharge",
+                "inventory-incharge",
+                "mess-incharge",
+                "hostel-incharge",
+                "receptionist"
+            ],
+            "student:read": [
+                "manager",
+                "principal",
+                "staff",
+                "receptionist",
+                "librarian",
+                "exam-incharge",
+                "transport-incharge",
+                "inventory-incharge",
+                "accountant",
+                "student",
+                "guardian"
+            ],
+            "student:admin-access": ["manager", "principal"],
+            "student:self-access": ["student", "guardian"],
+            "student:incharge-access": ["staff"],
+            "student:create": ["manager", "principal", "receptionist"],
+            "student:edit": ["manager", "principal"],
+            "student:delete": ["manager", "principal"],
+            "student:export": ["manager", "principal"],
+            "student:dialogue": [
+                "manager",
+                "principal",
+                "staff",
+                "guardian",
+                "student"
+            ],
+            "student-record:manage": ["manager", "principal", "staff"],
+            "registration:read": ["manager", "principal", "receptionist"],
+            "registration:create": ["manager", "principal", "receptionist"],
+            "registration:edit": ["manager", "principal", "receptionist"],
+            "registration:delete": ["manager", "principal"],
+            "registration:action": ["manager", "principal", "receptionist"],
+            "registration:export": ["manager", "principal"],
+            "fee:set": ["manager", "principal", "accountant"],
+            "fee:reset": ["manager", "principal", "accountant"],
+            "fee:edit": ["manager", "principal", "accountant"],
+            "fee:payment": [
+                "manager",
+                "principal",
+                "accountant",
+                "receptionist",
+                "student",
+                "guardian"
+            ],
+            "fee:flexible-installment-payment": ["manager", "principal"],
+            "fee:head-wise-payment": ["manager", "principal", "accountant"],
+            "fee:cancel-payment": [
+                "manager",
+                "principal",
+                "accountant",
+                "receptionist"
+            ],
+            "fee:bank-transfer": [],
+            "fee:bank-transfer-action": ["manager", "principal", "accountant"],
+            "fee:custom-concession": ["manager", "principal"],
+            "fee:manage-force-custom-fee": ["manager", "principal"],
+            "fee:partial-payment": ["manager", "principal", "accountant"],
+            "fee:change-payment-date": ["manager", "principal", "accountant"],
+            "fee:customize-late-fee": ["manager", "principal", "accountant"],
+            "fee:edit-payment": ["manager", "principal", "accountant"],
+            "student:promotion": ["manager", "principal"],
+            "student:edit-request-action": ["manager", "principal"],
+            "student:leave-request": [
+                "manager",
+                "principal",
+                "staff",
+                "student",
+                "guardian"
+            ],
+            "student:service-request": [
+                "manager",
+                "principal",
+                "student",
+                "guardian"
+            ],
+            "student:service-request-action": ["manager", "principal"],
+            "student:service-allocation": ["manager", "principal"],
+            "student:transfer-request": [
+                "manager",
+                "principal",
+                "student",
+                "guardian"
+            ],
+            "student:transfer-request-action": ["manager", "principal"],
+            "student:transfer": ["manager", "principal"],
+            "student:list-attendance": [
+                "manager",
+                "principal",
+                "staff",
+                "student",
+                "guardian"
+            ],
+            "student:mark-attendance": ["manager", "principal"],
+            "student:incharge-wise-mark-attendance": ["staff"],
+            "student:manage-timesheet": [],
+            "alumni:read": ["manager", "principal"]
+        },
+        "guardian": {
+            "guardian:config": ["manager"],
+            "guardian:read": ["manager", "principal", "receptionist"],
+            "guardian:create": ["manager", "principal", "receptionist"],
+            "guardian:edit": ["manager", "principal", "receptionist"],
+            "guardian:delete": ["manager", "principal"],
+            "guardian:export": ["manager", "principal", "receptionist"]
+        },
+        "employee": {
+            "department:read": ["manager", "principal"],
+            "department:create": ["manager"],
+            "department:edit": ["manager"],
+            "department:delete": ["manager"],
+            "department:export": ["manager"],
+            "designation:read": ["manager", "principal"],
+            "designation:create": ["manager"],
+            "designation:edit": ["manager"],
+            "designation:delete": ["manager"],
+            "designation:export": ["manager"],
+            "designation:admin-access": [],
+            "designation:self-access": [],
+            "designation:subordinate-access": ["manager", "principal", "staff"],
+            "employee:config": ["manager"],
+            "employee:summary": [
+                "librarian",
+                "exam-incharge",
+                "transport-incharge",
+                "inventory-incharge",
+                "mess-incharge",
+                "hostel-incharge",
+                "receptionist"
+            ],
+            "employee:read": [
+                "manager",
+                "principal",
+                "receptionist",
+                "librarian",
+                "accountant",
+                "exam-incharge",
+                "transport-incharge",
+                "inventory-incharge",
+                "staff"
+            ],
+            "employee:create": ["manager"],
+            "employee:edit": ["manager"],
+            "employee:self-service": ["manager", "principal", "staff"],
+            "employee:self-service-action": ["manager"],
+            "employee-record:manage": [],
+            "employment-record:manage": ["manager"],
+            "employee:dialogue": ["manager", "principal"],
+            "employee:edit-request-action": ["manager", "principal"],
+            "employee:delete": [],
+            "employee:export": ["manager"],
+            "leave:config": ["manager"],
+            "leave-allocation:read": [
+                "manager",
+                "principal",
+                "receptionist",
+                "librarian",
+                "accountant",
+                "exam-incharge",
+                "transport-incharge",
+                "inventory-incharge",
+                "staff"
+            ],
+            "leave-allocation:create": ["manager", "principal"],
+            "leave-allocation:edit": ["manager"],
+            "leave-allocation:delete": [],
+            "leave-allocation:export": ["manager"],
+            "leave-request:read": [
+                "manager",
+                "principal",
+                "receptionist",
+                "librarian",
+                "accountant",
+                "exam-incharge",
+                "transport-incharge",
+                "inventory-incharge",
+                "staff"
+            ],
+            "leave-request:create": [
+                "manager",
+                "principal",
+                "receptionist",
+                "librarian",
+                "accountant",
+                "exam-incharge",
+                "transport-incharge",
+                "inventory-incharge",
+                "staff"
+            ],
+            "leave-request:edit": ["manager"],
+            "leave-request:action": ["manager", "principal"],
+            "leave-request:delete": [],
+            "leave-request:export": ["manager"],
+            "attendance:config": ["manager"],
+            "attendance:read": [
+                "manager",
+                "principal",
+                "receptionist",
+                "librarian",
+                "accountant",
+                "exam-incharge",
+                "transport-incharge",
+                "inventory-incharge",
+                "staff"
+            ],
+            "attendance:mark": ["manager", "principal"],
+            "attendance:export": ["manager"],
+            "work-shift:read": [
+                "manager",
+                "principal",
+                "receptionist",
+                "librarian",
+                "accountant",
+                "exam-incharge",
+                "transport-incharge",
+                "inventory-incharge",
+                "staff"
+            ],
+            "work-shift:create": ["manager", "principal"],
+            "work-shift:edit": ["manager", "principal"],
+            "work-shift:delete": ["manager"],
+            "work-shift:export": ["manager"],
+            "work-shift:assign": ["manager", "principal"],
+            "timesheet:import": ["manager"],
+            "timesheet:sync": ["manager"],
+            "timesheet:read": [
+                "manager",
+                "principal",
+                "receptionist",
+                "librarian",
+                "accountant",
+                "exam-incharge",
+                "transport-incharge",
+                "inventory-incharge",
+                "staff"
+            ],
+            "timesheet:create": ["manager"],
+            "timesheet:edit": ["manager"],
+            "timesheet:delete": ["manager"],
+            "timesheet:export": ["manager"],
+            "payroll:config": ["manager"],
+            "salary-template:read": ["manager"],
+            "salary-template:create": ["manager"],
+            "salary-template:edit": ["manager"],
+            "salary-template:delete": [],
+            "salary-template:export": ["manager"],
+            "salary-structure:read": ["manager"],
+            "salary-structure:create": ["manager"],
+            "salary-structure:edit": ["manager"],
+            "salary-structure:delete": [],
+            "salary-structure:export": ["manager"],
+            "payroll:read": [
+                "manager",
+                "principal",
+                "receptionist",
+                "librarian",
+                "accountant",
+                "exam-incharge",
+                "transport-incharge",
+                "inventory-incharge",
+                "staff"
+            ],
+            "payroll:create": ["manager"],
+            "payroll:process": ["manager"],
+            "payroll:edit": ["manager"],
+            "payroll:delete": [],
+            "payroll:export": ["manager"]
+        },
+        "academic": {
+            "academic:config": [],
+            "academic:admin-access": [],
+            "academic:incharge-access": ["staff"],
+            "session:manage": ["manager", "principal"],
+            "academic-department:manage": ["manager", "principal"],
+            "program:manage": ["manager", "principal"],
+            "period:read": ["manager", "principal"],
+            "period:create": ["manager", "principal"],
+            "period:edit": ["manager", "principal"],
+            "period:delete": ["manager"],
+            "period:export": ["manager", "principal"],
+            "period:change": [
+                "manager",
+                "principal",
+                "receptionist",
+                "librarian",
+                "accountant",
+                "exam-incharge",
+                "transport-incharge",
+                "inventory-incharge",
+                "staff"
+            ],
+            "period:config": ["manager"],
+            "division:read": [
+                "manager",
+                "principal",
+                "staff",
+                "receptionist",
+                "librarian",
+                "accountant",
+                "exam-incharge",
+                "transport-incharge",
+                "inventory-incharge"
+            ],
+            "division:create": ["manager", "principal"],
+            "division:edit": ["manager", "principal"],
+            "division:delete": ["manager"],
+            "division:export": ["manager", "principal"],
+            "course:read": [
+                "manager",
+                "principal",
+                "staff",
+                "receptionist",
+                "librarian",
+                "accountant",
+                "exam-incharge",
+                "transport-incharge",
+                "inventory-incharge"
+            ],
+            "course:create": ["manager", "principal"],
+            "course:edit": ["manager", "principal"],
+            "course:delete": ["manager"],
+            "course:export": ["manager", "principal"],
+            "batch:read": [
+                "manager",
+                "principal",
+                "staff",
+                "receptionist",
+                "librarian",
+                "accountant",
+                "exam-incharge",
+                "transport-incharge",
+                "inventory-incharge"
+            ],
+            "batch:create": ["manager", "principal"],
+            "batch:edit": ["manager", "principal"],
+            "batch:delete": ["manager"],
+            "batch:export": ["manager", "principal"],
+            "subject:read": ["manager", "principal", "staff"],
+            "subject:create": ["manager", "principal"],
+            "subject:edit": ["manager", "principal"],
+            "subject:delete": ["manager"],
+            "subject:export": ["manager", "principal"],
+            "book-list:manage": ["manager", "principal"],
+            "division-incharge:read": ["manager", "principal"],
+            "division-incharge:create": ["manager", "principal"],
+            "division-incharge:edit": ["manager", "principal"],
+            "division-incharge:delete": ["manager", "principal"],
+            "division-incharge:export": ["manager", "principal"],
+            "course-incharge:read": ["manager", "principal"],
+            "course-incharge:create": ["manager", "principal"],
+            "course-incharge:edit": ["manager", "principal"],
+            "course-incharge:delete": ["manager", "principal"],
+            "course-incharge:export": ["manager", "principal"],
+            "batch-incharge:read": ["manager", "principal"],
+            "batch-incharge:create": ["manager", "principal"],
+            "batch-incharge:edit": ["manager", "principal"],
+            "batch-incharge:delete": ["manager", "principal"],
+            "batch-incharge:export": ["manager", "principal"],
+            "subject-incharge:read": ["manager", "principal"],
+            "subject-incharge:create": ["manager", "principal"],
+            "subject-incharge:edit": ["manager", "principal"],
+            "subject-incharge:delete": ["manager", "principal"],
+            "subject-incharge:export": ["manager", "principal"],
+            "certificate-template:read": ["manager", "principal"],
+            "certificate-template:create": ["manager", "principal"],
+            "certificate-template:edit": ["manager", "principal"],
+            "certificate-template:delete": ["manager", "principal"],
+            "certificate-template:export": ["manager", "principal"],
+            "certificate:read": ["manager", "principal"],
+            "certificate:create": ["manager", "principal"],
+            "certificate:edit": ["manager", "principal"],
+            "certificate:delete": ["manager", "principal"],
+            "certificate:export": ["manager", "principal"],
+            "id-card:manage": ["manager", "principal"],
+            "class-timing:read": ["manager", "principal"],
+            "class-timing:create": ["manager", "principal"],
+            "class-timing:edit": ["manager", "principal"],
+            "class-timing:delete": ["manager", "principal"],
+            "class-timing:export": ["manager", "principal"],
+            "timetable:read": ["manager", "principal"],
+            "timetable:create": ["manager", "principal"],
+            "timetable:edit": ["manager", "principal"],
+            "timetable:delete": ["manager", "principal"],
+            "timetable:export": ["manager", "principal"],
+            "timetable:allocate": ["manager", "principal"]
+        },
+        "exam": {
+            "exam:config": ["manager"],
+            "exam:report": ["manager"],
+            "exam-term:manage": ["manager", "principal"],
+            "exam:manage": ["manager", "principal"],
+            "exam-grade:manage": ["manager", "principal"],
+            "exam-assessment:manage": ["manager", "principal"],
+            "exam-observation:manage": ["manager", "principal"],
+            "exam-schedule:read": [
+                "manager",
+                "principal",
+                "exam-incharge",
+                "staff",
+                "student",
+                "guardian"
+            ],
+            "exam-schedule:create": ["manager", "principal", "exam-incharge"],
+            "exam-schedule:edit": ["manager", "principal", "exam-incharge"],
+            "exam-schedule:delete": ["manager"],
+            "exam-schedule:export": ["manager", "principal", "exam-incharge"],
+            "exam-form:manage": [],
+            "exam:marks-record": ["manager", "principal", "exam-incharge"],
+            "exam:subject-incharge-wise-marks-record": ["staff"],
+            "exam-marksheet:process": ["manager", "principal", "exam-incharge"],
+            "exam-marksheet:access": [
+                "manager",
+                "principal",
+                "exam-incharge",
+                "staff",
+                "guardian",
+                "student"
+            ],
+            "exam-admit-card:access": ["manager", "principal", "exam-incharge"],
+            "online-exam:read": [
+                "manager",
+                "principal",
+                "staff",
+                "exam-incharge",
+                "student",
+                "guardian"
+            ],
+            "online-exam:create": [
+                "manager",
+                "principal",
+                "staff",
+                "exam-incharge"
+            ],
+            "online-exam:edit": [
+                "manager",
+                "principal",
+                "staff",
+                "exam-incharge"
+            ],
+            "online-exam:delete": ["manager", "principal", "exam-incharge"],
+            "online-exam:export": [
+                "manager",
+                "principal",
+                "staff",
+                "exam-incharge"
+            ]
+        },
+        "finance": {
+            "finance:config": ["manager"],
+            "finance:report": ["manager"],
+            "finance:export": ["manager"],
+            "fee-group:read": ["manager", "principal", "accountant"],
+            "fee-group:create": ["manager", "principal", "accountant"],
+            "fee-group:edit": ["manager", "principal", "accountant"],
+            "fee-group:delete": ["manager", "principal"],
+            "fee-group:export": ["manager", "principal", "accountant"],
+            "fee-head:read": ["manager", "principal", "accountant"],
+            "fee-head:create": ["manager", "principal", "accountant"],
+            "fee-head:edit": ["manager", "principal", "accountant"],
+            "fee-head:delete": ["manager", "principal"],
+            "fee-head:export": ["manager", "principal", "accountant"],
+            "fee-concession:read": ["manager", "principal", "accountant"],
+            "fee-concession:create": ["manager", "principal", "accountant"],
+            "fee-concession:edit": ["manager", "principal", "accountant"],
+            "fee-concession:delete": ["manager", "principal"],
+            "fee-concession:export": ["manager", "principal", "accountant"],
+            "fee-structure:read": ["manager", "principal", "accountant"],
+            "fee-structure:create": ["manager", "principal", "accountant"],
+            "fee-structure:edit": ["manager", "principal", "accountant"],
+            "fee-structure:delete": ["manager", "principal"],
+            "fee-structure:allocate": ["manager", "principal", "accountant"],
+            "fee-structure:export": ["manager", "principal", "accountant"],
+            "fee-payment:import": ["manager", "principal", "accountant"],
+            "ledger-type:read": ["manager", "principal", "accountant"],
+            "ledger-type:create": ["manager", "principal", "accountant"],
+            "ledger-type:edit": ["manager", "principal", "accountant"],
+            "ledger-type:delete": ["manager", "principal"],
+            "ledger-type:export": ["manager", "principal", "accountant"],
+            "ledger:read": ["manager", "principal", "accountant"],
+            "ledger:create": ["manager", "principal", "accountant"],
+            "ledger:edit": ["manager", "principal", "accountant"],
+            "ledger:delete": ["manager", "principal"],
+            "ledger:export": ["manager", "principal", "accountant"],
+            "transaction:read": ["manager", "principal", "accountant"],
+            "transaction:create": ["manager", "principal", "accountant"],
+            "transaction:edit": ["manager", "principal", "accountant"],
+            "transaction:cancel": ["manager", "principal", "accountant"],
+            "transaction:delete": ["manager"],
+            "transaction:export": ["manager", "principal", "accountant"],
+            "transaction:config": ["manager", "principal"]
+        },
+        "calendar": {
+            "calendar:config": ["manager"],
+            "holiday:read": ["manager", "principal"],
+            "holiday:create": ["manager", "principal"],
+            "holiday:edit": ["manager", "principal"],
+            "holiday:delete": ["manager", "principal"],
+            "holiday:export": ["manager", "principal"],
+            "event:read": [
+                "manager",
+                "principal",
+                "student",
+                "guardian",
+                "receptionist",
+                "librarian",
+                "accountant",
+                "exam-incharge",
+                "transport-incharge",
+                "inventory-incharge",
+                "staff"
+            ],
+            "event:admin-access": ["manager", "principal"],
+            "event:create": ["manager", "principal"],
+            "event:edit": ["manager", "principal"],
+            "event:delete": ["manager", "principal"],
+            "event:export": ["manager", "principal"],
+            "celebration:read": ["manager", "principal", "staff"],
+            "celebration:export": ["manager", "principal"]
+        },
+        "reception": {
+            "reception:config": ["manager"],
+            "query:read": ["manager", "principal", "receptionist"],
+            "query:action": ["manager", "principal", "receptionist"],
+            "query:delete": ["manager", "principal"],
+            "enquiry:read": ["manager", "principal", "receptionist"],
+            "enquiry:admin-access": ["manager", "principal"],
+            "enquiry:create": ["manager", "principal", "receptionist"],
+            "enquiry:follow-up": ["manager", "principal", "receptionist"],
+            "enquiry:action": ["manager", "principal"],
+            "enquiry:edit": ["manager", "principal", "receptionist"],
+            "enquiry:delete": ["manager", "principal"],
+            "enquiry:export": ["manager", "principal", "receptionist"],
+            "visitor-log:read": ["manager", "principal", "receptionist"],
+            "visitor-log:create": ["manager", "principal", "receptionist"],
+            "visitor-log:edit": ["manager", "principal", "receptionist"],
+            "visitor-log:delete": ["manager", "principal"],
+            "visitor-log:export": ["manager", "principal", "receptionist"],
+            "gate-pass:read": ["manager", "principal", "receptionist"],
+            "gate-pass:create": ["manager", "principal", "receptionist"],
+            "gate-pass:edit": ["manager", "principal", "receptionist"],
+            "gate-pass:delete": ["manager", "principal"],
+            "gate-pass:export": ["manager", "principal", "receptionist"],
+            "complaint:read": [
+                "manager",
+                "principal",
+                "receptionist",
+                "student",
+                "guardian"
+            ],
+            "complaint:admin-access": ["manager", "principal"],
+            "complaint:create": [
+                "manager",
+                "principal",
+                "receptionist",
+                "student",
+                "guardian"
+            ],
+            "complaint:edit": [
+                "manager",
+                "principal",
+                "receptionist",
+                "student",
+                "guardian"
+            ],
+            "complaint:action": ["manager", "principal"],
+            "complaint:delete": ["manager", "principal"],
+            "complaint:export": ["manager", "principal", "receptionist"],
+            "call-log:read": ["manager", "principal", "receptionist"],
+            "call-log:create": ["manager", "principal", "receptionist"],
+            "call-log:edit": ["manager", "principal", "receptionist"],
+            "call-log:delete": ["manager", "principal"],
+            "call-log:export": ["manager", "principal", "receptionist"],
+            "correspondence:read": ["manager", "principal", "receptionist"],
+            "correspondence:create": ["manager", "principal", "receptionist"],
+            "correspondence:edit": ["manager", "principal", "receptionist"],
+            "correspondence:delete": ["manager", "principal"],
+            "correspondence:export": ["manager", "principal", "receptionist"]
+        },
+        "discipline": {
+            "discipline:config": ["manager"],
+            "incident:manage": ["manager", "principal"]
+        },
+        "transport": {
+            "transport:config": ["manager"],
+            "transport:report": ["manager"],
+            "transport-circle:read": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "transport-circle:create": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "transport-circle:edit": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "transport-circle:delete": ["manager", "principal"],
+            "transport-circle:export": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "transport-fee:read": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "transport-fee:create": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "transport-fee:edit": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "transport-fee:delete": ["manager", "principal"],
+            "transport-fee:export": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "transport-stoppage:manage": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "transport-route:read": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "transport-route:create": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "transport-route:edit": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "transport-route:delete": ["manager", "principal"],
+            "transport-route:export": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "vehicle:config": ["manager", "principal", "transport-incharge"],
+            "vehicle:read": ["manager", "principal", "transport-incharge"],
+            "vehicle:create": ["manager", "principal", "transport-incharge"],
+            "vehicle:edit": ["manager", "principal", "transport-incharge"],
+            "vehicle:delete": ["manager", "principal"],
+            "vehicle:export": ["manager", "principal", "transport-incharge"],
+            "vehicle-incharge:read": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "vehicle-incharge:create": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "vehicle-incharge:edit": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "vehicle-incharge:delete": ["manager", "principal"],
+            "vehicle-incharge:export": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "vehicle-document:read": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "vehicle-document:create": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "vehicle-document:edit": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "vehicle-document:delete": ["manager", "principal"],
+            "vehicle-document:export": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "vehicle-travel-record:read": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "vehicle-travel-record:create": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "vehicle-travel-record:edit": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "vehicle-travel-record:delete": ["manager", "principal"],
+            "vehicle-travel-record:export": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "vehicle-fuel-record:read": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "vehicle-fuel-record:create": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "vehicle-fuel-record:edit": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "vehicle-fuel-record:delete": ["manager", "principal"],
+            "vehicle-fuel-record:export": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "vehicle-service-record:read": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "vehicle-service-record:create": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "vehicle-service-record:edit": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ],
+            "vehicle-service-record:delete": ["manager", "principal"],
+            "vehicle-service-record:export": [
+                "manager",
+                "principal",
+                "transport-incharge"
+            ]
+        },
+        "resource": {
+            "resource:config": ["manager"],
+            "resource:report": ["manager"],
+            "book-list:read": ["staff", "student", "guardian"],
+            "online-class:read": [
+                "manager",
+                "principal",
+                "staff",
+                "student",
+                "guardian"
+            ],
+            "online-class:create": ["manager", "principal", "staff"],
+            "online-class:edit": ["manager", "principal", "staff"],
+            "online-class:delete": ["manager", "principal"],
+            "online-class:export": ["manager", "principal", "staff"],
+            "assignment:read": [
+                "manager",
+                "principal",
+                "staff",
+                "student",
+                "guardian"
+            ],
+            "assignment:view-log": ["manager", "principal", "staff"],
+            "assignment:create": ["manager", "principal", "staff"],
+            "assignment:edit": ["manager", "principal", "staff"],
+            "assignment:delete": ["manager", "principal"],
+            "assignment:export": ["manager", "principal", "staff"],
+            "lesson-plan:read": ["manager", "principal", "staff"],
+            "lesson-plan:create": ["manager", "principal", "staff"],
+            "lesson-plan:edit": ["manager", "principal", "staff"],
+            "lesson-plan:delete": ["manager", "principal"],
+            "lesson-plan:export": ["manager", "principal", "staff"],
+            "syllabus:read": ["manager", "principal", "staff"],
+            "syllabus:create": ["manager", "principal", "staff"],
+            "syllabus:edit": ["manager", "principal", "staff"],
+            "syllabus:delete": ["manager", "principal"],
+            "syllabus:export": ["manager", "principal", "staff"],
+            "learning-material:read": [
+                "manager",
+                "principal",
+                "staff",
+                "student",
+                "guardian"
+            ],
+            "learning-material:view-log": ["manager", "principal", "staff"],
+            "learning-material:create": ["manager", "principal", "staff"],
+            "learning-material:edit": ["manager", "principal", "staff"],
+            "learning-material:delete": ["manager", "principal"],
+            "learning-material:export": ["manager", "principal", "staff"],
+            "student-diary:read": [
+                "manager",
+                "principal",
+                "staff",
+                "student",
+                "guardian"
+            ],
+            "student-diary:view-log": ["manager", "principal", "staff"],
+            "student-diary:create": ["manager", "principal", "staff"],
+            "student-diary:edit": ["manager", "principal", "staff"],
+            "student-diary:delete": ["manager", "principal"],
+            "student-diary:export": ["manager", "principal"],
+            "download:read": ["manager", "principal", "staff"],
+            "download:create": ["manager", "principal", "staff"],
+            "download:edit": ["manager", "principal", "staff"],
+            "download:delete": ["manager", "principal"],
+            "download:export": ["manager", "principal", "staff"]
+        },
+        "communication": {
+            "communication:config": ["manager"],
+            "announcement:read": [
+                "manager",
+                "principal",
+                "receptionist",
+                "librarian",
+                "accountant",
+                "exam-incharge",
+                "transport-incharge",
+                "inventory-incharge",
+                "staff",
+                "student",
+                "guardian"
+            ],
+            "announcement:view-log": ["manager", "principal", "staff"],
+            "announcement:admin-access": ["manager", "principal"],
+            "announcement:create": ["manager", "principal", "receptionist"],
+            "announcement:edit": ["manager", "principal"],
+            "announcement:delete": ["manager", "principal"],
+            "announcement:export": ["manager", "principal"],
+            "email:read": [],
+            "email:send": [],
+            "sms:read": [],
+            "sms:send": [],
+            "whatsapp:read": [],
+            "whatsapp:send": []
+        },
+        "library": {
+            "library:config": ["manager"],
+            "book:read": ["manager", "principal", "librarian"],
+            "book:create": ["manager", "principal", "librarian"],
+            "book:edit": ["manager", "principal", "librarian"],
+            "book:delete": ["manager", "principal"],
+            "book:export": ["manager", "principal", "librarian"],
+            "book-addition:read": ["manager", "principal", "librarian"],
+            "book-addition:create": ["manager", "principal", "librarian"],
+            "book-addition:edit": ["manager", "principal", "librarian"],
+            "book-addition:delete": ["manager", "principal"],
+            "book-addition:export": ["manager", "principal", "librarian"],
+            "book:issue": ["manager", "principal", "librarian"],
+            "book:return": ["manager", "principal", "librarian"],
+            "library:report": ["manager", "principal"]
+        },
+        "mess": {
+            "mess:config": ["manager"],
+            "menu-item:manage": ["manager", "principal", "mess-incharge"],
+            "meal:manage": ["manager", "principal", "mess-incharge"],
+            "meal-log:read": ["manager", "principal", "mess-incharge"],
+            "meal-log:create": ["manager", "principal", "mess-incharge"],
+            "meal-log:edit": ["manager", "principal", "mess-incharge"],
+            "meal-log:delete": ["manager", "principal"],
+            "meal-log:export": ["manager", "principal", "mess-incharge"]
+        },
+        "inventory": {
+            "inventory:config": ["manager"],
+            "inventory:report": ["manager", "principal", "inventory-incharge"],
+            "inventory:admin-access": ["manager", "principal"],
+            "vendor:read": ["manager", "principal", "inventory-incharge"],
+            "vendor:create": ["manager", "principal", "inventory-incharge"],
+            "vendor:edit": ["manager", "principal", "inventory-incharge"],
+            "vendor:delete": ["manager"],
+            "vendor:export": ["manager", "principal", "inventory-incharge"],
+            "stock-category:read": [
+                "manager",
+                "principal",
+                "inventory-incharge"
+            ],
+            "stock-category:create": [
+                "manager",
+                "principal",
+                "inventory-incharge"
+            ],
+            "stock-category:edit": [
+                "manager",
+                "principal",
+                "inventory-incharge"
+            ],
+            "stock-category:delete": ["manager"],
+            "stock-category:export": [
+                "manager",
+                "principal",
+                "inventory-incharge"
+            ],
+            "stock-item:read": ["manager", "principal", "inventory-incharge"],
+            "stock-item:create": ["manager", "principal", "inventory-incharge"],
+            "stock-item:edit": ["manager", "principal", "inventory-incharge"],
+            "stock-item:delete": ["manager"],
+            "stock-item:export": ["manager", "principal", "inventory-incharge"],
+            "stock-purchase:read": [
+                "manager",
+                "principal",
+                "inventory-incharge"
+            ],
+            "stock-purchase:create": [
+                "manager",
+                "principal",
+                "inventory-incharge"
+            ],
+            "stock-purchase:edit": [
+                "manager",
+                "principal",
+                "inventory-incharge"
+            ],
+            "stock-purchase:delete": ["manager"],
+            "stock-purchase:export": [
+                "manager",
+                "principal",
+                "inventory-incharge"
+            ],
+            "stock-return:read": ["manager", "principal", "inventory-incharge"],
+            "stock-return:create": [
+                "manager",
+                "principal",
+                "inventory-incharge"
+            ],
+            "stock-return:edit": ["manager", "principal", "inventory-incharge"],
+            "stock-return:delete": ["manager"],
+            "stock-return:export": [
+                "manager",
+                "principal",
+                "inventory-incharge"
+            ],
+            "stock-transfer:read": [
+                "manager",
+                "principal",
+                "inventory-incharge"
+            ],
+            "stock-transfer:create": [
+                "manager",
+                "principal",
+                "inventory-incharge"
+            ],
+            "stock-transfer:edit": [
+                "manager",
+                "principal",
+                "inventory-incharge"
+            ],
+            "stock-transfer:delete": ["manager"],
+            "stock-transfer:export": [
+                "manager",
+                "principal",
+                "inventory-incharge"
+            ],
+            "stock-adjustment:read": [
+                "manager",
+                "principal",
+                "inventory-incharge"
+            ],
+            "stock-adjustment:create": [
+                "manager",
+                "principal",
+                "inventory-incharge"
+            ],
+            "stock-adjustment:edit": [
+                "manager",
+                "principal",
+                "inventory-incharge"
+            ],
+            "stock-adjustment:delete": ["manager"],
+            "stock-adjustment:export": [
+                "manager",
+                "principal",
+                "inventory-incharge"
+            ],
+            "stock-requisition:read": [
+                "manager",
+                "principal",
+                "inventory-incharge"
+            ],
+            "stock-requisition:create": [
+                "manager",
+                "principal",
+                "inventory-incharge"
+            ],
+            "stock-requisition:edit": [
+                "manager",
+                "principal",
+                "inventory-incharge"
+            ],
+            "stock-requisition:delete": ["manager"],
+            "stock-requisition:export": [
+                "manager",
+                "principal",
+                "inventory-incharge"
+            ]
+        },
+        "hostel": {
+            "hostel:manage": ["manager", "hostel-incharge"],
+            "hostel-incharge:read": ["manager", "principal", "hostel-incharge"],
+            "hostel-incharge:create": ["manager", "principal"],
+            "hostel-incharge:edit": ["manager", "principal"],
+            "hostel-incharge:delete": ["manager", "principal"],
+            "hostel-incharge:export": ["manager", "principal"],
+            "hostel-room-allocation:read": [
+                "manager",
+                "principal",
+                "hostel-incharge"
+            ],
+            "hostel-room-allocation:create": [
+                "manager",
+                "principal",
+                "hostel-incharge"
+            ],
+            "hostel-room-allocation:edit": [
+                "manager",
+                "principal",
+                "hostel-incharge"
+            ],
+            "hostel-room-allocation:delete": ["manager", "principal"],
+            "hostel-room-allocation:export": ["manager", "principal"]
+        },
+        "recruitment": {
+            "recruitment:config": ["manager"],
+            "job-vacancy:read": ["manager", "principal"],
+            "job-vacancy:create": ["manager", "principal"],
+            "job-vacancy:edit": ["manager", "principal"],
+            "job-vacancy:delete": ["manager", "principal"],
+            "job-vacancy:export": ["manager", "principal"],
+            "job-application:read": ["manager", "principal"],
+            "job-application:create": ["manager", "principal"],
+            "job-application:edit": ["manager", "principal"],
+            "job-application:delete": ["manager", "principal"],
+            "job-application:export": ["manager", "principal"]
+        },
+        "gallery": {
+            "gallery:config": ["manager"],
+            "gallery:read": [
+                "manager",
+                "principal",
+                "staff",
+                "student",
+                "guardian"
+            ],
+            "gallery:create": ["manager", "principal"],
+            "gallery:edit": ["manager", "principal"],
+            "gallery:delete": ["manager", "principal"],
+            "gallery:export": ["manager", "principal"]
+        },
+        "form": {
+            "form:config": ["manager"],
+            "form:read": ["manager", "principal"],
+            "form:create": ["manager", "principal"],
+            "form:edit": ["manager", "principal"],
+            "form:delete": ["manager", "principal"],
+            "form:export": ["manager", "principal"],
+            "form:submit": [
+                "manager",
+                "principal",
+                "staff",
+                "student",
+                "guardian"
+            ],
+            "form-submission:manage": ["manager", "principal"]
+        },
+        "activity": {
+            "activity:config": ["manager"],
+            "trip:manage": ["manager"],
+            "trip-participant:manage": ["manager"],
+            "trip:read": [
+                "manager",
+                "principal",
+                "staff",
+                "student",
+                "guardian"
+            ]
+        },
+        "asset": {
+            "asset:config": ["manager"],
+            "building:manage": ["manager"]
+        },
+        "site": {
+            "site:manage": ["manager"]
+        },
+        "blog": {
+            "blog:config": [],
+            "blog:read": [],
+            "blog:create": [],
+            "blog:edit": [],
+            "blog:delete": [],
+            "blog:export": []
+        },
+        "approval": {
+            "approval:config": [],
+            "approval:report": ["manager", "principal"],
+            "approval-type:manage": ["manager", "principal"],
+            "approval-request:read": [
+                "manager",
+                "principal",
+                "staff",
+                "accountant",
+                "librarian",
+                "exam-incharge",
+                "transport-incharge",
+                "inventory-incharge",
+                "mess-incharge",
+                "hostel-incharge",
+                "receptionist"
+            ],
+            "approval-request:create": [
+                "manager",
+                "principal",
+                "staff",
+                "accountant",
+                "librarian",
+                "exam-incharge",
+                "transport-incharge",
+                "inventory-incharge",
+                "mess-incharge",
+                "hostel-incharge",
+                "receptionist"
+            ],
+            "approval-request:edit": ["manager", "principal", "staff"],
+            "approval-request:delete": ["manager", "principal"],
+            "approval-request:action": [
+                "manager",
+                "principal",
+                "staff",
+                "accountant",
+                "librarian",
+                "exam-incharge",
+                "transport-incharge",
+                "inventory-incharge",
+                "mess-incharge",
+                "hostel-incharge",
+                "receptionist"
+            ],
+            "approval-request:export": ["manager", "principal"]
+        },
+        "utility": {
+            "utility:config": [],
+            "todo:manage": [
+                "manager",
+                "principal",
+                "staff",
+                "accountant",
+                "librarian",
+                "exam-incharge",
+                "transport-incharge",
+                "inventory-incharge",
+                "mess-incharge",
+                "hostel-incharge",
+                "receptionist",
+                "student",
+                "guardian",
+                "attendance-assistant"
+            ],
+            "todo:export": []
+        },
+        "user": {
+            "user:read": [],
+            "user:create": [],
+            "user:edit": [],
+            "user:force-change-password": [],
+            "user:change-role": [],
+            "user:delete": [],
+            "user:impersonate": [],
+            "user:export": []
+        },
+        "modules": {}
+    }
+}

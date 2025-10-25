@@ -1,0 +1,418 @@
+[
+    {
+        "country": "India",
+        "name": "Basic Education Department",
+        "code": "india-basic-education-department",
+        "description": "Basic Education Department",
+        "programs": [
+            {
+                "name": "K12",
+                "description": "K12",
+                "divisions": [
+                    {
+                        "name": "Pre-School",
+                        "description": "Pre-School",
+                        "courses": [
+                            {
+                                "name": "Nursery",
+                                "description": "Nursery",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "LKG",
+                                "description": "LKG",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "UKG",
+                                "description": "UKG",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Primary School",
+                        "description": "Primary School",
+                        "courses": [
+                            {
+                                "name": "Grade I",
+                                "description": "Grade I",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Grade II",
+                                "description": "Grade II",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Grade III",
+                                "description": "Grade III",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Grade IV",
+                                "description": "Grade IV",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Grade V",
+                                "description": "Grade V",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Middle School",
+                        "description": "Middle School",
+                        "courses": [
+                            {
+                                "name": "Grade VI",
+                                "description": "Grade VI",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Grade VII",
+                                "description": "Grade VII",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Grade VIII",
+                                "description": "Grade VIII",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "High School",
+                        "description": "High School",
+                        "courses": [
+                            {
+                                "name": "Grade IX",
+                                "description": "Grade IX",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Grade X",
+                                "description": "Grade X",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Senior Secondary School",
+                        "description": "Senior Secondary School",
+                        "courses": [
+                            {
+                                "name": "Grade XI",
+                                "description": "Grade XI",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Grade XII",
+                                "description": "Grade XII",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "country": "Ghana",
+        "name": "Basic Education Department",
+        "code": "ghana-basic-education-department",
+        "description": "Basic Education Department",
+        "programs": [
+            {
+                "name": "Basic Education",
+                "description": "Basic Education",
+                "divisions": [
+                    {
+                        "name": "Pre-School",
+                        "description": "Pre-School",
+                        "courses": [
+                            {
+                                "name": "Creche",
+                                "description": "Creche",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Nursery 1",
+                                "description": "Nursery 1",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Nursery 2",
+                                "description": "Nursery 2",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Kindergarten 1",
+                                "description": "Kindergarten 1",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Kindergarten 2",
+                                "description": "Kindergarten 2",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Primary School",
+                        "description": "Primary School",
+                        "courses": [
+                            {
+                                "name": "Grade 1",
+                                "description": "Grade 1",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Grade 2",
+                                "description": "Grade 2",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Grade 3",
+                                "description": "Grade 3",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Grade 4",
+                                "description": "Grade 4",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Grade 5",
+                                "description": "Grade 5",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Grade 6",
+                                "description": "Grade 6",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Junior High School",
+                        "description": "Junior High School",
+                        "courses": [
+                            {
+                                "name": "JHS 1",
+                                "description": "JHS 1",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "JHS 2",
+                                "description": "JHS 2",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "JHS 3",
+                                "description": "JHS 3",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "country": "Ghana",
+        "name": "Secondary Education Department",
+        "code": "ghana-secondary-education-department",
+        "description": "Secondary Education Department",
+        "programs": [
+            {
+                "name": "Secondary Education",
+                "description": "Secondary Education",
+                "divisions": [
+                    {
+                        "name": "Senior High School",
+                        "description": "Senior High School",
+                        "courses": [
+                            {
+                                "name": "SHS 1",
+                                "description": "SHS 1",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "SHS 2",
+                                "description": "SHS 2",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "SHS 3",
+                                "description": "SHS 3",
+                                "batches": [
+                                    {
+                                        "name": "A",
+                                        "description": "A"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

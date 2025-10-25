@@ -1,0 +1,1 @@
+import{r as o,t as a,o as s,w as c,e as r}from"./app-Cvm44xuh.js";const i={name:"EmployeePayrollConfig"},g=Object.assign(i,{setup(l){const e=[{name:"EmployeePayrollConfigGeneral",icon:"fas fa-cogs",label:"config.config"}];return(_,f)=>{const n=o("router-view"),t=o("ModuleConfig");return s(),a(t,{navigations:e},{default:c(()=>[r(n)]),_:1})}}});export{g as default};

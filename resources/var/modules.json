@@ -1,0 +1,530 @@
+[
+    {
+        "name": "reception",
+        "label": "reception.reception",
+        "children": [
+            {
+                "name": "reception.enquiry",
+                "label": "reception.enquiry.enquiry"
+            },
+            {
+                "name": "reception.visitor_log",
+                "label": "reception.visitor_log.visitor_log"
+            },
+            {
+                "name": "reception.gate_pass",
+                "label": "reception.gate_pass.gate_pass"
+            },
+            {
+                "name": "reception.complaint",
+                "label": "reception.complaint.complaint"
+            },
+            {
+                "name": "reception.call_log",
+                "label": "reception.call_log.call_log"
+            },
+            {
+                "name": "reception.correspondence",
+                "label": "reception.correspondence.correspondence"
+            }
+        ]
+    },
+    {
+        "name": "academic",
+        "label": "academic.academic",
+        "children": [
+            {
+                "name": "academic.department",
+                "label": "academic.department.department"
+            },
+            {
+                "name": "academic.period",
+                "label": "academic.period.period"
+            },
+            {
+                "name": "academic.division",
+                "label": "academic.division.division"
+            },
+            {
+                "name": "academic.course",
+                "label": "academic.course.course"
+            },
+            {
+                "name": "academic.batch",
+                "label": "academic.batch.batch"
+            },
+            {
+                "name": "academic.subject",
+                "label": "academic.subject.subject"
+            },
+            {
+                "name": "academic.class_timing",
+                "label": "academic.class_timing.class_timing"
+            },
+            {
+                "name": "academic.timetable",
+                "label": "academic.timetable.timetable"
+            },
+            {
+                "name": "academic.book_list",
+                "label": "academic.book_list.book_list"
+            },
+            {
+                "name": "academic.certificate",
+                "label": "academic.certificate.certificate"
+            },
+            {
+                "name": "academic.id_card",
+                "label": "academic.id_card.id_card"
+            }
+        ]
+    },
+    {
+        "name": "student",
+        "label": "student.student",
+        "children": [
+            {
+                "name": "student.registration",
+                "label": "student.registration.registration"
+            },
+            {
+                "name": "student.roll_number",
+                "label": "student.roll_number.roll_number"
+            },
+            {
+                "name": "student.health_record",
+                "label": "student.health_record.health_record"
+            },
+            {
+                "name": "student.subject",
+                "label": "student.subject.subject"
+            },
+            {
+                "name": "student.attendance",
+                "label": "student.attendance.attendance"
+            },
+            {
+                "name": "student.fee_allocation",
+                "label": "student.fee_allocation.fee_allocation"
+            },
+            {
+                "name": "student.promotion",
+                "label": "student.promotion.promotion"
+            },
+            {
+                "name": "student.edit_request",
+                "label": "student.edit_request.edit_request"
+            },
+            {
+                "name": "student.leave_request",
+                "label": "student.leave_request.leave_request"
+            },
+            {
+                "name": "student.transfer_request",
+                "label": "student.transfer_request.transfer_request"
+            },
+            {
+                "name": "student.transfer",
+                "label": "student.transfer.transfer"
+            },
+            {
+                "name": "student.alumni",
+                "label": "student.alumni.alumni"
+            },
+            {
+                "name": "student.report",
+                "label": "student.report.report"
+            }
+        ]
+    },
+    {
+        "name": "finance",
+        "label": "finance.finance",
+        "children": [
+            {
+                "name": "finance.payment_method",
+                "label": "finance.payment_method.payment_method"
+            },
+            {
+                "name": "finance.fee_group",
+                "label": "finance.fee_group.fee_group"
+            },
+            {
+                "name": "finance.fee_head",
+                "label": "finance.fee_head.fee_head"
+            },
+            {
+                "name": "finance.fee_concession",
+                "label": "finance.fee_concession.fee_concession"
+            },
+            {
+                "name": "finance.fee_structure",
+                "label": "finance.fee_structure.fee_structure"
+            },
+            {
+                "name": "finance.ledger_type",
+                "label": "finance.ledger_type.ledger_type"
+            },
+            {
+                "name": "finance.ledger",
+                "label": "finance.ledger.ledger"
+            },
+            {
+                "name": "finance.transaction",
+                "label": "finance.transaction.transaction"
+            },
+            {
+                "name": "finance.report",
+                "label": "finance.report.report"
+            }
+        ]
+    },
+    {
+        "name": "exam",
+        "label": "exam.exam",
+        "children": [
+            {
+                "name": "exam.term",
+                "label": "exam.term.term"
+            },
+            {
+                "name": "exam.grade",
+                "label": "exam.grade.grade"
+            },
+            {
+                "name": "exam.assessment",
+                "label": "exam.assessment.assessment"
+            },
+            {
+                "name": "exam.observation",
+                "label": "exam.observation.observation"
+            },
+            {
+                "name": "exam.schedule",
+                "label": "exam.schedule.schedule"
+            },
+            {
+                "name": "exam.form",
+                "label": "exam.form.form"
+            },
+            {
+                "name": "exam.report",
+                "label": "exam.report.report"
+            }
+        ]
+    },
+    {
+        "name": "employee",
+        "label": "employee.employee",
+        "children": [
+            {
+                "name": "employee.department",
+                "label": "employee.department.department"
+            },
+            {
+                "name": "employee.designation",
+                "label": "employee.designation.designation"
+            },
+            {
+                "name": "employee.attendance",
+                "label": "employee.attendance.attendance"
+            },
+            {
+                "name": "employee.leave",
+                "label": "employee.leave.leave"
+            },
+            {
+                "name": "employee.payroll",
+                "label": "employee.payroll.payroll"
+            },
+            {
+                "name": "employee.edit_request",
+                "label": "employee.edit_request.edit_request"
+            }
+        ]
+    },
+    {
+        "name": "resource",
+        "label": "resource.resource",
+        "children": [
+            {
+                "name": "resource.book_list",
+                "label": "resource.book_list.book_list"
+            },
+            {
+                "name": "resource.diary",
+                "label": "resource.diary.diary"
+            },
+            {
+                "name": "resource.assignment",
+                "label": "resource.assignment.assignment"
+            },
+            {
+                "name": "resource.lesson_plan",
+                "label": "resource.lesson_plan.lesson_plan"
+            },
+            {
+                "name": "resource.syllabus",
+                "label": "resource.syllabus.syllabus"
+            },
+            {
+                "name": "resource.online_class",
+                "label": "resource.online_class.online_class"
+            },
+            {
+                "name": "resource.learning_material",
+                "label": "resource.learning_material.learning_material"
+            },
+            {
+                "name": "resource.download",
+                "label": "resource.download.download"
+            }
+        ]
+    },
+    {
+        "name": "transport",
+        "label": "transport.transport",
+        "children": [
+            {
+                "name": "transport.route",
+                "label": "transport.route.route"
+            },
+            {
+                "name": "transport.circle",
+                "label": "transport.circle.circle"
+            },
+            {
+                "name": "transport.fee",
+                "label": "transport.fee.fee"
+            },
+            {
+                "name": "transport.vehicle",
+                "label": "transport.vehicle.vehicle"
+            }
+        ]
+    },
+    {
+        "name": "calendar",
+        "label": "calendar.calendar",
+        "children": [
+            {
+                "name": "calendar.holiday",
+                "label": "calendar.holiday.holiday"
+            },
+            {
+                "name": "calendar.celebration",
+                "label": "calendar.celebration.celebration"
+            },
+            {
+                "name": "calendar.event",
+                "label": "calendar.event.event"
+            }
+        ]
+    },
+    {
+        "name": "discipline",
+        "label": "discipline.discipline",
+        "children": [
+            {
+                "name": "discipline.incident",
+                "label": "discipline.incident.incident"
+            }
+        ]
+    },
+    {
+        "name": "gallery",
+        "label": "gallery.gallery"
+    },
+    {
+        "name": "guardian",
+        "label": "guardian.guardian"
+    },
+    {
+        "name": "contact",
+        "label": "contact.contact"
+    },
+    {
+        "name": "mess",
+        "label": "mess.mess",
+        "children": [
+            {
+                "name": "mess.menu_item",
+                "label": "mess.menu.menu"
+            },
+            {
+                "name": "mess.meal",
+                "label": "mess.meal.meal"
+            },
+            {
+                "name": "mess.meal_log",
+                "label": "mess.meal.log.log"
+            }
+        ]
+    },
+    {
+        "name": "inventory",
+        "label": "inventory.inventory",
+        "children": [
+            {
+                "name": "inventory.stock_category",
+                "label": "inventory.stock_category.stock_category"
+            },
+            {
+                "name": "inventory.stock_item",
+                "label": "inventory.stock_item.stock_item"
+            },
+            {
+                "name": "inventory.stock_requisition",
+                "label": "inventory.stock_requisition.stock_requisition"
+            },
+            {
+                "name": "inventory.stock_purchase",
+                "label": "inventory.stock_purchase.stock_purchase"
+            },
+            {
+                "name": "inventory.stock_transfer",
+                "label": "inventory.stock_transfer.stock_transfer"
+            },
+            {
+                "name": "inventory.stock_adjustment",
+                "label": "inventory.stock_adjustment.stock_adjustment"
+            }
+        ]
+    },
+    {
+        "name": "communication",
+        "label": "communication.communication",
+        "children": [
+            {
+                "name": "communication.announcement",
+                "label": "communication.announcement.announcement"
+            },
+            {
+                "name": "communication.email",
+                "label": "communication.email.email"
+            },
+            {
+                "name": "communication.sms",
+                "label": "communication.sms.sms"
+            }
+        ]
+    },
+    {
+        "name": "library",
+        "label": "library.library",
+        "children": [
+            {
+                "name": "library.book",
+                "label": "library.book.book"
+            },
+            {
+                "name": "library.book_addition",
+                "label": "library.book_addition.book_addition"
+            },
+            {
+                "name": "library.transaction",
+                "label": "library.transaction.transaction"
+            }
+        ]
+    },
+    {
+        "name": "approval",
+        "label": "approval.approval",
+        "children": [
+            {
+                "name": "approval.type",
+                "label": "approval.type.type"
+            },
+            {
+                "name": "approval.request",
+                "label": "approval.request.request"
+            },
+            {
+                "name": "approval.request.pending_requests",
+                "label": "approval.request.pending_requests"
+            },
+            {
+                "name": "approval.request.processed_requests",
+                "label": "approval.request.processed_requests"
+            }
+        ]
+    },
+    {
+        "name": "activity",
+        "label": "activity.activity",
+        "children": [
+            {
+                "name": "activity.trip",
+                "label": "activity.trip.trip"
+            }
+        ]
+    },
+    {
+        "name": "hostel",
+        "label": "hostel.hostel",
+        "children": [
+            {
+                "name": "hostel.hostel",
+                "label": "hostel.hostel"
+            },
+            {
+                "name": "hostel.room_allocation",
+                "label": "hostel.room_allocation.room_allocation"
+            }
+        ]
+    },
+    {
+        "name": "form",
+        "label": "form.form"
+    },
+    {
+        "name": "asset",
+        "label": "asset.asset",
+        "children": [
+            {
+                "name": "asset.building",
+                "label": "asset.building.building"
+            }
+        ]
+    },
+    {
+        "name": "site",
+        "label": "site.site",
+        "children": [
+            {
+                "name": "site.page",
+                "label": "site.page.page"
+            },
+            {
+                "name": "site.menu",
+                "label": "site.menu.menu"
+            },
+            {
+                "name": "site.block",
+                "label": "site.block.block"
+            }
+        ]
+    },
+    {
+        "name": "recruitment",
+        "label": "recruitment.recruitment",
+        "children": [
+            {
+                "name": "recruitment.vacancy",
+                "label": "recruitment.vacancy.vacancy"
+            },
+            {
+                "name": "recruitment.application",
+                "label": "recruitment.application.application"
+            }
+        ]
+    },
+    {
+        "name": "custom_field",
+        "label": "custom_field.custom_field"
+    },
+    {
+        "name": "user",
+        "label": "user.user"
+    }
+]

@@ -1,0 +1,399 @@
+{
+    "mail": [
+        {
+            "name": "Reset Password Confirmation",
+            "subject": "Reset Password Confirmation",
+            "code": "reset-password-confirmation",
+            "variables": ["NAME", "CODE", "TOKEN_LIFETIME"],
+            "content": "<p>Hi ##NAME##,</p><p>You are receiving this email because we received a password reset request for your account.</p><p>Your password reset code is ##CODE##. This code is valid for next ##TOKEN_LIFETIME## minutes.</p><p>If you did not request a password reset, no further action is required.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Email Change Confirmation",
+            "subject": "Email Change Confirmation",
+            "code": "email-change-confirmation",
+            "variables": ["NAME", "CODE", "TOKEN_LIFETIME"],
+            "content": "<p>Hi ##NAME##,</p><p>We have recevied email change request from you!</p><p>Your one time verification code is ##CODE##.</p><p>This code is valid for ##TOKEN_LIFETIME## minutes.</p><p>If you haven't requested for email change, please ignore this email.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Reset Password Alert",
+            "subject": "Reset Password Alert",
+            "code": "reset-password-alert",
+            "variables": ["NAME", "URL"],
+            "content": "<p>Hi ##NAME##,</p><p>Your password has been reset successfully!</p><p>Click on the below link to continue login.</p>[Login Now](##URL##)<p>If you haven't changed your password, please contact administrator.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Email OTP",
+            "subject": "Email OTP",
+            "code": "send-email-otp",
+            "variables": ["NAME", "CODE", "TOKEN_LIFETIME"],
+            "content": "<p>Hi ##NAME##,</p><p>Your one time password is: ##CODE##</p><p>This code is valid for the next ##TOKEN_LIFETIME## minutes!</p><p>Do not share this code with anyone else.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Two Factor Security",
+            "subject": "Two Factor Security",
+            "code": "two-factor-security",
+            "variables": ["NAME", "CODE", "TOKEN_LIFETIME"],
+            "content": "<p>Hi ##NAME##,</p><p>Your one time two factor security code is: ##CODE##</p><p>This code is valid for the next ##TOKEN_LIFETIME## minutes!</p><p>Do not share this code with anyone else.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Email Verification",
+            "subject": "Email Verification",
+            "code": "user-email-verification",
+            "variables": ["NAME", "URL"],
+            "content": "<p>Hi ##NAME##,</p><p>Thank you for registering an account with us.</p><p>Click on the below link to verify your account.</p>[Verify my Email](##URL##)<p>If you haven't registered with us, please ignore this email.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Username Change Confirmation",
+            "subject": "Username Change Confirmation",
+            "code": "username-change-confirmation",
+            "variables": ["NAME", "CODE", "TOKEN_LIFETIME"],
+            "content": "<p>Hi ##NAME##,</p><p>We have recevied username change request from you!</p><p>Your one time verification code is ##CODE##</p><p>This code is valid for the next ##TOKEN_LIFETIME## minutes!</p><p>If you haven't requested for username change, please ignore this email.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Account Registered",
+            "subject": "Account Registered",
+            "code": "account-registered",
+            "variables": ["NAME", "URL"],
+            "content": "<p>Hi ##NAME##,</p><p>Thank you for registering an account with us.</p><p>Click on the below link to login.</p>[Login Now](##URL##)<p>If you haven't registered with us, please ignore this email.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Online Registration Email Confirmation",
+            "subject": "Online Registration",
+            "code": "online-registration-email-confirmation",
+            "variables": [
+                "NAME",
+                "PROGRAM",
+                "PERIOD",
+                "COURSE",
+                "OTP",
+                "APPLICATION_NUMBER"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Your request for registration for ##PROGRAM## ##PERIOD## ##COURSE## has been received with application number ##APPLICATION_NUMBER##.</p><p>Please use ##OTP## to confirm your email.</p><p>If you haven't registered with us, please ignore this email.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Online Registration Email Confirmed",
+            "subject": "Online Registration Application Number",
+            "code": "online-registration-email-confirmed",
+            "variables": [
+                "NAME",
+                "PROGRAM",
+                "PERIOD",
+                "COURSE",
+                "APPLICATION_NUMBER"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Your request for registration for ##PROGRAM## ##PERIOD## ##COURSE## has been received.</p><p>Your application number is ##APPLICATION_NUMBER##.</p><p>Use this application number to complete your application.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Online Registration Submitted",
+            "subject": "Online Registration Update",
+            "code": "online-registration-submitted",
+            "variables": [
+                "NAME",
+                "PROGRAM",
+                "PERIOD",
+                "COURSE",
+                "APPLICATION_NUMBER"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Your request for registration with application number ##APPLICATION_NUMBER## for ##PROGRAM## ##PERIOD## ##COURSE## has been received and under review.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Registration Fee Payment Success",
+            "subject": "Registration Fee Payment",
+            "code": "online-registration-fee-payment-success",
+            "variables": [
+                "NAME",
+                "PROGRAM",
+                "PERIOD",
+                "COURSE",
+                "APPLICATION_NUMBER",
+                "AMOUNT",
+                "PAYMENT_DATE",
+                "REFERENCE_NUMBER"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Your registration fee payment of ##AMOUNT## for application number ##APPLICATION_NUMBER## - ##PROGRAM## ##PERIOD## ##COURSE## is received at ##PAYMENT_DATE##. You can use ##REFERENCE_NUMBER## for payment related query.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Registration Fee Payment Failure",
+            "subject": "Registration Fee Payment",
+            "code": "online-registration-fee-payment-failure",
+            "variables": [
+                "NAME",
+                "PROGRAM",
+                "PERIOD",
+                "COURSE",
+                "APPLICATION_NUMBER",
+                "AMOUNT",
+                "PAYMENT_DATE",
+                "REFERENCE_NUMBER"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Your registration fee payment of ##AMOUNT## for application number ##APPLICATION_NUMBER## - ##PROGRAM## ##PERIOD## ##COURSE## is failed at ##PAYMENT_DATE##. You can use ##REFERENCE_NUMBER## for payment related query.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Registration Approved",
+            "subject": "Registration Update",
+            "code": "registration-approved",
+            "variables": [
+                "NAME",
+                "PROGRAM",
+                "PERIOD",
+                "COURSE",
+                "REGISTRATION_NUMBER"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Your request for registration with registration number ##REGISTRATION_NUMBER## for ##PROGRAM## ##PERIOD## ##COURSE## has been approved.</p><p>We welcome you to our institute and wish you all the best for the future.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Registration Approved (With Account)",
+            "subject": "Registration Update",
+            "code": "registration-approved-with-account",
+            "variables": [
+                "NAME",
+                "PROGRAM",
+                "PERIOD",
+                "COURSE",
+                "REGISTRATION_NUMBER",
+                "USERNAME",
+                "PASSWORD",
+                "URL"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Your request for registration with registration number ##REGISTRATION_NUMBER## for ##PROGRAM## ##PERIOD## ##COURSE## has been approved.</p><p>You can use ##USERNAME## as username & ##PASSWORD## as password to login at ##URL##.</p>[Login Now](##URL##)<p>We welcome you to our institute and wish you all the best for the future.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Online Registration Approved",
+            "subject": "Online Registration Update",
+            "code": "online-registration-approved",
+            "variables": [
+                "NAME",
+                "PROGRAM",
+                "PERIOD",
+                "COURSE",
+                "APPLICATION_NUMBER"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Your request for registration with application number ##APPLICATION_NUMBER## for ##PROGRAM## ##PERIOD## ##COURSE## has been approved.</p><p>We welcome you to our institute and wish you all the best for the future.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Online Registration Approved (With Account)",
+            "subject": "Online Registration Update",
+            "code": "online-registration-approved-with-account",
+            "variables": [
+                "NAME",
+                "PROGRAM",
+                "PERIOD",
+                "COURSE",
+                "APPLICATION_NUMBER",
+                "USERNAME",
+                "PASSWORD",
+                "URL"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Your request for registration with application number ##APPLICATION_NUMBER## for ##PROGRAM## ##PERIOD## ##COURSE## has been approved.</p><p>You can use ##USERNAME## as username & ##PASSWORD## as password to login at ##URL##.</p>[Login Now](##URL##)<p>We welcome you to our institute and wish you all the best for the future.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Online Registration Rejected",
+            "subject": "Online Registration Update",
+            "code": "online-registration-rejected",
+            "variables": [
+                "NAME",
+                "PROGRAM",
+                "PERIOD",
+                "COURSE",
+                "APPLICATION_NUMBER",
+                "REASON"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Your request for registration with application number ##APPLICATION_NUMBER## for ##PROGRAM## ##PERIOD## ##COURSE## has been rejected with following reason.</p><p><strong>##REASON##</strong></p><p>We wish you all the best for your future.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Fee Due Notification",
+            "subject": "Fee Due Notification",
+            "code": "fee-due-notification",
+            "variables": ["NAME", "COURSE", "BATCH", "AMOUNT", "DUE_DATE"],
+            "content": "<p>Hi ##NAME##,</p><p>This is a gentle reminder to pay your fee of ##AMOUNT## due on ##DUE_DATE## for ##COURSE## ##BATCH##.</p><p>Late fee is applicable for overdues payment.</p><p>You are requested to make the payment as soon as possible.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Employee Account Created",
+            "subject": "Employee Welcome",
+            "code": "employee-account-created",
+            "variables": [
+                "NAME",
+                "EMPLOYEE_CODE",
+                "DESIGNATION",
+                "DEPARTMENT",
+                "USERNAME",
+                "PASSWORD",
+                "URL"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>You have joined our institution as ##DESIGNATION## in the ##DEPARTMENT##.</p><p>Your employee account is created with employee code ##EMPLOYEE_CODE##.</p><p>You can use ##USERNAME## as username & ##PASSWORD## as password to login at ##URL##.</p>[Login Now](##URL##)<p>We welcome you to our institute and wish you all the best for the future.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Online Fee Payment Confirmation",
+            "subject": "Online Fee Payment Confirmation",
+            "code": "online-fee-payment-confirmation",
+            "variables": [
+                "NAME",
+                "COURSE_NAME",
+                "BATCH_NAME",
+                "FEE_TITLE",
+                "VOUCHER_NUMBER",
+                "AMOUNT",
+                "DATETIME",
+                "PAYMENT_METHOD"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>We have received your fee payment of ##AMOUNT## for ##COURSE_NAME## ##BATCH_NAME## ##FEE_TITLE## with voucher number ##VOUCHER_NUMBER## at ##DATETIME## using ##PAYMENT_METHOD##.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Online Fee Payment Failure",
+            "subject": "Online Fee Payment Failure",
+            "code": "online-fee-payment-failure",
+            "variables": [
+                "NAME",
+                "COURSE_NAME",
+                "BATCH_NAME",
+                "FEE_TITLE",
+                "AMOUNT",
+                "DATETIME",
+                "PAYMENT_METHOD",
+                "REFERENCE_NUMBER"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Your fee payment of ##AMOUNT## for ##COURSE_NAME## ##BATCH_NAME## ##FEE_TITLE## at ##DATETIME## using ##PAYMENT_METHOD## is failed.</p><p>You can use ##REFERENCE_NUMBER## for payment related query.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Student Daily Attendance Report",
+            "subject": "Student Daily Attendance Report",
+            "code": "student-daily-attendance-report",
+            "variables": [
+                "NAME",
+                "COURSE_NAME",
+                "BATCH_NAME",
+                "ATTENDANCE",
+                "DATE"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Your attendance is marked as ##ATTENDANCE## on ##DATE## for ##COURSE_NAME## ##BATCH_NAME##.</p><p>Thank you!</p>"
+        }
+    ],
+    "sms": [
+        {
+            "name": "Test SMS Notification",
+            "subject": "Test SMS Notification",
+            "code": "test-sms-notification",
+            "variables": ["NAME"],
+            "content": "Hi ##NAME##, This is a test SMS notification for you."
+        },
+        {
+            "name": "SMS OTP",
+            "subject": "SMS OTP",
+            "code": "send-sms-otp",
+            "variables": ["NAME", "OTP", "TOKEN_LIFETIME"],
+            "content": "Your one time password is ##OTP## valid for ##TOKEN_LIFETIME## minutes. Do not share this code with anyone else."
+        },
+        {
+            "name": "Student Daily Attendance Report",
+            "subject": "Student Daily Attendance Report",
+            "code": "student-daily-attendance-report",
+            "variables": [
+                "NAME",
+                "COURSE_NAME",
+                "BATCH_NAME",
+                "ATTENDANCE",
+                "DATE"
+            ],
+            "content": "Hi ##NAME##, Your attendance is marked as ##ATTENDANCE## on ##DATE## for ##COURSE_NAME## ##BATCH_NAME##. ##APP_NAME##"
+        },
+        {
+            "name": "Online Fee Payment Confirmation",
+            "subject": "Online Fee Payment Confirmation",
+            "code": "online-fee-payment-confirmation",
+            "variables": [
+                "NAME",
+                "COURSE_NAME",
+                "BATCH_NAME",
+                "FEE_TITLE",
+                "VOUCHER_NUMBER",
+                "AMOUNT",
+                "DATETIME",
+                "PAYMENT_METHOD"
+            ],
+            "content": "Hi ##NAME##, We have received your fee payment of ##AMOUNT## for ##COURSE_NAME## ##BATCH_NAME## ##FEE_TITLE## with voucher number ##VOUCHER_NUMBER## at ##DATETIME## using ##PAYMENT_METHOD##. ##APP_NAME##"
+        },
+        {
+            "name": "Online Fee Payment Failure",
+            "subject": "Online Fee Payment Failure",
+            "code": "online-fee-payment-failure",
+            "variables": [
+                "NAME",
+                "COURSE_NAME",
+                "BATCH_NAME",
+                "FEE_TITLE",
+                "AMOUNT",
+                "DATETIME",
+                "PAYMENT_METHOD",
+                "REFERENCE_NUMBER"
+            ],
+            "content": "Hi ##NAME##, Your fee payment of ##AMOUNT## for ##COURSE_NAME## ##BATCH_NAME## ##FEE_TITLE## at ##DATETIME## using ##PAYMENT_METHOD## is failed. You can use ##REFERENCE_NUMBER## for payment related query. ##APP_NAME##"
+        }
+    ],
+    "whatsapp": [
+        {
+            "name": "Test Whatsapp Notification",
+            "subject": "Test Whatsapp Notification",
+            "code": "test-whatsapp-notification",
+            "variables": ["NAME"],
+            "content": "Hi ##NAME##, This is a test whatsapp notification for you."
+        }
+    ],
+    "push": [
+        {
+            "name": "Test Push Notification",
+            "subject": "Test Push Notification",
+            "code": "test-push-notification",
+            "variables": ["NAME"],
+            "content": "This is a test push notification for ##NAME##"
+        },
+        {
+            "name": "Announcement Published",
+            "subject": "Announcement Published",
+            "code": "announcement-published",
+            "variables": ["TITLE", "TYPE"],
+            "content": "(##TYPE##) - ##TITLE##"
+        },
+        {
+            "name": "Event Published",
+            "subject": "Event Published",
+            "code": "event-published",
+            "variables": ["TITLE", "TYPE", "VENUE", "DURATION"],
+            "content": "(##TYPE##) - ##TITLE## at ##VENUE## on ##DURATION##"
+        },
+        {
+            "name": "Student Diary Published",
+            "subject": "Student Diary Published",
+            "code": "student-diary-published",
+            "variables": ["DATE"],
+            "content": "Student diary published for ##DATE##"
+        },
+        {
+            "name": "Assignment Published",
+            "subject": "Assignment Published",
+            "code": "assignment-published",
+            "variables": ["TITLE", "TYPE", "DATE", "DUE_DATE"],
+            "content": "##TITLE## (##TYPE##) on ##DATE##. Due Date ##DUE_DATE##"
+        },
+        {
+            "name": "Learning Material Published",
+            "subject": "Learning Material Published",
+            "code": "learning-material-published",
+            "variables": ["TITLE", "DATETIME"],
+            "content": "##TITLE## on ##DATETIME##"
+        },
+        {
+            "name": "Fee Payment",
+            "subject": "Fee Payment",
+            "code": "fee-payment",
+            "variables": ["FEE_GROUP", "VOUCHER_NUMBER", "AMOUNT", "DATE"],
+            "content": "##AMOUNT## paid for ##FEE_GROUP## voucher number ##VOUCHER_NUMBER## on ##DATE##"
+        },
+        {
+            "name": "Online Fee Payment",
+            "subject": "Online Fee Payment",
+            "code": "online-fee-payment",
+            "variables": ["FEE_GROUP", "VOUCHER_NUMBER", "AMOUNT", "DATETIME"],
+            "content": "##AMOUNT## paid for ##FEE_GROUP## voucher number ##VOUCHER_NUMBER## at ##DATETIME##"
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+import{r as e,t as a,o as c,w as r,e as i}from"./app-Cvm44xuh.js";const s={name:"RecruitmentConfig"},g=Object.assign(s,{setup(_){const o=[{name:"RecruitmentConfigGeneral",icon:"fas fa-chevron-right",label:"config.config"}];return(f,u)=>{const n=e("router-view"),t=e("ModuleConfig");return c(),a(t,{navigations:o},{default:r(()=>[i(n)]),_:1})}}});export{g as default};

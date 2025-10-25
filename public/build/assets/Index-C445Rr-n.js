@@ -1,0 +1,1 @@
+import{r as e,t as a,o as r,w as c,e as s}from"./app-Cvm44xuh.js";const i={name:"TransportVehicleConfig"},g=Object.assign(i,{setup(_){const o=[{name:"TransportVehicleConfigGeneral",icon:"fas fa-chevron-right",label:"config.config"}];return(f,l)=>{const n=e("router-view"),t=e("ModuleConfig");return r(),a(t,{navigations:o},{default:c(()=>[s(n)]),_:1})}}});export{g as default};

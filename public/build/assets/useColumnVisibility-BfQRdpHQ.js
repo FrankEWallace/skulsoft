@@ -1,0 +1,1 @@
+import{ah as l}from"./app-Cvm44xuh.js";function r(y){const s=`${y}_columns`;return{applyVisibility:i=>{const t=l.get(s);if(t){const e=JSON.parse(t);return i.map(n=>({...n,visibility:e.includes(n.key)}))}return i},saveVisibility:i=>{l.set(s,JSON.stringify(i),{expires:1})}}}export{r as u};

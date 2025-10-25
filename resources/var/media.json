@@ -1,0 +1,29 @@
+[
+    {
+        "module": "general",
+        "max_file_size": 1024,
+        "max_no_of_files": 10,
+        "allowed_extensions": [
+            "zip",
+            "rar",
+            "jpg",
+            "jpeg",
+            "webp",
+            "png",
+            "pdf",
+            "txt",
+            "doc",
+            "docx",
+            "xls",
+            "xlsx",
+            "ppt",
+            "pptx"
+        ]
+    },
+    {
+        "module": "registration",
+        "max_file_size": 2048,
+        "max_no_of_files": 10,
+        "allowed_extensions": ["jpg", "jpeg", "webp", "png", "pdf"]
+    }
+]

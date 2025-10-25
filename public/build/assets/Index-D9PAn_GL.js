@@ -1,0 +1,1 @@
+import{r as o,t,o as s,w as c,e as i}from"./app-Cvm44xuh.js";const r={name:"GuardianConfig"},g=Object.assign(r,{setup(_){const e=[{name:"GuardianConfigGeneral",icon:"fas fa-cogs",label:"config.config"}];return(f,u)=>{const n=o("router-view"),a=o("ModuleConfig");return s(),t(a,{navigations:e},{default:c(()=>[i(n)]),_:1})}}});export{g as default};

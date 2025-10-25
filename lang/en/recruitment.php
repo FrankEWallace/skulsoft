@@ -1,0 +1,62 @@
+<?php
+
+return [
+    'recruitment' => 'Recruitment',
+    'config' => [
+        'config' => 'Config',
+        'props' => [
+            'vacancy_number_prefix' => 'Job Vacancy Number Prefix',
+            'vacancy_number_suffix' => 'Job Vacancy Number Suffix',
+            'vacancy_number_digit' => 'Job Vacancy Number Digit',
+        ],
+    ],
+    'apply_now' => 'Apply Now',
+    'application_submitted' => 'Your application has been submitted successfully.',
+    'vacancy' => [
+        'vacancy' => 'Job Vacancy',
+        'vacancies' => 'Job Vacancies',
+        'module_title' => 'Manage all Job Vacancies',
+        'module_description' => 'Publish job vacancies and collect applications from your employees.',
+        'application_instruction_alert' => 'Please read the instruction carefully before proceeding.',
+        'no_vacancy' => 'There are no job vacancies available at the moment.',
+        'props' => [
+            'code_number' => 'Code Number',
+            'title' => 'Title',
+            'last_application_date' => 'Last Application Date',
+            'published_at' => 'Published At',
+            'description' => 'Description',
+            'responsibility' => 'Responsibility',
+            'number_of_positions' => 'Number of Positions',
+        ],
+        'wizard' => [
+            'first_step' => 'Basic Info',
+            'second_step' => 'Contact Info',
+            'third_step' => 'Cover Letter',
+            'fourth_step' => 'File Upload',
+            'final_step' => 'Declaration',
+            'resume' => 'Resume',
+            'marksheet' => 'Marksheet',
+            'declaration' => 'Declaration',
+            'review' => 'Review',
+            'review_content' => 'Please review the information provided below.',
+            'declaration_content' => 'I hereby declare that the information provided is true and accurate.',
+        ],
+    ],
+    'application' => [
+        'application' => 'Job Application',
+        'applications' => 'Job Applications',
+        'module_title' => 'Manage all Job Applications',
+        'module_description' => 'List all Job Applications',
+        'could_not_perform_if_existing_employee' => 'Could not perform this action if you are an existing employee.',
+        'duplicate_application' => 'You have already applied for this job.',
+        'applicant' => 'Applicant',
+        'props' => [
+            'application_date' => 'Date of Application',
+            'availability_date' => 'Date of Availability',
+            'cover_letter' => 'Cover Letter',
+            'qualification_summary' => 'Qualification Summary',
+            'references' => 'References',
+        ],
+        'manual' => 'Manual',
+    ],
+];

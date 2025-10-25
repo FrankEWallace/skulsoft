@@ -1,0 +1,1 @@
+import{r as o,t as a,o as s,w as c,e as r}from"./app-Cvm44xuh.js";const i={name:"PostConfig"},u=Object.assign(i,{setup(_){const e=[{name:"PostConfigGeneral",icon:"fas fa-chevron-right",label:"config.config"}];return(f,l)=>{const n=o("router-view"),t=o("ModuleConfig");return s(),a(t,{navigations:e},{default:c(()=>[r(n)]),_:1})}}});export{u as default};
