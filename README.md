@@ -1,12 +1,11 @@
-InstiKit Premium - Most Comprehensive School ERP Solution
-Release Date    : 13 July 2018
-Author          : ScriptMint
-Author Email    : hello@scriptmint.com
-Skype           : ScriptMint
-Website         : https://scriptmint.com
-Support         : http://scriptmint.com
-Product Website : https://instikit.com
-Demo            : https://demo.instikit.com
+SkulSoft - School Software Management System
+Release Date    : 11 January 2026
+Author          : FW Technologies
+Author Email    : info@fwtechnologies.com
+Website         : https://fwtechnologies.com
+Support         : https://fwtechnologies.com/support
+Product Website : https://skulsoft.com
+Demo            : (Coming Soon)
 
 ### License
 
@@ -14,246 +13,195 @@ The license term allows the licensee (buyer) to use the script as:
 
 ## Regular License
 
-ScriptMint offers the following license terms to use the script:
+FW Technologies offers the following license terms to use the software:
 
 * Non-exclusive, non-transferable, lifetime license.
-* Permits hosting a single instance of the script on your server.
+* Permits hosting a single instance of the software on your server.
 * Permits customization of the website to meet your specific requirements.
 * Grants access to updates and support during the valid support period.
 
 ## Extended License
 
-ScriptMint offers the following license terms to use the script:
+FW Technologies offers the following license terms to use the software:
 
 * Non-exclusive, non-transferable, lifetime license.
-* Permits hosting multiple instances of the script on your server.
-* Permits customization of the website & other parts of the script to meet your specific requirements.
+* Permits hosting multiple instances of the software on your server.
+* Permits customization of the website & other parts of the software to meet your specific requirements.
 * Grants access to updates and support during the valid support period.
 
 ## Restrictions
 
 * Prohibits for re-selling, sub-licensing, or redistribution, even if offered for free.
-* Prohibits from uploading or sharing the script publicly
-* Prohibits creating derivative works, superficial copies, or "as-is" versions of the script for the purpose of selling or distributing them
+* Prohibits from uploading or sharing the software publicly
+* Prohibits creating derivative works, superficial copies, or "as-is" versions of the software for the purpose of selling or distributing them
 
 ### Installation
 
-To check installation video, please visit https://www.youtube.com/watch?v=NkQHFDtbpC4
+For installation instructions, please visit https://fwtechnologies.com/docs/skulsoft
 
 ### Support
 
-For any kind of support please raise ticket at http://scriptmint.com/helpdesk/articles
+For any kind of support please contact us at https://fwtechnologies.com/support
 
 ### Security
 
-For any kind of support/suggestion/bug or security report please send email to hello@scriptmint.com
+For any kind of support/suggestion/bug or security report please send email to security@fwtechnologies.com
 
 ### Version Log
 
-Version 5.0 Released on 5 May 2025
+Version 1.0 Released on 11 January 2026
 
-*** NEW FEATURES ***
+*** FEATURES ***
 
-* Facebook-like Wall for Sharing Updates
-* Bank Transfer Payment & Approval
-* WhatsApp Integration
-* Billplz (Malaysia) Payment Gateway Integration
-* Login with Email & SMS OTP
-* Detailed Enquiry Form Wizard
-* Convert Enquiry to Registration
-* Enquiry Bulk Actions
-* Printable Enquiry Form
-* Detailed Registration Form Wizard
-* Convert Registration to Admission
-* Partial Registration Fee Payment with Due Date
-* Registration Bulk Actions
-* Printable Registration Form
-* Printable Admission Form
-* Provisional Admission
-* Seat-wise Admission Enrollment
-* Transfer Certificate Verification
-* ID Cards for Parents/Guardians
-* Export all Student & Employee Lists to Excel
-* Student Enrollment Status Log
-* Transport Reports
-* Transaction Categories & Print Vouchers
-* Import Course & Batch
-* Assign Mentor to Students
-* Gender-wise Fee Structure
-* Export Detailed Fee Payment Report to Excel
-* Improved Library Module
-* Library Reports
-* Salary Sheet & Payment Advice Print
-* Auto-lock Exam Marks
-* Pin Announcement & Events to Feed
-
-Version 4.10.0 Released on 31 March 2025
-
-*** NEW FEATURES ***
-
-* Provision for Half Day Leave
-* Import Transport Stoppage between Periods
-* Service Request by Students & Guardians
-* Student & Employee Dialogue with Institute
-* Subject Incharge with Multiple Batches
-* Blacklist & Whitelist IP Filter
-* DayBook Financial Report
-* Import Role & Permission between different Installation
-* Bulk Payroll Process
-* Editable Course & Batch in Student Record
-* Custom Fee Import
-* Custom Fee Concession
-* Installment wise Fee Concession Restriction
-* Fee Receipt for Guest Payment
-
-Version 4.9.0 Released on 25 February 2025
-
-*** NEW FEATURES ***
-
-* Up to date Laravel & Vue.js version
-* Biometric Integration (Addons)
-* QR Code based Attendance for Students
-* New Program Type module
-* Guardian form improved
-* Employee form send account creation email
-* Student/Employee Edit Request improvement
-* Division, Course, Batch wise Period update
-* Exam and Term reorder
-* Marksheet related improvement
-* Fee Concession Amount log in Fee Payment
-* Sibling record in Student Fee Payment
-
-Version 4.8.0 Released on 28 January 2025
-
-*** NEW FEATURES ***
-
-* Up to date Laravel & Vue.js version
-* Improved Website Design
-* New Blog Module
-* Flexible Fee Installment Payment
-* Access to Enquiry & Complaint based on Assignment
-* Date wise report for Diary, Assignment, Learning Material
-* Employee Welcome Email during Account Creation
-* Birthday List in Dashboard
-* Todo & Events in the Calendar
-
-Version 4.7.0 Released on 2 January 2025
-
-*** NEW FEATURES ***
-
-* Up to date Laravel & Vue.js version
+**Core System**
+* Built with latest Laravel 11 & Vue.js 3 & Tailwind CSS
+* Modern UI, Clean Design, Enhanced User Experience
+* Multi-School/Multi-Tenant Support
+* Role-based Access Control with Permissions
 * Mobile Application Support
-* Multiple Session Allotment for Timetable
-* Support for New PayHead as Total
-* Ledger & Payment Method Placeholder in Voucher Number
-
-Version 4.6.0 Released on 2 December 2024
-
-*** NEW FEATURES ***
-
-* Up to date Laravel & Vue.js version
-* Multi Branch Support for Employee
-* Watermark in Gallery Images
-* Math Equation support in Markdown Editor
-
-Version 4.5.0 Released on 22 November 2024
-
-*** NEW FEATURES ***
-
-* Up to date Laravel & Vue.js version
 * Predefined Color Theme Support
+* Two-Factor Authentication & Security Features
+* Blacklist & Whitelist IP Filter
+* Activity Log & Audit Trail
+* Keyboard Navigation for Student & Employee Search
+* Show/Hide Menus Configuration
+* Custom Field Support in Student, Employee & Registration
+
+**Student Management**
+* Comprehensive Student Registration & Admission
+* Provisional Admission with Conversion to Regular
+* Seat-wise Admission Enrollment
 * Student Tag & Group Support
-* Employee Tag & Group Support
+* Convert Enquiry to Registration to Admission Workflow
+* Enquiry Bulk Actions & Import
+* Printable Enquiry, Registration & Admission Forms
+* Transfer Certificate with Verification
+* ID Cards for Students & Parents/Guardians
+* Student Enrollment Status Log
+* Support to Delete Student Records
+* Editable Course & Batch in Student Record
+* Student Profile with Attendance, Subject, Exam Records
+* Sibling Tracking & Reports
+* Alumni Module with Events
+* Student & Employee Dialogue with Institute
+* Service Request by Students & Guardians
 
-*** BUG FIXES ***
-
-* Sync Role & Permission issue fixed
-
-Version 4.4.0 Released on 12 November 2024
-
-*** NEW FEATURES ***
-
-* Up to date Laravel & Vue.js version
-* Online Exam Module
-* Option to Create Manual Backup
-* Department level Employee Access
-* Program level Employee Access
-
-*** BUG FIXES ***
-
-* Promotion related issue fixed
-
-Version 4.3.0 Released on 21 October 2024
-
-*** NEW FEATURES ***
-
-* Up to date Laravel & Vue.js version
-* Realtime Chat with Users
-* Assignment Submission by Students
-* Assignment Evaluation by Teachers
+**Academic Management**
+* Academic Session & Period Management
+* Division, Course, Batch wise Period Update
+* Import Course & Batch
+* Subject Management with Elective Subjects
+* Subject Incharge with Multiple Batches
+* Assign Mentor to Students
 * Academic Department Module
-* Payment Gateway Account wise Report
-* Delete Imported Students at once
+* Program Type Module
+* Multi Branch Support for Employees
 
-*** BUG FIXES ***
-
-* Student Update issue fixed
-
-Version 4.2.0 Released on 7 October 2024
-
-*** NEW FEATURES ***
-
-* Up to date Laravel & Vue.js version
-* SMS Gateway Integration
-* Email Communication
-* Show/Hide Menus
-* Custom Field support in Student, Employee & Registration
+**Attendance System**
+* QR Code based Attendance for Students
+* Biometric Integration (Add-ons)
+* Subject-wise Attendance
 * Elective Subject wise Attendance
 * Subject wise Attendance Report
-* QR Code based Attendance
-* New Attendance Assistant Role
-* Paystack Payment Gateway Integration
-* Feature to set Stock Item Quantity during item creation
-* Stock Category & Item Import
+* Attendance Assistant Role
+* Provision for Half Day Leave
+* Student & Employee Attendance Tracking
 
-*** BUG FIXES ***
+**Fee Management**
+* Comprehensive Fee Structure & Installments
+* Gender-wise Fee Structure
+* Flexible Fee Installment Payment
+* Head-wise Fee Payment
+* Custom Fee with Import Support
+* Fee Concession with Custom Options
+* Installment wise Fee Concession Restriction
+* Fee Concession Amount Log in Payment
+* Bank Transfer Payment & Approval Workflow
+* Partial Registration Fee Payment with Due Date
+* Fee Receipt for Guest & Online Payment
+* Export Detailed Fee Payment Report to Excel
+* Multiple Payment Gateway Integration:
+  - Stripe
+  - Razorpay
+  - Paystack
+  - Billdesk
+  - CCAvenue
+  - Billplz (Malaysia)
 
-* Online Registration Submission
+**Payroll & Finance**
+* Bulk Payroll Process
+* Salary Sheet & Payment Advice Print
+* Conditional Formula in Payroll
+* Support for New PayHead as Total
+* Ledger & Payment Method Placeholder in Voucher Number
+* Transaction Categories & Print Vouchers
+* DayBook Financial Report
+* Payment Gateway Account wise Report
 
-Version 4.1.0 Released on 30 Sep 2024
+**Exam & Assessment**
+* Online Exam Module
+* Exam Module with Attempt Feature
+* Auto-lock Exam Marks
+* Exam and Term Reorder
+* Marksheet Improvements
+* Grade Management
 
-*** NEW FEATURES ***
-
-* Up to date Laravel & Vue.js version
-* Keyboard Navigation for Student & Employee Search
-* Keyboard Navigation for Available Menu
-* New Academic Session Module
-* Assign Event to Event Incharge Incharge
-* Conditional formula in Payroll
-* Convert Enquiry to Registration, Assign Enquiry to Employee, Import Enquiry
-* Assign Complaint to Employees, Manage Complaint Logs
-* Student Attendance, Subject, Exam in Student's Profile
-* Support to delete Student
+**Timetable**
+* Multiple Session Allotment for Timetable
 * Print Batch wise Timetable
-* Student & Employee timetable in Dashboard Feed
-* Billdesk & CCAvenue Payment Gateway status check
-* Improved Contact Module
-* Alumni Module, Events for Alumni
+* Student & Employee Timetable in Dashboard Feed
+
+**Communication**
+* WhatsApp Integration
+* SMS Gateway Integration
+* Email Communication
+* Email Templates
+* Login with Email & SMS OTP
+* Realtime Chat with Users
+* Facebook-like Wall for Sharing Updates
+* Pin Announcement & Events to Feed
+* Employee Welcome Email during Account Creation
+
+**Assignment & Learning**
+* Assignment Module
+* Assignment Submission by Students
+* Assignment Evaluation by Teachers
+* Date wise Report for Diary, Assignment, Learning Material
+
+**Library Management**
+* Improved Library Module
+* Library Reports
+* Book Issue & Return Management
+
+**Transport Management**
+* Transport Route & Fee Management
+* Transport Reports
+* Import Transport Stoppage between Periods
+
+**Additional Modules**
+* Recruitment Module
+* Hostel Management
+* Mess Module
+* Activity Module
+* Custom Form Builder
+* Gallery Module with Watermark Support
+* Blog Module
 * Discipline Module
-* Communication -> Send Email Module
+* Complaint Management with Assignment to Employees
+* Inventory & Stock Management
+* Stock Category & Item Import
+* Reception & Visitor Management
 
-Version 4.0.0 Released on 20 Sep 2024
+**Reports & Export**
+* Export all Student & Employee Lists to Excel
+* Birthday List in Dashboard
+* Detailed Reports for all Modules
+* Printable Documents & Certificates
 
-*** NEW ***
-* Rewritten from scratch with latest version of Laravel, Vue.js & Tailwind CSS
-* New UI, New Design, New Experience
-* Support Multi School Feature
-* New Recruitment Module
-* New Mess Module
-* New Activity Module
-* New Custom Form Module
-* New Gallery Module
-* Improved Dashboard for Student & Guardian
-* Improved Exam Module with Attempt feature
-* Improved Fee Module with Head wise Fee Payment
-* Billdesk, CCAvenue Payment Gateway Integration
+**System Administration**
+* Option to Create Manual Backup
+* Import Role & Permission between Installations
+* Department level Employee Access
+* Program level Employee Access
+* Calendar with Todo & Events
+* Math Equation Support in Markdown Editor

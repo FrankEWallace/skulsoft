@@ -1,0 +1,35 @@
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃           🎓 SKULSOFT LOGIN CREDENTIALS 🎓          ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃                                                     ┃
+┃  🌐 URL:      http://127.0.0.1:8002                ┃
+┃                                                     ┃
+┃  📧 Email:    admin@skulsoft.com                   ┃
+┃                                                     ┃
+┃  🔑 Password: admin123                             ┃
+┃                                                     ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃  ⚠️  IMPORTANT: Change password after first login! ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+QUICK START:
+1. Open browser → http://127.0.0.1:8002
+2. Login with credentials above
+3. Go to Settings → Change password
+4. Configure your school settings
+
+SYSTEM INFO:
+• School: SkulSoft School (ID: 1)
+• Period: 2026-2027 (ID: 1)
+• User: System Administrator (ID: 1)
+• Role: Admin (Full Access)
+
+SERVER STATUS:
+✅ Running on port 8002
+✅ Database: Connected
+✅ All features: Available
+
+STOP SERVER: Press Ctrl+C
+START SERVER: php artisan serve
+
+Full docs: See LOGIN_CREDENTIALS.md

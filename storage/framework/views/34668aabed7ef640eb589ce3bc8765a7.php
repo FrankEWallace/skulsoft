@@ -1,2 +1,0 @@
-<?php echo $__env->make('gateways.assets.billdesk', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
-<?php /**PATH /Applications/MAMP/htdocs/InstiKit School v5.0.0 Nulled/schoolms/resources/views/gateways/assets/index.blade.php ENDPATH**/ ?>

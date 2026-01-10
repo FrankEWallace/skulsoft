@@ -22,7 +22,7 @@ This is the easiest and safest method.
 1. Open your terminal/command prompt
 2. Navigate to the project directory:
    ```bash
-   cd "/Applications/MAMP/htdocs/InstiKit School v5.0.0 Nulled/schoolms"
+   cd "/Applications/MAMP/htdocs/shulesoft/school-ms"
    ```
 3. Run the fix command:
    ```bash

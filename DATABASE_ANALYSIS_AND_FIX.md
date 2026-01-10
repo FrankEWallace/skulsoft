@@ -10,7 +10,7 @@ The login issue has been **completely fixed**! The database has been properly se
 
 ### Database Structure
 - **Total Tables:** 208
-- **Database Name:** instikit_school
+- **Database Name:** skulsoft_school
 - **Database Size:** 10.22 MB
 - **MySQL Version:** 8.0.40
 
@@ -345,7 +345,7 @@ Before making major changes:
 
 ```bash
 # Backup database
-mysqldump -u root -p instikit_school > backup_$(date +%Y%m%d).sql
+mysqldump -u root -p skulsoft_school > backup_$(date +%Y%m%d).sql
 
 # Or using artisan
 php artisan backup:run

@@ -79,7 +79,7 @@
 
 ### 2. Check Session
    ```bash
-   cd "/Applications/MAMP/htdocs/InstiKit School v5.0.0 Nulled/schoolms"
+   cd "/Applications/MAMP/htdocs/shulesoft/school-ms"
    php artisan session:clear
    ```
 
@@ -99,7 +99,7 @@
 
 ## Understanding the System
 
-This school management system requires:
+This school management system (SkulSoft) requires:
 1. **User** - Your login account
 2. **School/Team** - The school organization
 3. **Role** - Your permission level (admin, teacher, student, etc.)

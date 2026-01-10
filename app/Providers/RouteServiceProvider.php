@@ -47,7 +47,7 @@ class RouteServiceProvider extends ServiceProvider
 
                 Route::middleware(['api', 'user.config'])
                     // ->namespace($this->namespace)
-                    ->group(base_path('routes/integration.php'));
+                    ->group(base_path('routes/features/integration.php'));
 
                 Route::middleware(['api', 'guest'])
                     // ->namespace($this->namespace)
@@ -66,7 +66,7 @@ class RouteServiceProvider extends ServiceProvider
                 Route::prefix('app/chat')
                     ->middleware(['api', 'auth:sanctum', 'two.factor.security', 'screen.lock', 'under.maintenance', 'user.config', 'permission:chat:access'])
                     // ->namespace($this->namespace)
-                    ->group(base_path('routes/chat.php'));
+                    ->group(base_path('routes/features/chat.php'));
 
                 $modules = glob(base_path('routes/modules/*.php'));
                 foreach ($modules as $module) {
@@ -93,11 +93,11 @@ class RouteServiceProvider extends ServiceProvider
             Route::prefix('app')
                 ->middleware(['web', 'auth:sanctum', 'two.factor.security', 'screen.lock', 'under.maintenance', 'user.config', 'export'])
                 // ->namespace($this->namespace)
-                ->group(base_path('routes/export.php'));
+                ->group(base_path('routes/features/export.php'));
 
             Route::middleware(['web'])
                 // ->namespace($this->namespace)
-                ->group(base_path('routes/gateway.php'));
+                ->group(base_path('routes/features/gateway.php'));
 
             Route::middleware(['web', 'site.enabled'])
                 // ->namespace($this->namespace)
@@ -105,7 +105,7 @@ class RouteServiceProvider extends ServiceProvider
 
             Route::middleware(['web', 'auth:sanctum', 'user.config', 'permission:access:reports'])
                 // ->namespace($this->namespace)
-                ->group(base_path('routes/report.php'));
+                ->group(base_path('routes/features/report.php'));
 
             // Custom routes
 

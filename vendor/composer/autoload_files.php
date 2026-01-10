@@ -49,5 +49,5 @@ return array(
     '72b1e3f4a2af9b30b3f137b3ec2057fc' => $vendorDir . '/spatie/laravel-activitylog/src/helpers.php',
     '0c3c22e27afa83be19b4c938f4c6e9ea' => $vendorDir . '/spatie/laravel-backup/src/Helpers/functions.php',
     '377b22b161c09ed6e5152de788ca020a' => $vendorDir . '/spatie/laravel-permission/src/helpers.php',
-    'ef157334f1067da991ff8953983afdb3' => $baseDir . '/app/Helpers/helper.php',
+    '333202d9915e4f4f33344546f9ed44ca' => $baseDir . '/app/Helpers/helper.php',
 );

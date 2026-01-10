@@ -47,7 +47,7 @@ You should now be able to login successfully with:
 ### 2. Check Password
    - If you don't know the password, you can reset it:
    ```bash
-   cd "/Applications/MAMP/htdocs/InstiKit School v5.0.0 Nulled/schoolms"
+   cd "/Applications/MAMP/htdocs/shulesoft/school-ms"
    php artisan tinker --execute="$user = App\Models\User::find(1); $user->password = bcrypt('newpassword123'); $user->save(); echo 'Password reset to: newpassword123';"
    ```
 

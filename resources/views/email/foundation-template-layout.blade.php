@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width"/>
   <!-- Link to the email's CSS, which will be inlined into the email -->
   <link rel="stylesheet" href="{{url('/mail/css/foundation-emails.css')}}">
-  <title>{{config('config.general.app_name', config('app.name', 'ScriptMint'))}}</title>
+  <title>{{config('config.general.app_name', config('app.name', 'SkulSoft'))}}</title>
   <style>
     .header {
       background: #340E57;
