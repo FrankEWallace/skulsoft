@@ -1,0 +1,57 @@
+# Laravel .gitignore
+
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.phpunit.result.cache
+docker-compose.override.yml
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/.idea
+/.vscode
+
+# Session files
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitignore
+
+# Cache files
+/storage/framework/cache/*
+!/storage/framework/cache/.gitignore
+!/storage/framework/cache/data
+/storage/framework/cache/data/*
+!/storage/framework/cache/data/.gitignore
+
+# View cache
+/storage/framework/views/*
+!/storage/framework/views/.gitignore
+
+# Logs
+/storage/logs/*
+!/storage/logs/.gitignore
+
+# Compiled files
+/public/build
+/public/mix-manifest.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Temporary files
+*.swp
+*.swo
+*~
+.*.swp
+
+# Development files
+fix_*.php
+setup_*.php
+update_*.sh
+upload_*.sh
