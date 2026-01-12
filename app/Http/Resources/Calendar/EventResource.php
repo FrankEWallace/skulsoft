@@ -9,8 +9,8 @@ use App\Http\Resources\Academic\SessionResource;
 use App\Http\Resources\AudienceResource;
 use App\Http\Resources\MediaResource;
 use App\Http\Resources\OptionResource;
-use App\Models\Academic\Period;
-use App\Models\Academic\Session;
+use App\Domain\Academic\Models\Period;
+use App\Domain\Academic\Models\Session;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\Arr;
 

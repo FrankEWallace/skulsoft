@@ -2,7 +2,7 @@
 
 namespace App\Policies\Academic;
 
-use App\Models\Academic\CertificateTemplate;
+use App\Domain\Academic\Models\CertificateTemplate;
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 

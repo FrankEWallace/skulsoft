@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Exam;
 
-use App\Models\Academic\Division;
+use App\Domain\Academic\Models\Division;
 use App\Models\Exam\Term;
 use Illuminate\Foundation\Http\FormRequest;
 

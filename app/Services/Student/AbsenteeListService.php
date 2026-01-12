@@ -6,7 +6,7 @@ use App\Actions\Student\FetchBatchWiseStudent;
 use App\Contracts\ListGenerator;
 use App\Enums\Student\AttendanceSession;
 use App\Http\Resources\Student\AttendanceResource;
-use App\Models\Academic\Batch;
+use App\Domain\Academic\Models\Batch;
 use App\Models\Calendar\Holiday;
 use App\Models\Student\Attendance;
 use Carbon\Carbon;

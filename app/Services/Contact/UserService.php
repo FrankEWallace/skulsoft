@@ -5,7 +5,7 @@ namespace App\Services\Contact;
 use App\Concerns\Auth\EnsureUniqueUserEmail;
 use App\Enums\UserStatus;
 use App\Http\Resources\UserSummaryResource;
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 use App\Models\Contact;
 use App\Models\User;
 use Illuminate\Http\Request;

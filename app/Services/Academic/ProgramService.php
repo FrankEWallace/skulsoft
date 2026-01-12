@@ -3,9 +3,9 @@
 namespace App\Services\Academic;
 
 use App\Http\Resources\Academic\ProgramTypeResource;
-use App\Models\Academic\Department;
-use App\Models\Academic\Program;
-use App\Models\Academic\ProgramType;
+use App\Domain\Academic\Models\Department;
+use App\Domain\Academic\Models\Program;
+use App\Domain\Academic\Models\ProgramType;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

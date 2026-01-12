@@ -2,7 +2,7 @@
 
 namespace App\Observers\Academic;
 
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 
 class PeriodObserver
 {

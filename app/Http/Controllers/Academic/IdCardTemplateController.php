@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Academic;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Academic\IdCardTemplateRequest;
 use App\Http\Resources\Academic\IdCardTemplateResource;
-use App\Models\Academic\IdCardTemplate;
+use App\Domain\Academic\Models\IdCardTemplate;
 use App\Services\Academic\IdCardTemplateListService;
 use App\Services\Academic\IdCardTemplateService;
 use Illuminate\Http\Request;

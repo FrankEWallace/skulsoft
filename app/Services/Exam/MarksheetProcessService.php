@@ -14,7 +14,7 @@ use App\Concerns\Exam\MarksheetLayout;
 use App\Enums\Exam\AssessmentAttempt;
 use App\Http\Resources\Exam\ExamResource;
 use App\Http\Resources\Exam\TermResource;
-use App\Models\Academic\Batch;
+use App\Domain\Academic\Models\Batch;
 use App\Models\Exam\Exam;
 use App\Models\Exam\Term;
 use App\Support\HasGrade;

@@ -10,7 +10,7 @@ use App\Concerns\HasMedia;
 use App\Concerns\HasMeta;
 use App\Concerns\HasUuid;
 use App\Enums\Finance\BankTransferStatus;
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;

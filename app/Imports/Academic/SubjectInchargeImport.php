@@ -4,11 +4,11 @@ namespace App\Imports\Academic;
 
 use App\Concerns\ItemImport;
 use App\Helpers\CalHelper;
-use App\Models\Academic\Batch;
-use App\Models\Academic\Course;
-use App\Models\Academic\Period;
-use App\Models\Academic\Subject;
-use App\Models\Academic\SubjectRecord;
+use App\Domain\Academic\Models\Batch;
+use App\Domain\Academic\Models\Course;
+use App\Domain\Academic\Models\Period;
+use App\Domain\Academic\Models\Subject;
+use App\Domain\Academic\Models\SubjectRecord;
 use App\Models\Employee\Employee;
 use App\Models\Incharge;
 use Carbon\Carbon;

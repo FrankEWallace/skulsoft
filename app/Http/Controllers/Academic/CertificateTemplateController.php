@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Academic;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Academic\CertificateTemplateRequest;
 use App\Http\Resources\Academic\CertificateTemplateResource;
-use App\Models\Academic\CertificateTemplate;
+use App\Domain\Academic\Models\CertificateTemplate;
 use App\Services\Academic\CertificateTemplateListService;
 use App\Services\Academic\CertificateTemplateService;
 use Illuminate\Http\Request;

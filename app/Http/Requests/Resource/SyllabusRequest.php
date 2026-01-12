@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests\Resource;
 
-use App\Models\Academic\Batch;
-use App\Models\Academic\Subject;
+use App\Domain\Academic\Models\Batch;
+use App\Domain\Academic\Models\Subject;
 use App\Models\Resource\Syllabus;
 use Illuminate\Foundation\Http\FormRequest;
 

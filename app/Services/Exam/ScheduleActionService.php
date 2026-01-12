@@ -6,7 +6,7 @@ use App\Actions\Exam\GetAvailableSubjectForStudent;
 use App\Actions\Exam\GetReassessmentSubjectForStudent;
 use App\Actions\Student\CreateCustomFeeHead;
 use App\Helpers\CalHelper;
-use App\Models\Academic\Batch;
+use App\Domain\Academic\Models\Batch;
 use App\Models\Exam\Form;
 use App\Models\Exam\Schedule;
 use App\Models\Finance\FeeHead;

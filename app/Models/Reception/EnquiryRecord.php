@@ -8,7 +8,7 @@ use App\Concerns\HasMedia;
 use App\Concerns\HasMeta;
 use App\Concerns\HasUuid;
 use App\Enums\Gender;
-use App\Models\Academic\Course;
+use App\Domain\Academic\Models\Course;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

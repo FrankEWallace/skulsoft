@@ -3,8 +3,8 @@
 namespace App\Imports\Exam;
 
 use App\Concerns\ItemImport;
-use App\Models\Academic\Course;
-use App\Models\Academic\Subject;
+use App\Domain\Academic\Models\Course;
+use App\Domain\Academic\Models\Subject;
 use App\Models\Exam\Schedule;
 use App\Models\Student\Student;
 use Illuminate\Support\Arr;

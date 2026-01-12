@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests;
 
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 use App\Models\Team;
 use Illuminate\Foundation\Http\FormRequest;
 

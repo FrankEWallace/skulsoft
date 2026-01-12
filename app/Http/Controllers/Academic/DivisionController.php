@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Academic;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Academic\DivisionRequest;
 use App\Http\Resources\Academic\DivisionResource;
-use App\Models\Academic\Division;
+use App\Domain\Academic\Models\Division;
 use App\Services\Academic\DivisionListService;
 use App\Services\Academic\DivisionService;
 use Illuminate\Http\Request;

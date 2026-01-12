@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Academic;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Academic\CourseBatchRequest;
-use App\Models\Academic\Batch;
-use App\Models\Academic\Course;
+use App\Domain\Academic\Models\Batch;
+use App\Domain\Academic\Models\Course;
 use App\Services\Academic\CourseActionService;
 use Illuminate\Http\Request;
 

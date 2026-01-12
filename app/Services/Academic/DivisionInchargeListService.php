@@ -4,7 +4,7 @@ namespace App\Services\Academic;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Academic\DivisionInchargeResource;
-use App\Models\Academic\Division;
+use App\Domain\Academic\Models\Division;
 use App\Models\Incharge;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;

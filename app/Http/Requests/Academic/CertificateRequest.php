@@ -3,8 +3,8 @@
 namespace App\Http\Requests\Academic;
 
 use App\Concerns\CustomFieldValidation;
-use App\Models\Academic\Certificate;
-use App\Models\Academic\CertificateTemplate;
+use App\Domain\Academic\Models\Certificate;
+use App\Domain\Academic\Models\CertificateTemplate;
 use App\Models\Employee\Employee;
 use App\Models\Student\Student;
 use Illuminate\Foundation\Http\FormRequest;

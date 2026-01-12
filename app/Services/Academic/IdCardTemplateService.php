@@ -3,7 +3,7 @@
 namespace App\Services\Academic;
 
 use App\Enums\Academic\IdCardFor;
-use App\Models\Academic\IdCardTemplate;
+use App\Domain\Academic\Models\IdCardTemplate;
 use Illuminate\Http\Request;
 
 class IdCardTemplateService

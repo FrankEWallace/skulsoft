@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Academic;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Academic\TimetableAllocationRequest;
-use App\Models\Academic\Timetable;
+use App\Domain\Academic\Models\Timetable;
 use App\Services\Academic\TimetableAllocationService;
 
 class TimetableAllocationController extends Controller

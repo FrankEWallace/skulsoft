@@ -3,7 +3,7 @@
 namespace App\Http\Middleware;
 
 use App\Helpers\SysHelper;
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 use App\Models\Team;
 use Closure;
 use Illuminate\Http\Request;

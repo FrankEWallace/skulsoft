@@ -5,7 +5,7 @@ namespace App\Http\Requests\Student;
 use App\Enums\Academic\CertificateType;
 use App\Enums\OptionType;
 use App\Enums\Student\TransferRequestStatus;
-use App\Models\Academic\Certificate;
+use App\Domain\Academic\Models\Certificate;
 use App\Models\Option;
 use App\Models\Student\Student;
 use App\Models\Student\TransferRequest;

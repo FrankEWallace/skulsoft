@@ -2,9 +2,9 @@
 
 namespace App\Services\Resource\Report;
 
-use App\Models\Academic\Batch;
-use App\Models\Academic\Subject;
-use App\Models\Academic\SubjectRecord;
+use App\Domain\Academic\Models\Batch;
+use App\Domain\Academic\Models\Subject;
+use App\Domain\Academic\Models\SubjectRecord;
 use App\Models\Employee\Employee;
 use App\Models\Incharge;
 use App\Models\Resource\Assignment;

@@ -7,7 +7,7 @@ use App\Concerns\HasFilter;
 use App\Concerns\HasMeta;
 use App\Concerns\HasUuid;
 use App\Enums\Transport\Direction;
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 use App\Models\Transport\Vehicle\Vehicle;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;

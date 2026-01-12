@@ -5,7 +5,7 @@ namespace App\Services\Dashboard;
 use App\Enums\Employee\Type;
 use App\Enums\ServiceType;
 use App\Enums\Student\AttendanceSession;
-use App\Models\Academic\Course;
+use App\Domain\Academic\Models\Course;
 use App\Models\Employee\Employee;
 use App\Models\Finance\Transaction;
 use App\Models\Student\Attendance;

@@ -4,7 +4,7 @@ namespace App\Actions\Exam;
 
 use App\Enums\Exam\AssessmentAttempt;
 use App\Enums\Exam\Result;
-use App\Models\Academic\SubjectRecord;
+use App\Domain\Academic\Models\SubjectRecord;
 use App\Models\Exam\Result as ExamResult;
 use App\Models\Exam\Schedule;
 use App\Models\Student\Student;

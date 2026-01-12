@@ -7,7 +7,7 @@ use App\Actions\Student\FetchStudentForPromotion;
 use App\Enums\Gender;
 use App\Http\Resources\Academic\PeriodResource;
 use App\Http\Resources\Student\PromotionResource;
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 use App\Models\Finance\FeeAllocation;
 use App\Models\Finance\FeeConcession;
 use App\Models\Finance\FeeHead;

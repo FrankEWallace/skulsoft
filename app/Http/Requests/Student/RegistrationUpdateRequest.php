@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests\Student;
 
-use App\Models\Academic\Course;
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Course;
+use App\Domain\Academic\Models\Period;
 use App\Models\Option;
 use Illuminate\Foundation\Http\FormRequest;
 

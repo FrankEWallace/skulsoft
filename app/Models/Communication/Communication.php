@@ -8,7 +8,7 @@ use App\Concerns\HasMedia;
 use App\Concerns\HasMeta;
 use App\Concerns\HasUuid;
 use App\Enums\Communication\Type;
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 use App\Models\Audience;
 use App\Models\User;
 use App\Scopes\AudienceScope;

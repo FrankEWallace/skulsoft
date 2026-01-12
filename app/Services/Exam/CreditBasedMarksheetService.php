@@ -2,9 +2,9 @@
 
 namespace App\Services\Exam;
 
-use App\Models\Academic\Batch;
-use App\Models\Academic\Period;
-use App\Models\Academic\Subject;
+use App\Domain\Academic\Models\Batch;
+use App\Domain\Academic\Models\Period;
+use App\Domain\Academic\Models\Subject;
 use App\Models\Exam\Exam;
 use App\Models\Exam\Schedule;
 use App\Models\Student\SubjectWiseStudent;

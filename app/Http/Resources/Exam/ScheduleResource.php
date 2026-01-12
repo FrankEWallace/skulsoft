@@ -6,7 +6,7 @@ use App\Enums\Exam\AssessmentAttempt;
 use App\Helpers\CalHelper;
 use App\Http\Resources\Academic\BatchResource;
 use App\Http\Resources\Academic\SubjectResource;
-use App\Models\Academic\SubjectRecord;
+use App\Domain\Academic\Models\SubjectRecord;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\Arr;
 

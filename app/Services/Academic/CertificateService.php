@@ -4,8 +4,8 @@ namespace App\Services\Academic;
 
 use App\Concerns\CertificateTemplateParser;
 use App\Http\Resources\Academic\CertificateTemplateSummaryResource;
-use App\Models\Academic\Certificate;
-use App\Models\Academic\CertificateTemplate;
+use App\Domain\Academic\Models\Certificate;
+use App\Domain\Academic\Models\CertificateTemplate;
 use App\Support\FormatCodeNumber;
 use chillerlan\QRCode\QRCode;
 use Illuminate\Http\Request;

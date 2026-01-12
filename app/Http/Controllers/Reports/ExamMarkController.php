@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Reports;
 
-use App\Models\Academic\Batch;
+use App\Domain\Academic\Models\Batch;
 use App\Models\Exam\Exam;
 use App\Models\Exam\Schedule;
 use App\Models\Incharge;

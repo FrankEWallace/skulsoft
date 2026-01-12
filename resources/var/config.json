@@ -51,7 +51,7 @@
         },
         {
             "name": "footer_credit",
-            "value": "Designed with ❤️ by ScriptMint",
+            "value": "Developed by FW Technologies",
             "is_public": true
         },
         {
@@ -233,17 +233,17 @@
     "general": [
         {
             "name": "app_name",
-            "value": "ScriptMint",
+            "value": "SkulSoft",
             "is_public": true
         },
         {
             "name": "meta_author",
-            "value": "ScriptMint",
+            "value": "FW Technologies",
             "is_public": true
         },
         {
             "name": "meta_description",
-            "value": "Application by ScriptMint",
+            "value": "School Management System by FW Technologies",
             "is_public": true
         },
         {

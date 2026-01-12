@@ -7,7 +7,7 @@ use App\Enums\Finance\PaymentStatus;
 use App\Enums\OptionType;
 use App\Enums\Student\RegistrationStatus;
 use App\Enums\Transport\Direction;
-use App\Models\Academic\Batch;
+use App\Domain\Academic\Models\Batch;
 use App\Models\Finance\FeeConcession;
 use App\Models\Option;
 use App\Models\Transport\Circle;

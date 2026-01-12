@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Site;
 
 use App\Enums\Academic\BookListType;
-use App\Models\Academic\BookList;
-use App\Models\Academic\Course;
+use App\Domain\Academic\Models\BookList;
+use App\Domain\Academic\Models\Course;
 use App\Models\Team;
 
 class BookListController

@@ -3,9 +3,9 @@
 namespace App\Http\Requests\Student;
 
 use App\Enums\Student\RegistrationStatus;
-use App\Models\Academic\Course;
-use App\Models\Academic\Period;
-use App\Models\Academic\Program;
+use App\Domain\Academic\Models\Course;
+use App\Domain\Academic\Models\Period;
+use App\Domain\Academic\Models\Program;
 use App\Models\Student\Registration;
 use App\Models\Team;
 use App\Rules\AlphaSpace;

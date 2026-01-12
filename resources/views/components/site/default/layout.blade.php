@@ -9,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ $metaDescription }}">
     <meta name="keywords" content="{{ $metaKeywords }}">
-    <meta name="author" content="ScriptMint">
-    <title>{{ $metaTitle ?? config('config.general.app_name', config('app.name', 'ScriptMint')) }}</title>
+    <meta name="author" content="FW Technologies">
+    <title>{{ $metaTitle ?? config('config.general.app_name', config('app.name', 'SkulSoft')) }}</title>
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <link rel="icon" href="{{ config('config.assets.favicon') }}" type="image/png">
 

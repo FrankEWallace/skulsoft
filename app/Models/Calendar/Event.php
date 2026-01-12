@@ -11,7 +11,7 @@ use App\Concerns\HasMeta;
 use App\Concerns\HasStorage;
 use App\Concerns\HasUuid;
 use App\Helpers\CalHelper;
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 use App\Models\Audience;
 use App\Models\Incharge;
 use App\Models\Option;

@@ -4,8 +4,8 @@ namespace App\Services\Student\Report;
 
 use App\Actions\Student\FetchBatchWiseStudent;
 use App\Contracts\ListGenerator;
-use App\Models\Academic\Batch;
-use App\Models\Academic\Subject;
+use App\Domain\Academic\Models\Batch;
+use App\Domain\Academic\Models\Subject;
 use App\Models\Student\Attendance;
 use App\Models\Student\SubjectWiseStudent;
 use Carbon\Carbon;

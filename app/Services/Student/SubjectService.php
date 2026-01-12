@@ -4,8 +4,8 @@ namespace App\Services\Student;
 
 use App\Actions\Student\FetchBatchWiseStudent;
 use App\Http\Resources\Student\StudentResource;
-use App\Models\Academic\Batch;
-use App\Models\Academic\Subject;
+use App\Domain\Academic\Models\Batch;
+use App\Domain\Academic\Models\Subject;
 use App\Models\Student\SubjectWiseStudent;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

@@ -5,7 +5,7 @@ namespace App\Services\Finance\Report;
 use App\Contracts\ListGenerator;
 use App\Enums\Finance\TransactionStatus;
 use App\Http\Resources\Finance\Report\FeePaymentListResource;
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 use App\Models\Finance\Transaction;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;

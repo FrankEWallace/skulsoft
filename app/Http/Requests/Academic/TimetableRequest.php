@@ -3,9 +3,9 @@
 namespace App\Http\Requests\Academic;
 
 use App\Enums\Day;
-use App\Models\Academic\Batch;
-use App\Models\Academic\ClassTiming;
-use App\Models\Academic\Timetable;
+use App\Domain\Academic\Models\Batch;
+use App\Domain\Academic\Models\ClassTiming;
+use App\Domain\Academic\Models\Timetable;
 use App\Models\Asset\Building\Room;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;

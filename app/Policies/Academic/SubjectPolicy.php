@@ -2,7 +2,7 @@
 
 namespace App\Policies\Academic;
 
-use App\Models\Academic\Subject;
+use App\Domain\Academic\Models\Subject;
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 

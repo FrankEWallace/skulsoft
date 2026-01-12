@@ -2,8 +2,8 @@
 
 namespace App\Services\Student;
 
-use App\Models\Academic\Period;
-use App\Models\Academic\Subject;
+use App\Domain\Academic\Models\Period;
+use App\Domain\Academic\Models\Subject;
 use App\Models\Student\Student;
 use App\Models\Student\SubjectWiseStudent;
 use Illuminate\Http\Request;

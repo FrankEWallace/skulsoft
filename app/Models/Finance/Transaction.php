@@ -10,7 +10,7 @@ use App\Concerns\HasMedia;
 use App\Concerns\HasMeta;
 use App\Concerns\HasUuid;
 use App\Enums\Finance\TransactionType;
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 use App\Models\Option;
 use App\Models\Student\FeePayment;
 use App\Models\User;

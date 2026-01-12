@@ -3,7 +3,7 @@
 namespace App\Services\Calendar;
 
 use App\Enums\Day;
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 use App\Models\Calendar\Holiday;
 use Carbon\Carbon;
 use Illuminate\Http\Request;

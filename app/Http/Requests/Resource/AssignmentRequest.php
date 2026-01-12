@@ -3,8 +3,8 @@
 namespace App\Http\Requests\Resource;
 
 use App\Enums\OptionType;
-use App\Models\Academic\Batch;
-use App\Models\Academic\Subject;
+use App\Domain\Academic\Models\Batch;
+use App\Domain\Academic\Models\Subject;
 use App\Models\Option;
 use App\Models\Resource\Assignment;
 use Illuminate\Foundation\Http\FormRequest;

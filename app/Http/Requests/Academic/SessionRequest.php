@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Academic;
 
-use App\Models\Academic\Session;
+use App\Domain\Academic\Models\Session;
 use Illuminate\Foundation\Http\FormRequest;
 
 class SessionRequest extends FormRequest

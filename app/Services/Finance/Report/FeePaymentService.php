@@ -5,7 +5,7 @@ namespace App\Services\Finance\Report;
 use App\Enums\Finance\TransactionStatus;
 use App\Http\Resources\Academic\PeriodResource;
 use App\Http\Resources\Finance\PaymentMethodResource;
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 use App\Models\Finance\PaymentMethod;
 
 class FeePaymentService

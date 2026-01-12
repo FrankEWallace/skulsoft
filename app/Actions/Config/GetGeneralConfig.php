@@ -7,7 +7,7 @@ use App\Helpers\SysHelper;
 use App\Http\Resources\Academic\PeriodResource;
 use App\Http\Resources\OrganizationResource;
 use App\Http\Resources\TeamResource;
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 use App\Models\Organization;
 use App\Models\Team;
 use App\Support\QrCodeAttendance;

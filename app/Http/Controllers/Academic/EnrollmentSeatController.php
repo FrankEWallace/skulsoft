@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Academic;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Academic\EnrollmentSeatRequest;
 use App\Http\Resources\Academic\EnrollmentSeatResource;
-use App\Models\Academic\EnrollmentSeat;
+use App\Domain\Academic\Models\EnrollmentSeat;
 use App\Services\Academic\EnrollmentSeatListService;
 use App\Services\Academic\EnrollmentSeatService;
 use Illuminate\Http\Request;

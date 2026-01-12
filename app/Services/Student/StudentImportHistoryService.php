@@ -2,7 +2,7 @@
 
 namespace App\Services\Student;
 
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 use App\Models\Student\Registration;
 use App\Models\Student\Student;
 use App\Models\User;

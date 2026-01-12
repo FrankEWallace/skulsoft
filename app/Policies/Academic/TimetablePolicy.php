@@ -2,7 +2,7 @@
 
 namespace App\Policies\Academic;
 
-use App\Models\Academic\Timetable;
+use App\Domain\Academic\Models\Timetable;
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 

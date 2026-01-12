@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Resource;
 
 use App\Enums\Academic\BookListType;
 use App\Http\Controllers\Controller;
-use App\Models\Academic\BookList;
-use App\Models\Academic\Course;
+use App\Domain\Academic\Models\BookList;
+use App\Domain\Academic\Models\Course;
 use App\Models\Team;
 use App\Services\Resource\BookListService;
 use Illuminate\Http\Request;

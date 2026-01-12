@@ -4,7 +4,7 @@ namespace App\Services\Academic;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Academic\BatchInchargeResource;
-use App\Models\Academic\Batch;
+use App\Domain\Academic\Models\Batch;
 use App\Models\Incharge;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;

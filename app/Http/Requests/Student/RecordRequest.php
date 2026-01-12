@@ -3,7 +3,7 @@
 namespace App\Http\Requests\Student;
 
 use App\Enums\OptionType;
-use App\Models\Academic\Batch;
+use App\Domain\Academic\Models\Batch;
 use App\Models\Option;
 use Illuminate\Foundation\Http\FormRequest;
 

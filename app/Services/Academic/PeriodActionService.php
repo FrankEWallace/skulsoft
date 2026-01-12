@@ -2,13 +2,13 @@
 
 namespace App\Services\Academic;
 
-use App\Models\Academic\Batch;
-use App\Models\Academic\ClassTiming;
-use App\Models\Academic\Course;
-use App\Models\Academic\Division;
-use App\Models\Academic\Period;
-use App\Models\Academic\Subject;
-use App\Models\Academic\SubjectRecord;
+use App\Domain\Academic\Models\Batch;
+use App\Domain\Academic\Models\ClassTiming;
+use App\Domain\Academic\Models\Course;
+use App\Domain\Academic\Models\Division;
+use App\Domain\Academic\Models\Period;
+use App\Domain\Academic\Models\Subject;
+use App\Domain\Academic\Models\SubjectRecord;
 use App\Models\Exam\Assessment;
 use App\Models\Exam\Exam;
 use App\Models\Exam\Grade;

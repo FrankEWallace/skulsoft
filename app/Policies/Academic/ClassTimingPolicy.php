@@ -2,7 +2,7 @@
 
 namespace App\Policies\Academic;
 
-use App\Models\Academic\ClassTiming;
+use App\Domain\Academic\Models\ClassTiming;
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 

@@ -4,7 +4,7 @@ namespace App\Services\Student\Report;
 
 use App\Contracts\ListGenerator;
 use App\Enums\Student\AttendanceSession;
-use App\Models\Academic\Batch;
+use App\Domain\Academic\Models\Batch;
 use App\Models\Calendar\Holiday;
 use App\Models\Student\Attendance;
 use App\Models\Student\Student;

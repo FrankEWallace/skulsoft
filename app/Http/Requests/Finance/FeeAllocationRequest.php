@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests\Finance;
 
-use App\Models\Academic\Batch;
-use App\Models\Academic\Course;
+use App\Domain\Academic\Models\Batch;
+use App\Domain\Academic\Models\Course;
 use Illuminate\Foundation\Http\FormRequest;
 
 class FeeAllocationRequest extends FormRequest

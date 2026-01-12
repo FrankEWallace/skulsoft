@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Academic;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Academic\BookListRequest;
 use App\Http\Resources\Academic\BookListResource;
-use App\Models\Academic\BookList;
+use App\Domain\Academic\Models\BookList;
 use App\Services\Academic\BookListListService;
 use App\Services\Academic\BookListService;
 use Illuminate\Http\Request;

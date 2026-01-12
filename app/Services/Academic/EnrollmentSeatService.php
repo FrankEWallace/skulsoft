@@ -5,8 +5,8 @@ namespace App\Services\Academic;
 use App\Enums\OptionType;
 use App\Http\Resources\Academic\CourseResource;
 use App\Http\Resources\OptionResource;
-use App\Models\Academic\Course;
-use App\Models\Academic\EnrollmentSeat;
+use App\Domain\Academic\Models\Course;
+use App\Domain\Academic\Models\EnrollmentSeat;
 use App\Models\Option;
 use Illuminate\Http\Request;
 

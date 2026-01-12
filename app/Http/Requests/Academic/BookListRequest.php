@@ -3,9 +3,9 @@
 namespace App\Http\Requests\Academic;
 
 use App\Enums\Academic\BookListType;
-use App\Models\Academic\BookList;
-use App\Models\Academic\Course;
-use App\Models\Academic\Subject;
+use App\Domain\Academic\Models\BookList;
+use App\Domain\Academic\Models\Course;
+use App\Domain\Academic\Models\Subject;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 

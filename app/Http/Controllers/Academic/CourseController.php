@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Academic;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Academic\CourseRequest;
 use App\Http\Resources\Academic\CourseResource;
-use App\Models\Academic\Course;
+use App\Domain\Academic\Models\Course;
 use App\Services\Academic\CourseListService;
 use App\Services\Academic\CourseService;
 use Illuminate\Http\Request;

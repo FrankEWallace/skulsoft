@@ -3,8 +3,8 @@
 namespace App\Http\Requests\Academic;
 
 use App\Enums\OptionType;
-use App\Models\Academic\Course;
-use App\Models\Academic\EnrollmentSeat;
+use App\Domain\Academic\Models\Course;
+use App\Domain\Academic\Models\EnrollmentSeat;
 use App\Models\Option;
 use Illuminate\Foundation\Http\FormRequest;
 

@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use App\Events\Auth\UserLogin;
 use App\Listeners\UserLoginListener;
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 use App\Models\Contact;
 use App\Models\Team;
 use App\Models\User;

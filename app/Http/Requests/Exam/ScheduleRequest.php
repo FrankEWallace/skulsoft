@@ -3,8 +3,8 @@
 namespace App\Http\Requests\Exam;
 
 use App\Enums\Exam\AssessmentAttempt;
-use App\Models\Academic\Batch;
-use App\Models\Academic\Subject;
+use App\Domain\Academic\Models\Batch;
+use App\Domain\Academic\Models\Subject;
 use App\Models\Exam\Assessment;
 use App\Models\Exam\Exam;
 use App\Models\Exam\Grade;

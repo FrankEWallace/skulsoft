@@ -17,7 +17,7 @@ use App\Enums\Student\RegistrationStatus;
 use App\Http\Resources\Academic\PeriodResource;
 use App\Http\Resources\CustomFieldResource;
 use App\Http\Resources\OptionResource;
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 use App\Models\Contact;
 use App\Models\CustomField;
 use App\Models\Finance\Transaction;

@@ -2,7 +2,7 @@
 
 namespace App\Http\Resources;
 
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class AuthUserResource extends JsonResource

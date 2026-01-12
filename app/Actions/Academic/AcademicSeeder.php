@@ -2,12 +2,12 @@
 
 namespace App\Actions\Academic;
 
-use App\Models\Academic\Batch;
-use App\Models\Academic\Course;
-use App\Models\Academic\Department;
-use App\Models\Academic\Division;
-use App\Models\Academic\Period;
-use App\Models\Academic\Program;
+use App\Domain\Academic\Models\Batch;
+use App\Domain\Academic\Models\Course;
+use App\Domain\Academic\Models\Department;
+use App\Domain\Academic\Models\Division;
+use App\Domain\Academic\Models\Period;
+use App\Domain\Academic\Models\Program;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;

@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests\Academic;
 
-use App\Models\Academic\Period;
-use App\Models\Academic\Session;
+use App\Domain\Academic\Models\Period;
+use App\Domain\Academic\Models\Session;
 use Illuminate\Foundation\Http\FormRequest;
 
 class PeriodRequest extends FormRequest

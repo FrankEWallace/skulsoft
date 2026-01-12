@@ -2,7 +2,7 @@
 
 namespace App\Policies\Academic;
 
-use App\Models\Academic\Batch;
+use App\Domain\Academic\Models\Batch;
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 

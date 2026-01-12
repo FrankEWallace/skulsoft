@@ -2,7 +2,7 @@
 
 namespace App\Actions\Student;
 
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 use App\Models\Student\Timesheet;
 use Carbon\Carbon;
 

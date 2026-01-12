@@ -2,7 +2,7 @@
 
 namespace App\Services\Student;
 
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 use App\Models\Calendar\Holiday;
 use App\Models\Student\Attendance;
 use App\Models\Student\Student;

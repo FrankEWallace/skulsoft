@@ -3,8 +3,8 @@
 namespace App\Services\Academic;
 
 use App\Http\Resources\Academic\CourseResource;
-use App\Models\Academic\Batch;
-use App\Models\Academic\Course;
+use App\Domain\Academic\Models\Batch;
+use App\Domain\Academic\Models\Course;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

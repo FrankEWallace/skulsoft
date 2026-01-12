@@ -5,7 +5,7 @@ namespace App\Services\Finance;
 use App\Contracts\ListGenerator;
 use App\Enums\Finance\TransactionStatus;
 use App\Http\Resources\Finance\TransactionResource;
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 use App\Models\Employee\Employee;
 use App\Models\Finance\Transaction;
 use App\Models\Student\Registration;

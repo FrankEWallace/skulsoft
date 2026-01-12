@@ -7,7 +7,7 @@ use App\Concerns\HasFilter;
 use App\Concerns\HasMeta;
 use App\Concerns\HasUuid;
 use App\Enums\Exam\AssessmentAttempt;
-use App\Models\Academic\Batch;
+use App\Domain\Academic\Models\Batch;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;

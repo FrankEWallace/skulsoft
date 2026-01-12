@@ -3,7 +3,7 @@
 namespace App\Services\Academic;
 
 use App\Http\Resources\Academic\SubjectResource;
-use App\Models\Academic\Subject;
+use App\Domain\Academic\Models\Subject;
 use App\Models\Incharge;
 use Illuminate\Http\Request;
 

@@ -4,7 +4,7 @@ namespace App\Services\Finance\Report;
 
 use App\Enums\Finance\TransactionStatus;
 use App\Http\Resources\Academic\PeriodResource;
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 
 class OnlineFeePaymentService
 {

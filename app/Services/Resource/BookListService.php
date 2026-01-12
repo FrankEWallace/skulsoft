@@ -3,7 +3,7 @@
 namespace App\Services\Resource;
 
 use App\Http\Resources\Academic\CourseResource;
-use App\Models\Academic\Course;
+use App\Domain\Academic\Models\Course;
 use Illuminate\Http\Request;
 
 class BookListService

@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 use App\Models\Team;
 use App\Models\Team\Role;
 use Illuminate\Http\Request;

@@ -3,7 +3,7 @@
 namespace App\Http\Requests\Academic;
 
 use App\Concerns\HasIncharge;
-use App\Models\Academic\Program;
+use App\Domain\Academic\Models\Program;
 use App\Models\Employee\Employee;
 use Illuminate\Foundation\Http\FormRequest;
 

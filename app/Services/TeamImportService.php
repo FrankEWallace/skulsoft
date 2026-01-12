@@ -3,16 +3,16 @@
 namespace App\Services;
 
 use App\Enums\OptionType;
-use App\Models\Academic\Batch;
-use App\Models\Academic\ClassTiming;
-use App\Models\Academic\Course;
-use App\Models\Academic\Department;
-use App\Models\Academic\Division;
-use App\Models\Academic\Period;
-use App\Models\Academic\Program;
-use App\Models\Academic\ProgramType;
-use App\Models\Academic\Session;
-use App\Models\Academic\Subject;
+use App\Domain\Academic\Models\Batch;
+use App\Domain\Academic\Models\ClassTiming;
+use App\Domain\Academic\Models\Course;
+use App\Domain\Academic\Models\Department;
+use App\Domain\Academic\Models\Division;
+use App\Domain\Academic\Models\Period;
+use App\Domain\Academic\Models\Program;
+use App\Domain\Academic\Models\ProgramType;
+use App\Domain\Academic\Models\Session;
+use App\Domain\Academic\Models\Subject;
 use App\Models\Approval\Type as ApprovalType;
 use App\Models\Config\Config;
 use App\Models\Employee\Department as EmployeeDepartment;

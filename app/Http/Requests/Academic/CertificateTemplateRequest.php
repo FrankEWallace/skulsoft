@@ -5,7 +5,7 @@ namespace App\Http\Requests\Academic;
 use App\Enums\Academic\CertificateFor;
 use App\Enums\Academic\CertificateType;
 use App\Enums\CustomFieldType;
-use App\Models\Academic\CertificateTemplate;
+use App\Domain\Academic\Models\CertificateTemplate;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
 use Illuminate\Validation\Rules\Enum;

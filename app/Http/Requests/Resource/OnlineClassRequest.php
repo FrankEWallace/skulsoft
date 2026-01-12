@@ -4,8 +4,8 @@ namespace App\Http\Requests\Resource;
 
 use App\Enums\Resource\OnlineClassPlatform;
 use App\Helpers\CalHelper;
-use App\Models\Academic\Batch;
-use App\Models\Academic\Subject;
+use App\Domain\Academic\Models\Batch;
+use App\Domain\Academic\Models\Subject;
 use App\Models\Media;
 use App\Models\Resource\OnlineClass;
 use App\Support\HasAudience;

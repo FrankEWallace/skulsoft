@@ -3,9 +3,9 @@
 namespace App\Services\Academic;
 
 use App\Http\Resources\Academic\DivisionResource;
-use App\Models\Academic\Course;
-use App\Models\Academic\Division;
-use App\Models\Academic\SubjectRecord;
+use App\Domain\Academic\Models\Course;
+use App\Domain\Academic\Models\Division;
+use App\Domain\Academic\Models\SubjectRecord;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

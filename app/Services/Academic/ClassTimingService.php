@@ -2,10 +2,10 @@
 
 namespace App\Services\Academic;
 
-use App\Models\Academic\ClassTiming;
-use App\Models\Academic\ClassTimingSession;
-use App\Models\Academic\TimetableAllocation;
-use App\Models\Academic\TimetableRecord;
+use App\Domain\Academic\Models\ClassTiming;
+use App\Domain\Academic\Models\ClassTimingSession;
+use App\Domain\Academic\Models\TimetableAllocation;
+use App\Domain\Academic\Models\TimetableRecord;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;

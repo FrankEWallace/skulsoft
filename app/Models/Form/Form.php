@@ -10,7 +10,7 @@ use App\Concerns\HasMedia;
 use App\Concerns\HasMeta;
 use App\Concerns\HasUuid;
 use App\Enums\Form\Status;
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 use App\Models\Audience;
 use App\Scopes\AudienceScope;
 use Illuminate\Database\Eloquent\Builder;

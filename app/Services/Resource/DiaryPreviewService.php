@@ -6,7 +6,7 @@ use App\Actions\UpdateViewLog;
 use App\Helpers\CalHelper;
 use App\Http\Resources\Employee\EmployeeBasicResource;
 use App\Http\Resources\MediaResource;
-use App\Models\Academic\Batch;
+use App\Domain\Academic\Models\Batch;
 use App\Models\Resource\Diary;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

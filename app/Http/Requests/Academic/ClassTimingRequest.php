@@ -3,7 +3,7 @@
 namespace App\Http\Requests\Academic;
 
 use App\Helpers\CalHelper;
-use App\Models\Academic\ClassTiming;
+use App\Domain\Academic\Models\ClassTiming;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;
 

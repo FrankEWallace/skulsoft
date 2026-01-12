@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Academic;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Academic\SubjectRequest;
 use App\Http\Resources\Academic\SubjectResource;
-use App\Models\Academic\Subject;
+use App\Domain\Academic\Models\Subject;
 use App\Services\Academic\SubjectListService;
 use App\Services\Academic\SubjectService;
 use Illuminate\Http\Request;

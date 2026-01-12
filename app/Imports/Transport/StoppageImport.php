@@ -3,7 +3,7 @@
 namespace App\Imports\Transport;
 
 use App\Concerns\ItemImport;
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 use App\Models\Transport\Stoppage;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;

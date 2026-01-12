@@ -2,8 +2,8 @@
 
 namespace App\Services\Academic;
 
-use App\Models\Academic\Division;
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Division;
+use App\Domain\Academic\Models\Period;
 use App\Models\Guardian;
 use App\Models\Student\Student;
 use App\Models\User;

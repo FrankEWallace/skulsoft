@@ -4,8 +4,8 @@ namespace App\Services\Academic;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Academic\BatchResource;
-use App\Models\Academic\Batch;
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Batch;
+use App\Domain\Academic\Models\Period;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

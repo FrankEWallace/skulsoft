@@ -8,7 +8,7 @@ use App\Enums\OptionType;
 use App\Enums\Reception\EnquiryNature;
 use App\Enums\Reception\EnquiryStatus;
 use App\Enums\Student\RegistrationStatus;
-use App\Models\Academic\Course;
+use App\Domain\Academic\Models\Course;
 use App\Models\Contact;
 use App\Models\CustomField;
 use App\Models\Employee\Employee;

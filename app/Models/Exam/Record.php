@@ -8,7 +8,7 @@ use App\Concerns\HasConfig;
 use App\Concerns\HasFilter;
 use App\Concerns\HasMeta;
 use App\Concerns\HasUuid;
-use App\Models\Academic\Subject;
+use App\Domain\Academic\Models\Subject;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

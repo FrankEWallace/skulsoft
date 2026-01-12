@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Academic;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Academic\TimetableRequest;
 use App\Http\Resources\Academic\TimetableResource;
-use App\Models\Academic\Timetable;
+use App\Domain\Academic\Models\Timetable;
 use App\Services\Academic\TimetableListService;
 use App\Services\Academic\TimetableService;
 use Illuminate\Http\Request;

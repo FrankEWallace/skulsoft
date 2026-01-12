@@ -3,8 +3,8 @@
 namespace App\Services\Resource;
 
 use App\Http\Resources\Academic\SubjectResource;
-use App\Models\Academic\BatchSubjectRecord;
-use App\Models\Academic\Subject;
+use App\Domain\Academic\Models\BatchSubjectRecord;
+use App\Domain\Academic\Models\Subject;
 use App\Models\Employee\Employee;
 use App\Models\Resource\Syllabus;
 use App\Models\Resource\SyllabusUnit;

@@ -2,8 +2,8 @@
 
 namespace App\Services\Academic;
 
-use App\Models\Academic\Batch;
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Batch;
+use App\Domain\Academic\Models\Period;
 use App\Models\Guardian;
 use App\Models\Student\Student;
 use App\Models\User;

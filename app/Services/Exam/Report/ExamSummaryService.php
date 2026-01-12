@@ -7,7 +7,7 @@ use App\Enums\Exam\AssessmentAttempt;
 use App\Enums\Exam\ReportType;
 use App\Enums\Exam\Result as ExamResult;
 use App\Http\Resources\Exam\ExamResource;
-use App\Models\Academic\Batch;
+use App\Domain\Academic\Models\Batch;
 use App\Models\Exam\Exam;
 use App\Models\Exam\Result;
 use App\Models\Exam\Schedule;

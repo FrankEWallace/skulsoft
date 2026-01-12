@@ -2,7 +2,7 @@
 
 namespace App\Actions\Exam;
 
-use App\Models\Academic\SubjectRecord;
+use App\Domain\Academic\Models\SubjectRecord;
 use App\Models\Exam\Schedule;
 use App\Models\Student\Student;
 use App\Models\Student\SubjectWiseStudent;

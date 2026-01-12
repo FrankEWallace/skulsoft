@@ -3,12 +3,12 @@
 namespace App\Services\Dashboard;
 
 use App\Http\Resources\Employee\EmployeeSummaryResource;
-use App\Models\Academic\Batch;
-use App\Models\Academic\ClassTiming;
-use App\Models\Academic\ClassTimingSession;
-use App\Models\Academic\Subject;
-use App\Models\Academic\Timetable;
-use App\Models\Academic\TimetableAllocation;
+use App\Domain\Academic\Models\Batch;
+use App\Domain\Academic\Models\ClassTiming;
+use App\Domain\Academic\Models\ClassTimingSession;
+use App\Domain\Academic\Models\Subject;
+use App\Domain\Academic\Models\Timetable;
+use App\Domain\Academic\Models\TimetableAllocation;
 use App\Models\Asset\Building\Room;
 use App\Models\Employee\Employee;
 use App\Models\Incharge;

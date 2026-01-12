@@ -2,7 +2,7 @@
 
 namespace App\Observers;
 
-use App\Models\Academic\Period;
+use App\Domain\Academic\Models\Period;
 use App\Models\User;
 
 class UserObserver

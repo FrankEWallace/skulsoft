@@ -5,7 +5,7 @@ namespace App\Services\Academic;
 use App\Actions\Employee\FetchEmployee;
 use App\Actions\Student\FetchBatchWiseStudent;
 use App\Concerns\IdCardTemplateParser;
-use App\Models\Academic\IdCardTemplate;
+use App\Domain\Academic\Models\IdCardTemplate;
 use App\Models\Employee\Employee;
 use App\Models\Guardian;
 use App\Models\Student\Student;

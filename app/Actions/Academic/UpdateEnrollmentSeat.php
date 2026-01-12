@@ -2,8 +2,8 @@
 
 namespace App\Actions\Academic;
 
-use App\Models\Academic\Course;
-use App\Models\Academic\EnrollmentSeat;
+use App\Domain\Academic\Models\Course;
+use App\Domain\Academic\Models\EnrollmentSeat;
 use App\Models\Student\Student;
 
 class UpdateEnrollmentSeat

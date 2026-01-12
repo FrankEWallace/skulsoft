@@ -5,7 +5,7 @@ namespace App\Services\Exam;
 use App\Actions\Student\FetchBatchWiseStudent;
 use App\Http\Resources\Exam\ExamResource;
 use App\Http\Resources\Student\StudentResource;
-use App\Models\Academic\Batch;
+use App\Domain\Academic\Models\Batch;
 use App\Models\Exam\Exam;
 use App\Models\Exam\Schedule;
 use Illuminate\Http\Request;

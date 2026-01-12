@@ -5,7 +5,7 @@ namespace App\Services\Dashboard;
 use App\Enums\ServiceType;
 use App\Http\Resources\Dashboard\StudentFeeResource;
 use App\Http\Resources\Student\StudentSummaryResource;
-use App\Models\Academic\Batch;
+use App\Domain\Academic\Models\Batch;
 use App\Models\Employee\Employee;
 use App\Models\Incharge;
 use App\Models\Student\Fee;

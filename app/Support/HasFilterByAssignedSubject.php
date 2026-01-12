@@ -2,7 +2,7 @@
 
 namespace App\Support;
 
-use App\Models\Academic\Subject;
+use App\Domain\Academic\Models\Subject;
 use App\Models\Employee\Employee;
 use App\Models\Incharge;
 use App\Models\Student\Student;

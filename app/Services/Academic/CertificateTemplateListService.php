@@ -4,7 +4,7 @@ namespace App\Services\Academic;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Academic\CertificateTemplateSummaryResource;
-use App\Models\Academic\CertificateTemplate;
+use App\Domain\Academic\Models\CertificateTemplate;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

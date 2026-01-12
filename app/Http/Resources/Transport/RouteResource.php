@@ -5,7 +5,7 @@ namespace App\Http\Resources\Transport;
 use App\Enums\Transport\Direction;
 use App\Http\Resources\Academic\PeriodResource;
 use App\Http\Resources\Transport\Vehicle\VehicleResource;
-use App\Models\Academic\Batch;
+use App\Domain\Academic\Models\Batch;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\Arr;
 

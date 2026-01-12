@@ -5,8 +5,8 @@ namespace App\Services\Academic;
 use App\Enums\Academic\CertificateFor;
 use App\Enums\Academic\CertificateType;
 use App\Enums\CustomFieldType;
-use App\Models\Academic\Certificate;
-use App\Models\Academic\CertificateTemplate;
+use App\Domain\Academic\Models\Certificate;
+use App\Domain\Academic\Models\CertificateTemplate;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

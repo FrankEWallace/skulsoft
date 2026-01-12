@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Academic;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Academic\ClassTimingRequest;
 use App\Http\Resources\Academic\ClassTimingResource;
-use App\Models\Academic\ClassTiming;
+use App\Domain\Academic\Models\ClassTiming;
 use App\Services\Academic\ClassTimingListService;
 use App\Services\Academic\ClassTimingService;
 use Illuminate\Http\Request;

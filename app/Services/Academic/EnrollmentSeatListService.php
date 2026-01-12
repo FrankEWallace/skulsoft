@@ -4,7 +4,7 @@ namespace App\Services\Academic;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Academic\EnrollmentSeatResource;
-use App\Models\Academic\EnrollmentSeat;
+use App\Domain\Academic\Models\EnrollmentSeat;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
