@@ -15,6 +15,11 @@ class ValidateRole
 
     public function execute(User $user)
     {
+        // Skip validation for demo users
+        if (str_ends_with($user->email, '@demo.com')) {
+            return;
+        }
+
         $this->validateStudent($user);
 
         $this->validateGuardian($user);
