@@ -1,10 +1,9 @@
 <?php
 /**
- * Session/CSRF diagnostic script - DELETE after use!
- * Upload to public/ and visit: https://sims.mewogstars.sc.tz/check_session.php
+ * Full login diagnostic script - DELETE after use!
+ * Visit: https://sims.mewogstars.sc.tz/check_session.php
  */
 
-// Load Laravel environment
 define('LARAVEL_START', microtime(true));
 require __DIR__ . '/../vendor/autoload.php';
 $app = require_once __DIR__ . '/../bootstrap/app.php';
@@ -16,62 +15,93 @@ header('Content-Type: text/plain');
 
 $results = [];
 
-// 1. Check SESSION_DRIVER
-$results['SESSION_DRIVER'] = env('SESSION_DRIVER', '(not set - defaults to file)');
-$results['SESSION_TABLE'] = env('SESSION_TABLE', '(not set - defaults to sessions)');
-$results['SESSION_DOMAIN'] = env('SESSION_DOMAIN', '(not set)');
-$results['SANCTUM_STATEFUL_DOMAINS'] = env('SANCTUM_STATEFUL_DOMAINS', '(not set)');
-$results['APP_URL'] = env('APP_URL', '(not set)');
-
-// 2. Check if user_sessions table exists
+// 1. Storage / INSTALLED flag
 try {
-    $exists = \Illuminate\Support\Facades\Schema::hasTable('user_sessions');
-    $results['user_sessions table exists'] = $exists ? 'YES ✓' : 'NO ✗ (migration not run!)';
+    $appFileExists = \Storage::disk('local')->exists('.app');
+    $appContent = $appFileExists ? \Storage::disk('local')->get('.app') : '(file missing)';
+    $results['.app file exists'] = $appFileExists ? 'YES' : 'NO ✗';
+    $results['.app content'] = trim($appContent);
+    $results['.reinstall exists'] = \Storage::disk('local')->exists('.reinstall') ? 'YES ✗ (blocks login!)' : 'NO ✓';
 } catch (\Exception $e) {
-    $results['user_sessions table check error'] = $e->getMessage();
+    $results['storage check error'] = $e->getMessage();
 }
 
-// 3. Check if old sessions table exists and its columns
+// 2. isInstalled check
 try {
-    $exists = \Illuminate\Support\Facades\Schema::hasTable('sessions');
-    $results['sessions table exists'] = $exists ? 'YES (academic sessions table)' : 'NO';
-    if ($exists) {
-        $columns = \Illuminate\Support\Facades\Schema::getColumnListing('sessions');
-        $results['sessions table columns'] = implode(', ', $columns);
-    }
+    $installed = \App\Helpers\SysHelper::isInstalled();
+    $results['SysHelper::isInstalled()'] = $installed ? 'YES ✓' : 'NO ✗ (app not installed!)';
 } catch (\Exception $e) {
-    $results['sessions table check error'] = $e->getMessage();
+    $results['isInstalled error'] = $e->getMessage();
 }
 
-// 4. Check what the session config actually resolves to
-$results['config(session.driver)'] = config('session.driver');
-$results['config(session.table)'] = config('session.table');
-
-// 5. Try writing a session
+// 3. Admin user check
 try {
-    $sessionTable = config('session.table');
-    if (config('session.driver') === 'database') {
-        $count = \Illuminate\Support\Facades\DB::table($sessionTable)->count();
-        $results['session table row count'] = $count;
-        $results['session write test'] = 'Table accessible ✓';
+    $user = \App\Models\User::find(1);
+    if ($user) {
+        $results['admin user exists'] = 'YES ✓';
+        $results['admin email'] = $user->email;
+        $results['admin status'] = $user->status?->value ?? 'NULL ✗';
+        $results['admin current_team_id (meta)'] = $user->getMeta('current_team_id') ?? 'NULL ✗';
+        $results['admin is_default (meta)'] = $user->getMeta('is_default') ? 'true ✓' : 'false';
+        $teamId = $user->getMeta('current_team_id');
+        \App\Helpers\SysHelper::setTeam($teamId);
+        $roles = $user->getRoleNames();
+        $results['admin roles'] = $roles->isEmpty() ? 'NONE ✗' : $roles->implode(', ');
+        \App\Helpers\SysHelper::setTeam(null);
     } else {
-        $results['session write test'] = 'SKIPPED (driver is not database)';
+        $results['admin user'] = 'NOT FOUND ✗';
     }
 } catch (\Exception $e) {
-    $results['session write test'] = 'FAILED: ' . $e->getMessage();
+    $results['user check error'] = $e->getMessage();
 }
 
-// 6. Check migrations ran
+// 4. Team check
 try {
-    $ran = \Illuminate\Support\Facades\DB::table('migrations')
-        ->where('migration', 'like', '%user_session%')
-        ->first();
-    $results['user_sessions migration in DB'] = $ran ? 'YES - ' . $ran->migration : 'NO ✗';
+    $team = \Illuminate\Support\Facades\DB::table('teams')->find(1);
+    $results['team id=1'] = $team ? 'EXISTS: ' . $team->name : 'NOT FOUND ✗';
 } catch (\Exception $e) {
-    $results['migrations check error'] = $e->getMessage();
+    $results['team check error'] = $e->getMessage();
 }
 
-echo "=== SESSION/CSRF DIAGNOSTIC ===\n\n";
+// 5. Try actual login attempt
+try {
+    $user = \App\Models\User::where('email', 'admin@mewogstars.sc.tz')->first();
+    if ($user) {
+        $passwordOk = \Hash::check('Admin@1234', $user->password);
+        $results['password check'] = $passwordOk ? 'CORRECT ✓' : 'WRONG ✗';
+    }
+} catch (\Exception $e) {
+    $results['password check error'] = $e->getMessage();
+}
+
+// 6. ValidateRole check
+try {
+    $user = \App\Models\User::find(1);
+    if ($user) {
+        $teamId = $user->getMeta('current_team_id');
+        \App\Helpers\SysHelper::setTeam($teamId);
+        app(\Spatie\Permission\PermissionRegistrar::class)->setPermissionsTeamId($teamId);
+        $validateRole = new \App\Actions\Auth\ValidateRole();
+        $validateRole->execute($user);
+        $results['ValidateRole::execute()'] = 'PASSED ✓';
+        \App\Helpers\SysHelper::setTeam(null);
+    }
+} catch (\Exception $e) {
+    $results['ValidateRole::execute() error'] = $e->getMessage();
+}
+
+// 7. Storage permissions
+$storagePath = storage_path('framework/sessions');
+$results['sessions storage path'] = $storagePath;
+$results['sessions storage writable'] = is_writable($storagePath) ? 'YES ✓' : 'NO (but using DB driver)';
+
+// 8. CORS / domain
+$results['SESSION_DOMAIN (env)'] = env('SESSION_DOMAIN', '(not set)');
+$results['SESSION_SECURE_COOKIE (env)'] = env('SESSION_SECURE_COOKIE', '(not set - defaults to false)');
+$results['config(session.secure)'] = config('session.secure') ? 'true' : 'false';
+$results['config(session.same_site)'] = config('session.same_site');
+
+echo "=== FULL LOGIN DIAGNOSTIC ===\n\n";
 foreach ($results as $key => $value) {
     echo str_pad($key, 45) . ': ' . $value . "\n";
 }
