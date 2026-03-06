@@ -164,7 +164,14 @@ class User extends Authenticatable
 
     public function getAllowedTeamIds(): array
     {
-        return \DB::table('model_has_roles')->whereModelId($this->id)->whereModelType('User')->get()->pluck('team_id')->all();
+        return \DB::table('model_has_roles')
+            ->whereModelId($this->id)
+            ->where('model_type', get_class($this))
+            ->whereNotNull('team_id')
+            ->pluck('team_id')
+            ->unique()
+            ->values()
+            ->all();
     }
 
     public function validateCurrentTeamId()
