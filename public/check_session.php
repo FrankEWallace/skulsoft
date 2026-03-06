@@ -1,6 +1,6 @@
 <?php
 /**
- * Full login diagnostic script - DELETE after use!
+ * Fix admin role assignment + diagnostic - DELETE after use!
  * Visit: https://sims.mewogstars.sc.tz/check_session.php
  */
 
