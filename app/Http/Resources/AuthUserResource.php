@@ -19,7 +19,7 @@ class AuthUserResource extends JsonResource
             'uuid' => $this->uuid,
             'username' => $this->username,
             'email' => $this->email,
-            'status' => $this->status->value,
+            'status' => $this->status?->value,
             'roles' => $this->user_role,
             'permissions' => $this->user_permission,
             'is_super_admin' => $this->when($this->is_default, true),
