@@ -73,7 +73,9 @@ if ($adminRole) {
 
 // Step 4: Clear permission cache
 app(PermissionRegistrar::class)->forgetCachedPermissions();
-$log[] = "Permission cache cleared";
+\Illuminate\Support\Facades\Cache::forget('spatie.permission.cache');
+\Illuminate\Support\Facades\Cache::flush();
+$log[] = "All caches cleared";
 
 // Step 5: Raw DB check - what's actually in model_has_roles now
 $fresh = DB::table('model_has_roles')
@@ -85,48 +87,45 @@ foreach ($fresh as $row) {
     $log[] = "  role_id={$row->role_id}, team_id=" . ($row->team_id ?? 'NULL') . ", model_type={$row->model_type}";
 }
 
-// Step 5b: Check permission config team setting
-$log[] = "permission.teams config: " . (config('permission.teams') ? 'true' : 'false');
-$log[] = "PermissionRegistrar teamId before set: " . (app(PermissionRegistrar::class)->getPermissionsTeamId() ?? 'NULL');
-
-// Step 5c: Verify using Spatie's exact query path
+// Step 5b: Dump actual SQL query that roles() generates
 app(PermissionRegistrar::class)->forgetCachedPermissions();
+\Illuminate\Support\Facades\Cache::flush();
+\Illuminate\Support\Facades\Cache::forget('spatie.permission.cache');
 app(PermissionRegistrar::class)->setPermissionsTeamId($teamId);
-$log[] = "PermissionRegistrar teamId after set: " . (app(PermissionRegistrar::class)->getPermissionsTeamId() ?? 'NULL');
+$log[] = "PermissionRegistrar teamId set to: " . app(PermissionRegistrar::class)->getPermissionsTeamId();
 
-// Must reload user AFTER setting team id
 $user = \App\Models\User::find($userId);
+
+// Dump the actual SQL
+DB::enableQueryLog();
+$rolesQuery = $user->roles()->toBase();
+$log[] = "roles() SQL: " . $rolesQuery->toSql();
+$log[] = "roles() bindings: " . json_encode($rolesQuery->getBindings());
+$rolesResult = $rolesQuery->get();
+$log[] = "roles() raw result count: " . $rolesResult->count();
+foreach ($rolesResult as $r) {
+    $log[] = "  role: " . json_encode((array)$r);
+}
+
 $roles = $user->getRoleNames();
-$log[] = "getRoleNames() with teamId={$teamId}: " . ($roles->isEmpty() ? 'STILL NONE ✗' : $roles->implode(', ') . ' ✓');
+$log[] = "getRoleNames(): " . ($roles->isEmpty() ? 'STILL NONE ✗' : $roles->implode(', ') . ' ✓');
 
-// Step 5d: Try with setPermissionsTeamId via config
-$log[] = "Trying via SysHelper::setTeam()...";
-\App\Helpers\SysHelper::setTeam($teamId);
-app(PermissionRegistrar::class)->forgetCachedPermissions();
-$user2 = \App\Models\User::find($userId);
-$roles2 = $user2->getRoleNames();
-$log[] = "getRoleNames() after SysHelper::setTeam({$teamId}): " . ($roles2->isEmpty() ? 'STILL NONE ✗' : $roles2->implode(', ') . ' ✓');
-
-// Step 5e: Direct role check bypassing team
+// Step 5c: Direct DB role names  
 $allRoles = DB::table('model_has_roles')
     ->join('roles', 'roles.id', '=', 'model_has_roles.role_id')
     ->where('model_has_roles.model_id', $userId)
     ->select('roles.name', 'model_has_roles.team_id')
     ->get();
-$log[] = "Direct DB role names: " . ($allRoles->isEmpty() ? 'NONE' : $allRoles->map(fn($r) => $r->name . '(team_id=' . ($r->team_id ?? 'NULL') . ')')->implode(', '));
+$log[] = "Direct DB (no team filter): " . ($allRoles->isEmpty() ? 'NONE' : $allRoles->map(fn($r) => $r->name . '(team_id=' . ($r->team_id ?? 'NULL') . ')')->implode(', '));
 
-// Step 5f: Check what SysHelper::setTeam actually does to the PermissionRegistrar
-$log[] = "After SysHelper::setTeam, PermissionRegistrar teamId: " . (app(PermissionRegistrar::class)->getPermissionsTeamId() ?? 'NULL');
-
-// Step 6: Test ValidateRole using same path as Login action
+// Step 6: Test ValidateRole
 try {
-    // Replicate exactly what Login::getUser() does
     \App\Helpers\SysHelper::setTeam($teamId);
     app(PermissionRegistrar::class)->setPermissionsTeamId($teamId);
     app(PermissionRegistrar::class)->forgetCachedPermissions();
-    $user3 = \App\Models\User::find($userId);
+    $user2 = \App\Models\User::find($userId);
     $validateRole = new \App\Actions\Auth\ValidateRole();
-    $validateRole->execute($user3);
+    $validateRole->execute($user2);
     $log[] = "ValidateRole::execute(): PASSED ✓";
 } catch (\Exception $e) {
     $log[] = "ValidateRole::execute() FAILED: " . $e->getMessage();
