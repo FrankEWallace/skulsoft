@@ -10,32 +10,53 @@ use Illuminate\Support\Facades\DB;
 use Spatie\Permission\Models\Role;
 use App\Models\User;
 
-setPermissionsTeamId(1);
+$email = 'admin@mewogstars.sc.tz';
+$teamId = 1;
 
-$user = User::where('email', 'admin@mewogstars.sc.tz')->first();
-$adminRole = Role::where('name', 'admin')->whereNull('team_id')->first();
-
+$user = User::where('email', $email)->first();
 if (!$user) { die("User not found!\n"); }
+
+$adminRole = Role::where('name', 'admin')->first();
 if (!$adminRole) { die("Admin role not found!\n"); }
 
-// Check if already assigned
+// Ensure role is assigned with correct model_type (full namespace)
 $exists = DB::table('model_has_roles')
     ->where('role_id', $adminRole->id)
     ->where('model_id', $user->id)
-    ->where('model_type', 'App\Models\User')
+    ->where('model_type', 'App\\Models\\User')
     ->exists();
 
-if ($exists) {
-    echo "Role already assigned to: " . $user->email . "\n";
-} else {
+if (!$exists) {
     DB::table('model_has_roles')->insert([
         'role_id'    => $adminRole->id,
-        'model_type' => 'App\Models\User',
+        'model_type' => 'App\\Models\\User',
         'model_id'   => $user->id,
-        'team_id'    => 1,
+        'team_id'    => $teamId,
     ]);
-    echo "Role assigned successfully to: " . $user->email . "\n";
+    echo "Role assigned to: " . $user->email . "\n";
+} else {
+    echo "Role already assigned to: " . $user->email . "\n";
 }
+
+// Set current_team_id in user meta so login flow can find the team
+$meta = $user->meta ?? [];
+if (!is_array($meta)) { $meta = json_decode($meta, true) ?? []; }
+$meta['current_team_id'] = $teamId;
+DB::table('users')->where('id', $user->id)->update(['meta' => json_encode($meta)]);
+echo "Set current_team_id=$teamId in user meta.\n";
+
+// Also fix getAllowedTeamIds bug: model_type must be full class name, not 'User'
+// Correct any bad entries
+$fixed = DB::table('model_has_roles')
+    ->where('model_id', $user->id)
+    ->where('model_type', 'User')
+    ->update(['model_type' => 'App\\Models\\User']);
+if ($fixed) echo "Fixed $fixed model_has_roles rows with short model_type.\n";
+
+// Clear permission cache
+app(\Spatie\Permission\PermissionRegistrar::class)->forgetCachedPermissions();
+echo "Permission cache cleared.\n";
 
 echo "User ID: " . $user->id . "\n";
 echo "Role ID: " . $adminRole->id . "\n";
+echo "Done! Try logging in with: $email\n";
