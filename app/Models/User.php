@@ -164,9 +164,10 @@ class User extends Authenticatable
 
     public function getAllowedTeamIds(): array
     {
+        // Use getMorphClass() so it respects the morphMap alias ('User' not 'App\Models\User')
         return \DB::table('model_has_roles')
             ->whereModelId($this->id)
-            ->where('model_type', get_class($this))
+            ->where('model_type', $this->getMorphClass())
             ->whereNotNull('team_id')
             ->pluck('team_id')
             ->unique()
