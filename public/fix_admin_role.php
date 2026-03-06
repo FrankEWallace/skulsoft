@@ -75,17 +75,58 @@ if ($adminRole) {
 app(PermissionRegistrar::class)->forgetCachedPermissions();
 $log[] = "Permission cache cleared";
 
-// Step 5: Verify - load user with team context set
+// Step 5: Raw DB check - what's actually in model_has_roles now
+$fresh = DB::table('model_has_roles')
+    ->where('model_id', $userId)
+    ->where('model_type', 'App\\Models\\User')
+    ->get();
+$log[] = "Raw model_has_roles after fix:";
+foreach ($fresh as $row) {
+    $log[] = "  role_id={$row->role_id}, team_id=" . ($row->team_id ?? 'NULL') . ", model_type={$row->model_type}";
+}
+
+// Step 5b: Check permission config team setting
+$log[] = "permission.teams config: " . (config('permission.teams') ? 'true' : 'false');
+$log[] = "PermissionRegistrar teamId before set: " . (app(PermissionRegistrar::class)->getPermissionsTeamId() ?? 'NULL');
+
+// Step 5c: Verify using Spatie's exact query path
+app(PermissionRegistrar::class)->forgetCachedPermissions();
 app(PermissionRegistrar::class)->setPermissionsTeamId($teamId);
+$log[] = "PermissionRegistrar teamId after set: " . (app(PermissionRegistrar::class)->getPermissionsTeamId() ?? 'NULL');
+
+// Must reload user AFTER setting team id
 $user = \App\Models\User::find($userId);
 $roles = $user->getRoleNames();
-$log[] = "Verification - user roles with team_id={$teamId}: " . ($roles->isEmpty() ? 'STILL NONE ✗' : $roles->implode(', ') . ' ✓');
+$log[] = "getRoleNames() with teamId={$teamId}: " . ($roles->isEmpty() ? 'STILL NONE ✗' : $roles->implode(', ') . ' ✓');
 
-// Step 6: Test ValidateRole
+// Step 5d: Try with setPermissionsTeamId via config
+$log[] = "Trying via SysHelper::setTeam()...";
+\App\Helpers\SysHelper::setTeam($teamId);
+app(PermissionRegistrar::class)->forgetCachedPermissions();
+$user2 = \App\Models\User::find($userId);
+$roles2 = $user2->getRoleNames();
+$log[] = "getRoleNames() after SysHelper::setTeam({$teamId}): " . ($roles2->isEmpty() ? 'STILL NONE ✗' : $roles2->implode(', ') . ' ✓');
+
+// Step 5e: Direct role check bypassing team
+$allRoles = DB::table('model_has_roles')
+    ->join('roles', 'roles.id', '=', 'model_has_roles.role_id')
+    ->where('model_has_roles.model_id', $userId)
+    ->select('roles.name', 'model_has_roles.team_id')
+    ->get();
+$log[] = "Direct DB role names: " . ($allRoles->isEmpty() ? 'NONE' : $allRoles->map(fn($r) => $r->name . '(team_id=' . ($r->team_id ?? 'NULL') . ')')->implode(', '));
+
+// Step 5f: Check what SysHelper::setTeam actually does to the PermissionRegistrar
+$log[] = "After SysHelper::setTeam, PermissionRegistrar teamId: " . (app(PermissionRegistrar::class)->getPermissionsTeamId() ?? 'NULL');
+
+// Step 6: Test ValidateRole using same path as Login action
 try {
+    // Replicate exactly what Login::getUser() does
     \App\Helpers\SysHelper::setTeam($teamId);
+    app(PermissionRegistrar::class)->setPermissionsTeamId($teamId);
+    app(PermissionRegistrar::class)->forgetCachedPermissions();
+    $user3 = \App\Models\User::find($userId);
     $validateRole = new \App\Actions\Auth\ValidateRole();
-    $validateRole->execute($user);
+    $validateRole->execute($user3);
     $log[] = "ValidateRole::execute(): PASSED ✓";
 } catch (\Exception $e) {
     $log[] = "ValidateRole::execute() FAILED: " . $e->getMessage();
