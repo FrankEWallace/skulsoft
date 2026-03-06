@@ -32,7 +32,7 @@ Route::get('/app/pages/{slug}', [SiteController::class, 'pageView'])->name('site
 Route::get('/app/site/posts', [PostController::class, 'index'])->name('site.post.index');
 Route::get('/app/site/posts/{uuid}', [PostController::class, 'show'])->name('site.post.show');
 
-Route::prefix('app/guest')->group(function () {
+Route::prefix('app/guest')->name('guest.')->group(function () {
     Route::resource('medias', GuestMediaController::class)->only(['store', 'destroy']);
 });
 
