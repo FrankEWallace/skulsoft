@@ -38,12 +38,13 @@ if (!$exists) {
     echo "Role already assigned to: " . $user->email . "\n";
 }
 
-// Set current_team_id in user meta so login flow can find the team
+// Set current_team_id and is_default in user meta
 $meta = $user->meta ?? [];
 if (!is_array($meta)) { $meta = json_decode($meta, true) ?? []; }
 $meta['current_team_id'] = $teamId;
+$meta['is_default'] = true;  // Bypass login:action permission check for admin
 DB::table('users')->where('id', $user->id)->update(['meta' => json_encode($meta)]);
-echo "Set current_team_id=$teamId in user meta.\n";
+echo "Set current_team_id=$teamId and is_default=true in user meta.\n";
 
 // Also fix getAllowedTeamIds bug: model_type must be full class name, not 'User'
 // Correct any bad entries
