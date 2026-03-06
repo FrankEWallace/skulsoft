@@ -36,7 +36,14 @@ class UserConfig
 
         $userCurrentTeamId = auth()->user()?->current_team_id;
 
+        // For is_default (super admin) users, always trust their current_team_id
+        // even if getAllowedTeamIds() returns empty (can happen if morph cache is stale)
+        $isDefaultUser = auth()->user()?->getMeta('is_default');
+
         if (in_array($userCurrentTeamId, $allowedTeamIds)) {
+            SysHelper::setTeam($userCurrentTeamId);
+        } elseif ($isDefaultUser && $userCurrentTeamId) {
+            // Super admin: trust the stored team ID directly
             SysHelper::setTeam($userCurrentTeamId);
         } elseif (! $request->route()->named('teams.select')) {
             \Auth::guard('web')->logout();

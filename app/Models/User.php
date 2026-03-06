@@ -210,15 +210,16 @@ class User extends Authenticatable
     {
         $currentTeamId = $this->getMeta('current_team_id');
 
+        // is_default (super admin) users always use their stored team ID
+        if ($this->is_default && $currentTeamId) {
+            return $currentTeamId;
+        }
+
         if (! config('config.teams_set', false)) {
             return $currentTeamId;
         }
 
         $allowedTeamIds = config('config.teams', []);
-
-        if ($this->is_default && $currentTeamId) {
-            return $currentTeamId;
-        }
 
         if (in_array($currentTeamId, $allowedTeamIds)) {
             return $currentTeamId;
