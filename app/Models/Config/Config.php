@@ -68,14 +68,14 @@ class Config extends Model
             $teamId = 1;
         }
 
-        // return cache()->remember('query_config_list_all', now()->addDay(1), function () use ($teamId) {
-        return Config::query()
-            ->whereNull('team_id')
-            ->when($teamId, function ($q, $teamId) {
-                $q->orWhere('team_id', $teamId);
-            })
-            ->pluck('value', 'name')->all();
-        // });
+        return cache()->remember('query_config_list_all_'.$teamId, now()->addDay(1), function () use ($teamId) {
+            return Config::query()
+                ->whereNull('team_id')
+                ->when($teamId, function ($q, $teamId) {
+                    $q->orWhere('team_id', $teamId);
+                })
+                ->pluck('value', 'name')->all();
+        });
     }
 
     public function getActivitylogOptions(): LogOptions
