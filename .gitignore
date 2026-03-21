@@ -38,6 +38,8 @@ yarn-error.log
 # Compiled files
 /public/build
 /public/mix-manifest.json
+/bootstrap/cache/*.php
+!/bootstrap/cache/.gitignore
 
 # macOS
 .DS_Store
