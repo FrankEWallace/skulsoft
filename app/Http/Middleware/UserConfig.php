@@ -40,12 +40,16 @@ class UserConfig
         // even if getAllowedTeamIds() returns empty (can happen if morph cache is stale)
         $isDefaultUser = auth()->user()?->getMeta('is_default');
 
+        // Config, auth, and license routes must work regardless of team setup
+        // (e.g. fresh install, first login, license activation flow)
+        $bypassTeamCheck = Str::contains($request->path(), ['config', 'auth', 'license']);
+
         if (in_array($userCurrentTeamId, $allowedTeamIds)) {
             SysHelper::setTeam($userCurrentTeamId);
         } elseif ($isDefaultUser && $userCurrentTeamId) {
             // Super admin: trust the stored team ID directly
             SysHelper::setTeam($userCurrentTeamId);
-        } elseif (! $request->route()->named('teams.select')) {
+        } elseif (! $bypassTeamCheck && ! $request->route()->named('teams.select')) {
             return response()->json(['message' => __('team.could_not_find_selected_team')], 422);
         }
 
