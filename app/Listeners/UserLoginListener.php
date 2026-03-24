@@ -3,28 +3,34 @@
 namespace App\Listeners;
 
 use App\Events\Auth\UserLogin;
-use Illuminate\Contracts\Queue\ShouldQueue;
+use App\Helpers\SysHelper;
 use Mint\Service\Actions\CheckForUpdate;
 
-class UserLoginListener implements ShouldQueue
+class UserLoginListener
 {
     /**
-     * Create the event listener.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //
-    }
-
-    /**
      * Handle the event.
-     *
-     * @return void
      */
     public function handle(UserLogin $event)
     {
-        (new CheckForUpdate)->execute();
+        // Skip if already checked today
+        if (SysHelper::getApp('UPDATE') == today()->toDateString()) {
+            return;
+        }
+
+        // Mark today as checked immediately so subsequent logins don't block
+        SysHelper::setApp(['UPDATE' => today()->toDateString()]);
+
+        // Run the update check with a short timeout to avoid blocking the request
+        $orig = ini_get('default_socket_timeout');
+        ini_set('default_socket_timeout', 3);
+
+        try {
+            (new CheckForUpdate)->execute();
+        } catch (\Throwable $e) {
+            // Silently ignore — update check must never block a user login
+        } finally {
+            ini_set('default_socket_timeout', $orig);
+        }
     }
 }
