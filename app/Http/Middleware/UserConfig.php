@@ -46,8 +46,6 @@ class UserConfig
             // Super admin: trust the stored team ID directly
             SysHelper::setTeam($userCurrentTeamId);
         } elseif (! $request->route()->named('teams.select')) {
-            \Auth::guard('web')->logout();
-
             return response()->json(['message' => __('team.could_not_find_selected_team')], 422);
         }
 
