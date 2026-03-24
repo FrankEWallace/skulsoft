@@ -1887,7 +1887,7 @@
     "post": [
         {
             "name": "enable_redirect_to_post_after_login",
-            "value": true,
+            "value": false,
             "is_public": true
         }
     ],
