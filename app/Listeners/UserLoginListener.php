@@ -3,9 +3,10 @@
 namespace App\Listeners;
 
 use App\Events\Auth\UserLogin;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Mint\Service\Actions\CheckForUpdate;
 
-class UserLoginListener
+class UserLoginListener implements ShouldQueue
 {
     /**
      * Create the event listener.
