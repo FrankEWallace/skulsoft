@@ -24,23 +24,7 @@ class LoginController extends Controller
     public function login(LoginRequest $request, Login $login)
     {
         $result = $login->execute($request);
-        
-        // Ensure the user is properly logged in with session
-        $user = \Auth::user();
-        if (!$user) {
-            return response()->json([
-                'success' => false,
-                'message' => 'Login failed - session not established'
-            ], 401);
-        }
-        
-        // Force regenerate session ID for security
-        $request->session()->regenerate();
-        
-        // For SPA, we don't need tokens - Sanctum uses stateful authentication
-        // Just make sure the session is properly established
-        
-        // Always return the standard response format that the frontend expects
+
         return response()->success([
             'message' => $result['message'],
             'user' => $result['user'],

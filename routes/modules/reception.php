@@ -25,7 +25,7 @@ Route::prefix('reception')->name('reception.')->group(function () {
     Route::get('enquiries/{enquiry}/qualifications/pre-requisite', [EnquiryQualificationController::class, 'preRequisite'])->name('enquiries.qualifications.preRequisite');
     Route::apiResource('enquiries.qualifications', EnquiryQualificationController::class)->only(['store', 'show', 'update', 'destroy'])->names('enquiries.qualifications');
 
-    Route::get('enquiries/{enquiry}/follow-ups/pre-requisite', [EnquiryFollowUpController::class, 'preRequisite'])->name('enquiries.preRequisite');
+    Route::get('enquiries/{enquiry}/follow-ups/pre-requisite', [EnquiryFollowUpController::class, 'preRequisite'])->name('enquiries.followUps.preRequisite');
     Route::apiResource('enquiries.follow-ups', EnquiryFollowUpController::class)->only(['store', 'destroy'])->names('enquiries.follow-ups');
 
     Route::post('enquiries/{enquiry}/photo', [EnquiryActionController::class, 'uploadPhoto'])->name('enquiries.uploadPhoto');
